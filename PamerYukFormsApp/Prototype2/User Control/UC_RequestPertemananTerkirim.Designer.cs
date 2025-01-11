@@ -43,6 +43,7 @@
             this.buttonKirimUlang.TabIndex = 5;
             this.buttonKirimUlang.Text = "Kirim Ulang Permintaan Pertemanan";
             this.buttonKirimUlang.UseVisualStyleBackColor = false;
+            this.buttonKirimUlang.Click += new System.EventHandler(this.buttonKirimUlang_Click);
             // 
             // labelTanggalKirim
             // 
@@ -82,8 +83,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonKirimUlang;
-        private System.Windows.Forms.Label labelTanggalKirim;
-        private System.Windows.Forms.Label labelUsername;
+        public System.Windows.Forms.Button buttonKirimUlang;
+        public System.Windows.Forms.Label labelTanggalKirim;
+        public System.Windows.Forms.Label labelUsername;
     }
 }

@@ -32,36 +32,23 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             flowLayoutPanelChat.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanelChat.WrapContents = false;
 
-            //Console.WriteLine("From UC_Chat Current User : "+MainForm.service.Current_user.ToString());
-            /*for (int i = 0; i < 8; i++)
+            List<Teman> listTeman = MainForm.service.ListTeman;
+
+            labelContactName.Text = listTeman[0].Username;
+            
+            Console.WriteLine("Jumlah Teman : " + MainForm.service.ListTeman.Count);
+            
+            foreach (Teman teman in listTeman)
             {
-                UC_ChatListItem cli = new UC_ChatListItem(this);
-                cli.Testing(i);
+                string username = teman.Username;
 
-                this.flowLayoutPanelChat.Controls.Add(cli);
-            }*/
+                UC_ChatListItem uc_cl = new UC_ChatListItem(this);
 
-            Console.WriteLine("Jumlah Teman : "+MainForm.service.ListTeman.Count);
-
-            for (int i = 0; i < MainForm.service.ListTeman.Count; i++)
-            {
-                UC_ChatListItem uc_chatListItem = new UC_ChatListItem(this);
-                flowLayoutPanelChat.Controls.Add(uc_chatListItem);
-
-            }
-            // Clear the controls once, before adding all items            
-            //UC_ChatListItem[] jumlahChat = new UC_ChatListItem[MainForm.service.ListTeman.Count];
-            /*for (int i = 0; i < jumlahChat.Length; i++)
-            {
-                jumlahChat[i] = new UC_ChatListItem(this);
-                jumlahChat[i].Name1 = "Kontak";
-                jumlahChat[i].Message = "Message";
-
-                // Add the new item to the flow layout panel
-                flowLayoutPanelChat.Controls.Add(jumlahChat[i]);
-                Console.WriteLine("Kontrol ditambahkan: " + jumlahChat[i].Name1);
-            }*/
-
+                uc_cl.Name1 = username;
+                
+                this.flowLayoutPanelChat.Controls.Add(uc_cl);                
+            }            
+                    
         }
 
     }

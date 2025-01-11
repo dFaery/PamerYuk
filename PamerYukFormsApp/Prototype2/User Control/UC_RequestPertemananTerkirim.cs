@@ -13,15 +13,34 @@ namespace PamerYukFormsApp.Prototype2.User_Control
     public partial class UC_RequestPertemananTerkirim : UserControl
     {
         UC_Home uc;
+        private string username;
+        private DateTime dateTime;
         public UC_RequestPertemananTerkirim(UC_Home uc)
         {
             InitializeComponent();
             this.uc = uc;
         }
+        
+        public string Username
+        {
+            get { return username; }
+            set { username = value; labelUsername.Text = value; }
+        }
 
+        public DateTime DateTime
+        {
+            get { return dateTime; }
+            set { dateTime = value; labelTanggalKirim.Text = dateTime.ToString(); }
+        }
         private void UC_RequestPertemananTerkirim_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonKirimUlang_Click(object sender, EventArgs e)
+        {
+            MainForm.service.Terima_Pertemanan(this.Username);
+            MessageBox.Show("Berhasil Mengirim Ulang Pertemanan.");
         }
     }
 }

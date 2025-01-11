@@ -45,6 +45,7 @@
             this.buttonTerima.TabIndex = 10;
             this.buttonTerima.Text = "Terima Permintaan Pertemanan";
             this.buttonTerima.UseVisualStyleBackColor = false;
+            this.buttonTerima.Click += new System.EventHandler(this.buttonTerima_Click);
             // 
             // buttonTolak
             // 
@@ -57,6 +58,7 @@
             this.buttonTolak.TabIndex = 9;
             this.buttonTolak.Text = "Tolak Permintaan Pertemanan";
             this.buttonTolak.UseVisualStyleBackColor = false;
+            this.buttonTolak.Click += new System.EventHandler(this.buttonTolak_Click);
             // 
             // labelTanggalKirim
             // 
@@ -97,9 +99,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonTerima;
-        private System.Windows.Forms.Button buttonTolak;
-        private System.Windows.Forms.Label labelTanggalKirim;
-        private System.Windows.Forms.Label labelUsername;
+        public System.Windows.Forms.Button buttonTerima;
+        public System.Windows.Forms.Button buttonTolak;
+        public System.Windows.Forms.Label labelTanggalKirim;
+        public System.Windows.Forms.Label labelUsername;
     }
 }

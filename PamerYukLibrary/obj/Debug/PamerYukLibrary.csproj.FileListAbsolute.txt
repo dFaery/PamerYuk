@@ -32,3 +32,10 @@ C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.c
 C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\obj\Debug\PamerYuk.290381AD.Up2Date
 C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.dll
 C:\Users\joshu\source\repos\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.pdb
+E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukLibrary\bin\Debug\PamerYukLibrary.dll
+E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukLibrary\bin\Debug\PamerYukLibrary.pdb
+E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.csproj.AssemblyReference.cache
+E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.csproj.CoreCompileInputs.cache
+E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukLibrary\obj\Debug\PamerYuk.290381AD.Up2Date
+E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.dll
+E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.pdb

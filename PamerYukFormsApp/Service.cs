@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 using PamerYukLibrary.Entity;
+using PamerYukLibrary.Database;
 
 namespace PamerYukFormsApp
 {
@@ -64,7 +65,7 @@ namespace PamerYukFormsApp
             string newFotoProfilPath = New_ProfilePictureFileName(username);
             File.Copy(fotoDiri, Path.Combine(this.MediafilePath, newFotoDiriPath));
             File.Copy(fotoProfil, Path.Combine(this.MediafilePath, newFotoProfilPath));
-            User new_user = new User(username, password, namaLengkap, tglLahir, noKTP, Path.Combine(this.MediafilePath,newFotoDiriPath), Path.Combine(this.MediafilePath, newFotoProfilPath), email, kota);
+            User new_user = new User(username, password, namaLengkap, tglLahir, noKTP, Path.Combine(this.MediafilePath, newFotoDiriPath), Path.Combine(this.MediafilePath, newFotoProfilPath), email, kota);
             DAO_Users.User_Daftar(username, password, namaLengkap, tglLahir, noKTP, Path.Combine(this.MediafilePathDB, newFotoDiriPath), Path.Combine(this.MediafilePathDB, newFotoProfilPath), email, kota);
             this.Current_user = new_user;
         }
@@ -74,7 +75,7 @@ namespace PamerYukFormsApp
             string newFotoProfilPath = New_ProfilePictureFileName(new_usn);
             File.Copy(new_fd, Path.Combine(this.MediafilePath, newFotoDiriPath));
             File.Copy(new_fp, Path.Combine(this.MediafilePath, newFotoProfilPath));
-            DAO_Users.Update_User(this.Current_user.Username,new_usn,new_nama,new_date,new_ktp,Path.Combine(this.MediafilePathDB, newFotoDiriPath), Path.Combine(this.MediafilePathDB, newFotoProfilPath),new_email,new_kota);
+            DAO_Users.Update_User(this.Current_user.Username, new_usn, new_nama, new_date, new_ktp, Path.Combine(this.MediafilePathDB, newFotoDiriPath), Path.Combine(this.MediafilePathDB, newFotoProfilPath), new_email, new_kota);
             this.Current_user.Username = new_usn;
             this.Current_user.NamaLengkap = new_nama;
             this.Current_user.TglLahir = new_date;
@@ -85,8 +86,6 @@ namespace PamerYukFormsApp
             this.Current_user.Kota = new_kota;
 
         }
-
-
         #endregion
 
         #region METHOD (KISAH HIDUP)
