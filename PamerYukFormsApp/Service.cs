@@ -25,7 +25,6 @@ namespace PamerYukFormsApp
         private List<Teman> listTeman;
         private string MediafilePath = @"C:\PamerYuk\";
         private string MediafilePathDB = @"C:\\PamerYuk\\";
-        public Konten buffer_konten;
         #endregion
 
         #region CONSTRUCTOR
@@ -150,7 +149,7 @@ namespace PamerYukFormsApp
         }
         public void KirimUlang_Pertemanan(string username)
         {
-            DAO_Teman.Update_RequestPertemanan(username, this.Current_user.Username, "Menunggu");
+            DAO_Teman.Update_RequestPertemanan(this.Current_user.Username, username, "Menunggu");
         }
 
         public List<Teman> Request_Pertemanan(bool jenis)
@@ -167,47 +166,41 @@ namespace PamerYukFormsApp
             newKonten.Comment = DAO_Komen.Select_Komen(newKonten.Id);
             return newKonten;
         }
-
-
-        public void Tambah_Tag(string username)
-        {
-            this.buffer_konten.Tag.Add(DAO_Users.Select_User(username));
-        }
+        
 
         public Konten Lihat_Konten(int id)
         {
             return DAO_Konten.Select_Konten(id);
         }
 
-        public void Initiate_Konten()
+        public void Tambah_Konten(Konten newKonten)
         {
-            this.buffer_konten = new Konten();
-        }
-
-        public void Tambah_Konten(string caption, OpenFileDialog fdialog)
-        {
-            buffer_konten.Caption = caption;
-            buffer_konten.TglUpload = DateTime.Now;
             string newPath = "";
-            if (Path.GetExtension(fdialog.FileName) == ".jpg")
+            if (Path.GetExtension(newKonten.Foto) == ".jpg")
             {
                 newPath = New_FileName(true);
-                buffer_konten.Foto = Path.Combine(this.MediafilePathDB,newPath);
+                File.Copy(newKonten.Foto, Path.Combine(this.MediafilePath, newPath));
+                newKonten.Foto = Path.Combine(this.MediafilePathDB,newPath);
             }
             else
             {
                 newPath = New_FileName(false);
-                buffer_konten.Video = Path.Combine(this.MediafilePathDB, newPath);
+                File.Copy(newKonten.Video, Path.Combine(this.MediafilePath, newPath));
+                newKonten.Video = Path.Combine(this.MediafilePathDB, newPath);
             }
-            File.Copy(fdialog.FileName, Path.Combine(this.MediafilePath, newPath));
-            DAO_Konten.Insert_Konten(buffer_konten, this.Current_user.Username);
+            newKonten.TglUpload = DateTime.Now;
+            DAO_Konten.Insert_Konten(newKonten, this.Current_user.Username);
             this.Current_user.ListKonten = DAO_Konten.Select_ListKonten(this.current_user.Username);
             int konten_id = this.Current_user.ListKonten[(this.Current_user.ListKonten.Count - 1)].Id;
-            foreach(User us in this.buffer_konten.Tag)
+            foreach(User us in newKonten.Tag)
             {
                 DAO_Tag.Insert_Tag(konten_id, us.Username);
             }
-            this.buffer_konten = null;
+        }
+
+        public User Tambah_Tag(string username)
+        {
+            return DAO_Users.Select_Tag_ByUSN(username);
         }
 
         public bool Check_Like(int konten_id)

@@ -16,15 +16,25 @@ namespace PamerYukFormsApp.Prototype2.User_Control
     public partial class UC_Chat : UserControl
     {
         MainForm mainForm;
-        public string pickChat;
+        public string penerima ="";
+        private User penerimaUser;
         public UC_Chat(MainForm mainForm)
         {
             InitializeComponent();
             this.mainForm = mainForm;
         }
 
-        private void UC_Chat_Load(object sender, EventArgs e)
+        public void UC_Chat_Load(object sender, EventArgs e)
         {
+            this.flowLayoutPanelChat.Controls.Clear();
+            if (penerima!="")
+            {
+                penerimaUser = MainForm.service.Cari_AkunTeman(penerima);
+                labelContactName.Text = this.penerima;
+                 listBoxChat.DataSource = MainForm.service.Buka_Chat(this.penerima);
+                pictureBoxProfile.Image = new Bitmap(penerimaUser.FotoProfil);
+                pictureBoxProfile.BackgroundImageLayout = ImageLayout.Zoom;
+            }
             /* mainForm.panel1.Show();
              mainForm.panel1.BringToFront();
  */
@@ -32,24 +42,33 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             flowLayoutPanelChat.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanelChat.WrapContents = false;
 
-            List<Teman> listTeman = MainForm.service.ListTeman;
-
-            labelContactName.Text = listTeman[0].Username;
-            
-            Console.WriteLine("Jumlah Teman : " + MainForm.service.ListTeman.Count);
-            
-            foreach (Teman teman in listTeman)
+            if(MainForm.service.ListTeman.Count>0)
             {
-                string username = teman.Username;
 
-                UC_ChatListItem uc_cl = new UC_ChatListItem(this);
+                foreach (Teman teman in MainForm.service.ListTeman)
+                {
+                    string username = teman.Username;
 
-                uc_cl.Name1 = username;
-                
-                this.flowLayoutPanelChat.Controls.Add(uc_cl);                
-            }            
+                    UC_ChatListItem uc_cl = new UC_ChatListItem(this);
+
+                    uc_cl.Name1 = username;
+
+                    this.flowLayoutPanelChat.Controls.Add(uc_cl);
+                }
+            }
                     
         }
 
+        private void btnKirim_Click(object sender, EventArgs e)
+        {
+            string pesan = textBoxMessage.Text;
+            MainForm.service.Kirim_Chat(new Chat(pesan, MainForm.service.Current_user.Username, penerima));
+            UC_Chat_Load(sender, e);
+        }
+
+        private void panelContactHeader_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

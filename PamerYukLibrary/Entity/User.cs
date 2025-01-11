@@ -72,6 +72,11 @@ namespace PamerYukLibrary
         #endregion
 
         #region METHOD
+
+        public override string ToString()
+        {
+            return this.username;
+        }
         #endregion
     }
 }

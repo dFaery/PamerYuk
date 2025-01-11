@@ -51,13 +51,12 @@ namespace PamerYukLibrary.DAO
         {
             string command = "SELECT o.id FROM organisasi o ORDER BY o.id DESC LIMIT 1;";
             MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(command);
-            int result = -1;
+            int result = 0;
             if (dr.Read())
             {
                 result = int.Parse(dr.GetValue(0).ToString());
-                result++;
             }
-            return result;
+            return (result+1);
         }
     }
 }

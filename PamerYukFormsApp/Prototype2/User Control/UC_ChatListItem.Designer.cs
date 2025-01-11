@@ -38,31 +38,34 @@
             this.labelContactName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelContactName.AutoEllipsis = true;
             this.labelContactName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelContactName.Location = new System.Drawing.Point(188, 62);
-            this.labelContactName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelContactName.Location = new System.Drawing.Point(334, 96);
+            this.labelContactName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelContactName.Name = "labelContactName";
-            this.labelContactName.Size = new System.Drawing.Size(223, 32);
+            this.labelContactName.Size = new System.Drawing.Size(396, 50);
             this.labelContactName.TabIndex = 50;
             this.labelContactName.Text = "Contact Name";
+            this.labelContactName.Click += new System.EventHandler(this.labelContactName_Click);
             // 
             // profilePicture
             // 
             this.profilePicture.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.profilePicture.Location = new System.Drawing.Point(33, 14);
+            this.profilePicture.Location = new System.Drawing.Point(59, 22);
+            this.profilePicture.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.profilePicture.Name = "profilePicture";
-            this.profilePicture.Size = new System.Drawing.Size(132, 122);
+            this.profilePicture.Size = new System.Drawing.Size(235, 189);
             this.profilePicture.TabIndex = 49;
             this.profilePicture.TabStop = false;
             // 
             // UC_ChatListItem
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.Controls.Add(this.labelContactName);
             this.Controls.Add(this.profilePicture);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "UC_ChatListItem";
-            this.Size = new System.Drawing.Size(442, 150);
+            this.Size = new System.Drawing.Size(786, 232);
             this.Load += new System.EventHandler(this.UC_ChatListItem_Load);
             this.Click += new System.EventHandler(this.UC_ChatListItem_Click);
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).EndInit();

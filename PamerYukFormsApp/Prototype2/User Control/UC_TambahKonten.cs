@@ -1,8 +1,12 @@
-﻿using System;
+﻿using PamerYukFormsApp.Prototype;
+using PamerYukLibrary;
+using PamerYukLibrary.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,29 +17,75 @@ namespace PamerYukFormsApp.Prototype2.User_Control
     public partial class UC_TambahKonten : UserControl
     {
         UC_DaftarKonten uc;
+        Konten buffer;
+        OpenFileDialog fileDialog;
+        //OpenFileDialog openFileDialogVideo;
+
         public UC_TambahKonten(UC_DaftarKonten uc)
         {
             InitializeComponent();
             this.uc = uc;
         }
 
-        private void UC_TambahKonten_Load_1(object sender, EventArgs e)
+        private void UC_TambahKonten_Load(object sender, EventArgs e)
         {
-            MainForm.service.Initiate_Konten();
-
-        }
-
-        private void textBoxCaption_TextChanged(object sender, EventArgs e)
-        {
-            textBoxCaption.Clear();
-        }
-
-        private void textBoxCaption_Click(object sender, EventArgs e)
-        {
-            if (textBoxCaption.Text == "Caption")
+            buffer = new Konten();
+            dataGridViewTeman.DataSource = MainForm.service.ListTeman;
+            if (dataGridViewTeman.Columns.Count == 3)
             {
-                textBoxCaption.Clear();
+                DataGridViewButtonColumn buttonTambahTag = new DataGridViewButtonColumn();
+                buttonTambahTag.Text = "Tambah Tag";
+                buttonTambahTag.HeaderText = "Aksi";
+                buttonTambahTag.UseColumnTextForButtonValue = true;
+                buttonTambahTag.Name = "buttonTambahTag";
+                dataGridViewTeman.Columns.Add(buttonTambahTag);
             }
+        }
+
+        private void buttonUploadImage_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fileDialog = new OpenFileDialog();
+                //openFileDialogVideo = new OpenFileDialog();
+                if (fileDialog.ShowDialog() == DialogResult.OK && Path.GetExtension(fileDialog.FileName) == ".jpg")
+                {
+                    Image selectedFoto = new Bitmap(fileDialog.FileName);
+                    pictureBoxKonten.BackgroundImage = selectedFoto;
+                    pictureBoxKonten.BackgroundImageLayout = ImageLayout.Zoom;
+                    pictureBoxKonten.Visible = true;
+                    pictureBoxKonten.Image = null;
+                    buffer.Foto = fileDialog.FileName;
+                }
+                else
+                {
+                    MessageBox.Show("Only support .jpg");
+                }
+                /*              else if (openFileDialogVideo.ShowDialog() == DialogResult.OK && Path.GetExtension(openFileDialogVideo.FileName) == ".mp4")
+                                {
+
+                                }*/
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dataGridViewTeman_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+                if (e.ColumnIndex == dataGridViewTeman.Columns["buttonTambahTag"].Index)
+                {
+                    string username = dataGridViewTeman.CurrentRow.Cells["username"].Value.ToString();
+                    buffer.Tag.Add(MainForm.service.Tambah_Tag(username));
+                }
+        }
+
+        private void buttonTambahKonten_Click(object sender, EventArgs e)
+        {
+            buffer.Caption = textBoxCaption.Text;
+            MainForm.service.Tambah_Konten(buffer);
         }
     }
 }

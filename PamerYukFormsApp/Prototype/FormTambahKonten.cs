@@ -57,13 +57,12 @@ namespace PamerYukFormsApp.Prototype
 
         private void buttonTambah_Click(object sender, EventArgs e)
         {
-            FormUtama.service.Tambah_Konten(textBoxCaption.Text, fileDialog);
+            //FormUtama.service.Tambah_Konten(textBoxCaption.Text, fileDialog);
         }
 
         private void FormTambahKonten_Load(object sender, EventArgs e)
         {
             pictureBoxMedia.Visible = false;
-            FormUtama.service.Initiate_Konten();
         }
 
 
