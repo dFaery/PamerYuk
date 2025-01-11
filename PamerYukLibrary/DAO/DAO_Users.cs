@@ -194,7 +194,7 @@ namespace PamerYukLibrary.DAO
                 //User
                 string usname = dr.GetValue(0).ToString();
                 string namaLengkap = dr.GetValue(2).ToString();
-                DateTime tgllahir = DateTime.Parse(dr.GetValue(3).ToString());
+                DateTime tgllahir = DateTime.Parse(dr.GetValue(3).ToString());                
                 string noKTP = dr.GetValue(4).ToString();
                 string fotoDiri = dr.GetValue(5).ToString(); //Still confuse with this image data format
                 string fotoProfil = dr.GetValue(6).ToString();

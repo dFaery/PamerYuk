@@ -31,10 +31,10 @@
             this.labelLikeQuantity = new System.Windows.Forms.Label();
             this.buttonLike = new System.Windows.Forms.PictureBox();
             this.btnKirim = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBoxCaption = new System.Windows.Forms.TextBox();
+            this.textBoxKomen = new System.Windows.Forms.TextBox();
             this.pictureBoxKonten = new System.Windows.Forms.PictureBox();
+            this.listBoxCaption = new System.Windows.Forms.ListBox();
+            this.listBoxKomentar = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.buttonLike)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnKirim)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKonten)).BeginInit();
@@ -73,40 +73,15 @@
             this.btnKirim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnKirim.TabIndex = 88;
             this.btnKirim.TabStop = false;
+            this.btnKirim.Click += new System.EventHandler(this.btnKirim_Click);
             // 
-            // textBox2
+            // textBoxKomen
             // 
-            this.textBox2.Location = new System.Drawing.Point(405, 389);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(373, 46);
-            this.textBox2.TabIndex = 87;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox1.Location = new System.Drawing.Point(389, 170);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(438, 202);
-            this.textBox1.TabIndex = 86;
-            this.textBox1.Text = "Komentar";
-            // 
-            // textBoxCaption
-            // 
-            this.textBoxCaption.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBoxCaption.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCaption.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBoxCaption.Location = new System.Drawing.Point(389, 65);
-            this.textBoxCaption.Margin = new System.Windows.Forms.Padding(2);
-            this.textBoxCaption.Multiline = true;
-            this.textBoxCaption.Name = "textBoxCaption";
-            this.textBoxCaption.Size = new System.Drawing.Size(438, 86);
-            this.textBoxCaption.TabIndex = 85;
-            this.textBoxCaption.Text = "Caption";
+            this.textBoxKomen.Location = new System.Drawing.Point(405, 389);
+            this.textBoxKomen.Multiline = true;
+            this.textBoxKomen.Name = "textBoxKomen";
+            this.textBoxKomen.Size = new System.Drawing.Size(373, 46);
+            this.textBoxKomen.TabIndex = 87;
             // 
             // pictureBoxKonten
             // 
@@ -120,17 +95,35 @@
             this.pictureBoxKonten.TabIndex = 84;
             this.pictureBoxKonten.TabStop = false;
             // 
+            // listBoxCaption
+            // 
+            this.listBoxCaption.FormattingEnabled = true;
+            this.listBoxCaption.ItemHeight = 20;
+            this.listBoxCaption.Location = new System.Drawing.Point(405, 65);
+            this.listBoxCaption.Name = "listBoxCaption";
+            this.listBoxCaption.Size = new System.Drawing.Size(410, 84);
+            this.listBoxCaption.TabIndex = 91;
+            // 
+            // listBoxKomentar
+            // 
+            this.listBoxKomentar.FormattingEnabled = true;
+            this.listBoxKomentar.ItemHeight = 20;
+            this.listBoxKomentar.Location = new System.Drawing.Point(405, 168);
+            this.listBoxKomentar.Name = "listBoxKomentar";
+            this.listBoxKomentar.Size = new System.Drawing.Size(410, 204);
+            this.listBoxKomentar.TabIndex = 92;
+            // 
             // UC_KontenDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Controls.Add(this.listBoxKomentar);
+            this.Controls.Add(this.listBoxCaption);
             this.Controls.Add(this.labelLikeQuantity);
             this.Controls.Add(this.buttonLike);
             this.Controls.Add(this.btnKirim);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.textBoxCaption);
+            this.Controls.Add(this.textBoxKomen);
             this.Controls.Add(this.pictureBoxKonten);
             this.Name = "UC_KontenDetail";
             this.Size = new System.Drawing.Size(876, 500);
@@ -148,9 +141,9 @@
         private System.Windows.Forms.Label labelLikeQuantity;
         private System.Windows.Forms.PictureBox buttonLike;
         private System.Windows.Forms.PictureBox btnKirim;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBoxCaption;
+        private System.Windows.Forms.TextBox textBoxKomen;
         private System.Windows.Forms.PictureBox pictureBoxKonten;
+        private System.Windows.Forms.ListBox listBoxCaption;
+        private System.Windows.Forms.ListBox listBoxKomentar;
     }
 }

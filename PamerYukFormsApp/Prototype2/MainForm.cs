@@ -85,7 +85,7 @@ namespace PamerYukFormsApp.Prototype2
 
         private void ResetNavigationBar()
         {
-            this.buttonHome.Image = Properties.Resources.Home_true;
+            this.buttonHome.Image = Properties.Resources.Home_false;
             this.buttonChat.Image = Properties.Resources.Chat_false;
             this.buttonTambahKonten.Image = Properties.Resources.Tambahkonten_false;
             this.buttonProfile.Image = Properties.Resources.Profile_false;

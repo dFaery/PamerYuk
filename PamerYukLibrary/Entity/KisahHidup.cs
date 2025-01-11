@@ -29,7 +29,11 @@ namespace PamerYukLibrary
         public override string ToString()
         {
             string text = "";
-            text = this.Organisasi.Nama + " dari tahun " + this.thawal + " hingga " + this.thakhir + "\n";
+            text = "Organisasi: " + this.Organisasi.Nama +
+                   "\nKota: " + this.Organisasi.Kota +
+                   "\nTahun Awal: " + this.Thawal +
+                   "\nTahun Akhir: " + this.Thakhir +
+                   "\nDeskripsi: " + this.Deskripsi;
             return text;
         }
     }

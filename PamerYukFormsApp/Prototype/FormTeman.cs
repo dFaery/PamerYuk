@@ -41,6 +41,8 @@ namespace PamerYukFormsApp.Prototype
                 buttonTambahTeman.Name = "buttonTambahTeman";
                 dataGridViewDaftarTeman.Columns.Add(buttonTambahTeman);
             }
+
+            Console.WriteLine("Tanggal : ");
         }
 
         private void FormTeman_Load(object sender, EventArgs e)
