@@ -268,6 +268,30 @@ namespace PamerYukFormsApp
         {
             DAO_Chat.Insert_Chat(chat);
         }
+
+        public List<int> Cari_Chat(List<Chat> chat, string username, string pesan)
+        {
+            List<int> idChat =  DAO_Chat.Select_Chat_ByPesan(username, this.Current_user.Username,pesan);
+            List<int> indexList=new List<int>();
+            int index = 0;
+            for(int i=0;i<chat.Count;i++)
+            {
+                if (chat[i].Id == idChat[index])
+                {
+                    indexList.Add(i);
+                    if(index < (idChat.Count-1))
+                    {
+                        index++;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+
+            return indexList;
+        }
         #endregion
     }
 }

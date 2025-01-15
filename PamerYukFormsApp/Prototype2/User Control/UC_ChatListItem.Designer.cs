@@ -50,9 +50,9 @@
             // 
             this.profilePicture.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.profilePicture.Location = new System.Drawing.Point(59, 22);
-            this.profilePicture.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.profilePicture.Margin = new System.Windows.Forms.Padding(5);
             this.profilePicture.Name = "profilePicture";
-            this.profilePicture.Size = new System.Drawing.Size(235, 189);
+            this.profilePicture.Size = new System.Drawing.Size(180, 180);
             this.profilePicture.TabIndex = 49;
             this.profilePicture.TabStop = false;
             // 
@@ -63,7 +63,7 @@
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.Controls.Add(this.labelContactName);
             this.Controls.Add(this.profilePicture);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "UC_ChatListItem";
             this.Size = new System.Drawing.Size(786, 232);
             this.Load += new System.EventHandler(this.UC_ChatListItem_Load);

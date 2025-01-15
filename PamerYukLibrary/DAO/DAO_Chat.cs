@@ -31,6 +31,19 @@ namespace PamerYukLibrary.DAO
             return listChat;
         }
 
+        public static List<int> Select_Chat_ByPesan(string friend, string user,string pesan)
+        {
+            //usn2 is current user
+            string perintah = "SELECT id FROM chat  WHERE pengirim = '" + friend + "' and penerima ='" + user + "' and pesan like '%"+pesan+"%' UNION SELECT id FROM chat  WHERE pengirim = '" + user + "' and penerima ='" + friend + "' and pesan like '%"+pesan+"%' order by id asc;";
+            MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
+            List<int> listChatId = new List<int>();
+            while (dr.Read())
+            {
+                int id = int.Parse(dr.GetValue(0).ToString());
+                listChatId.Add(id);
+            }
+            return listChatId;
+        }
         public static void Insert_Chat(Chat chat)
         {
             string command = "INSERT INTO `pameryuk`.`chat` (`id`, `pesan`,`tglTerkirim`, `pengirim`,`penerima`) VALUES ('" + Get_NewChat_Id() + "', '" + chat.Pesan + "','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','" + chat.Pengirim + "','" + chat.Penerima +"');";

@@ -28,14 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_TambahKonten));
             this.buttonTambahKonten = new System.Windows.Forms.Button();
             this.dataGridViewTeman = new System.Windows.Forms.DataGridView();
             this.labelTag = new System.Windows.Forms.Label();
             this.buttonUploadImage = new System.Windows.Forms.Label();
             this.textBoxCaption = new System.Windows.Forms.TextBox();
-            this.pictureBoxKonten = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.videoPlayer = new AxWMPLib.AxWindowsMediaPlayer();
+            this.pictureBoxKonten = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeman)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.videoPlayer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKonten)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,7 +63,7 @@
             this.dataGridViewTeman.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridViewTeman.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTeman.Location = new System.Drawing.Point(1072, 484);
-            this.dataGridViewTeman.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dataGridViewTeman.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridViewTeman.Name = "dataGridViewTeman";
             this.dataGridViewTeman.RowHeadersWidth = 62;
             this.dataGridViewTeman.RowTemplate.Height = 28;
@@ -86,7 +89,7 @@
             this.buttonUploadImage.AutoSize = true;
             this.buttonUploadImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUploadImage.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonUploadImage.Location = new System.Drawing.Point(325, 835);
+            this.buttonUploadImage.Location = new System.Drawing.Point(338, 888);
             this.buttonUploadImage.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.buttonUploadImage.Name = "buttonUploadImage";
             this.buttonUploadImage.Size = new System.Drawing.Size(375, 46);
@@ -106,19 +109,6 @@
             this.textBoxCaption.Size = new System.Drawing.Size(1033, 182);
             this.textBoxCaption.TabIndex = 83;
             // 
-            // pictureBoxKonten
-            // 
-            this.pictureBoxKonten.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxKonten.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxKonten.Image = global::PamerYukFormsApp.Properties.Resources.Tambahkonten_false;
-            this.pictureBoxKonten.Location = new System.Drawing.Point(165, 138);
-            this.pictureBoxKonten.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.pictureBoxKonten.Name = "pictureBoxKonten";
-            this.pictureBoxKonten.Size = new System.Drawing.Size(722, 630);
-            this.pictureBoxKonten.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBoxKonten.TabIndex = 82;
-            this.pictureBoxKonten.TabStop = false;
-            // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -131,23 +121,44 @@
             this.label1.TabIndex = 88;
             this.label1.Text = "Caption";
             // 
+            // videoPlayer
+            // 
+            this.videoPlayer.Enabled = true;
+            this.videoPlayer.Location = new System.Drawing.Point(157, 138);
+            this.videoPlayer.Name = "videoPlayer";
+            this.videoPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("videoPlayer.OcxState")));
+            this.videoPlayer.Size = new System.Drawing.Size(720, 720);
+            this.videoPlayer.TabIndex = 0;
+            // 
+            // pictureBoxKonten
+            // 
+            this.pictureBoxKonten.BackgroundImage = global::PamerYukFormsApp.Properties.Resources.Tambahkonten_false;
+            this.pictureBoxKonten.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBoxKonten.Location = new System.Drawing.Point(157, 138);
+            this.pictureBoxKonten.Name = "pictureBoxKonten";
+            this.pictureBoxKonten.Size = new System.Drawing.Size(720, 720);
+            this.pictureBoxKonten.TabIndex = 89;
+            this.pictureBoxKonten.TabStop = false;
+            // 
             // UC_TambahKonten
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Controls.Add(this.pictureBoxKonten);
+            this.Controls.Add(this.videoPlayer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonTambahKonten);
             this.Controls.Add(this.dataGridViewTeman);
             this.Controls.Add(this.labelTag);
             this.Controls.Add(this.buttonUploadImage);
             this.Controls.Add(this.textBoxCaption);
-            this.Controls.Add(this.pictureBoxKonten);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "UC_TambahKonten";
             this.Size = new System.Drawing.Size(2272, 1051);
             this.Load += new System.EventHandler(this.UC_TambahKonten_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTeman)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.videoPlayer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKonten)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -161,7 +172,8 @@
         private System.Windows.Forms.Label labelTag;
         private System.Windows.Forms.Label buttonUploadImage;
         private System.Windows.Forms.TextBox textBoxCaption;
-        private System.Windows.Forms.PictureBox pictureBoxKonten;
         private System.Windows.Forms.Label label1;
+        private AxWMPLib.AxWindowsMediaPlayer videoPlayer;
+        private System.Windows.Forms.PictureBox pictureBoxKonten;
     }
 }

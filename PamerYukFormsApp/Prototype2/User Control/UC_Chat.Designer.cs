@@ -32,16 +32,18 @@
             this.labelContactName = new System.Windows.Forms.Label();
             this.panelContactHeader = new System.Windows.Forms.Panel();
             this.flowLayoutPanelChat = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelChat = new System.Windows.Forms.Panel();
-            this.listBoxChat = new System.Windows.Forms.ListBox();
             this.textBoxMessage = new System.Windows.Forms.TextBox();
             this.btnKirim = new System.Windows.Forms.PictureBox();
             this.panelSendMessage = new System.Windows.Forms.Panel();
+            this.numericUpDownCariChat = new System.Windows.Forms.NumericUpDown();
+            this.pictureBoxCari = new System.Windows.Forms.PictureBox();
+            this.listBoxChat = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).BeginInit();
             this.panelContactHeader.SuspendLayout();
-            this.panelChat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnKirim)).BeginInit();
             this.panelSendMessage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCariChat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCari)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxProfile
@@ -89,45 +91,21 @@
             this.flowLayoutPanelChat.TabIndex = 6;
             this.flowLayoutPanelChat.WrapContents = false;
             // 
-            // panelChat
-            // 
-            this.panelChat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelChat.Controls.Add(this.listBoxChat);
-            this.panelChat.Location = new System.Drawing.Point(786, 133);
-            this.panelChat.Margin = new System.Windows.Forms.Padding(5);
-            this.panelChat.Name = "panelChat";
-            this.panelChat.Size = new System.Drawing.Size(1486, 798);
-            this.panelChat.TabIndex = 8;
-            // 
-            // listBoxChat
-            // 
-            this.listBoxChat.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.listBoxChat.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listBoxChat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBoxChat.FormattingEnabled = true;
-            this.listBoxChat.ItemHeight = 31;
-            this.listBoxChat.Location = new System.Drawing.Point(0, 0);
-            this.listBoxChat.Margin = new System.Windows.Forms.Padding(5);
-            this.listBoxChat.Name = "listBoxChat";
-            this.listBoxChat.Size = new System.Drawing.Size(1486, 798);
-            this.listBoxChat.TabIndex = 0;
-            // 
             // textBoxMessage
             // 
             this.textBoxMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMessage.Location = new System.Drawing.Point(27, 31);
             this.textBoxMessage.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxMessage.Name = "textBoxMessage";
-            this.textBoxMessage.Size = new System.Drawing.Size(1238, 68);
+            this.textBoxMessage.Size = new System.Drawing.Size(1119, 68);
             this.textBoxMessage.TabIndex = 7;
+            this.textBoxMessage.TextChanged += new System.EventHandler(this.textBoxMessage_TextChanged);
             // 
             // btnKirim
             // 
             this.btnKirim.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnKirim.Image = global::PamerYukFormsApp.Properties.Resources.SendMessage;
-            this.btnKirim.Location = new System.Drawing.Point(1324, 22);
+            this.btnKirim.Location = new System.Drawing.Point(1171, 21);
             this.btnKirim.Margin = new System.Windows.Forms.Padding(5);
             this.btnKirim.Name = "btnKirim";
             this.btnKirim.Size = new System.Drawing.Size(89, 78);
@@ -139,6 +117,8 @@
             // panelSendMessage
             // 
             this.panelSendMessage.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelSendMessage.Controls.Add(this.numericUpDownCariChat);
+            this.panelSendMessage.Controls.Add(this.pictureBoxCari);
             this.panelSendMessage.Controls.Add(this.btnKirim);
             this.panelSendMessage.Controls.Add(this.textBoxMessage);
             this.panelSendMessage.Location = new System.Drawing.Point(786, 910);
@@ -147,13 +127,45 @@
             this.panelSendMessage.Size = new System.Drawing.Size(1486, 296);
             this.panelSendMessage.TabIndex = 9;
             // 
+            // numericUpDownCariChat
+            // 
+            this.numericUpDownCariChat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.numericUpDownCariChat.Location = new System.Drawing.Point(1366, 37);
+            this.numericUpDownCariChat.Name = "numericUpDownCariChat";
+            this.numericUpDownCariChat.Size = new System.Drawing.Size(87, 60);
+            this.numericUpDownCariChat.TabIndex = 10;
+            this.numericUpDownCariChat.ValueChanged += new System.EventHandler(this.numericUpDownCariChat_ValueChanged);
+            // 
+            // pictureBoxCari
+            // 
+            this.pictureBoxCari.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxCari.Image = global::PamerYukFormsApp.Properties.Resources.SendMessage;
+            this.pictureBoxCari.Location = new System.Drawing.Point(1270, 21);
+            this.pictureBoxCari.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxCari.Name = "pictureBoxCari";
+            this.pictureBoxCari.Size = new System.Drawing.Size(89, 78);
+            this.pictureBoxCari.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxCari.TabIndex = 9;
+            this.pictureBoxCari.TabStop = false;
+            this.pictureBoxCari.Click += new System.EventHandler(this.pictureBoxCari_Click);
+            // 
+            // listBoxChat
+            // 
+            this.listBoxChat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.listBoxChat.FormattingEnabled = true;
+            this.listBoxChat.ItemHeight = 46;
+            this.listBoxChat.Location = new System.Drawing.Point(786, 181);
+            this.listBoxChat.Name = "listBoxChat";
+            this.listBoxChat.Size = new System.Drawing.Size(1453, 694);
+            this.listBoxChat.TabIndex = 10;
+            // 
             // UC_Chat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Controls.Add(this.listBoxChat);
             this.Controls.Add(this.panelSendMessage);
-            this.Controls.Add(this.panelChat);
             this.Controls.Add(this.flowLayoutPanelChat);
             this.Controls.Add(this.panelContactHeader);
             this.Margin = new System.Windows.Forms.Padding(5);
@@ -163,10 +175,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfile)).EndInit();
             this.panelContactHeader.ResumeLayout(false);
             this.panelContactHeader.PerformLayout();
-            this.panelChat.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnKirim)).EndInit();
             this.panelSendMessage.ResumeLayout(false);
             this.panelSendMessage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCariChat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCari)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -177,10 +190,11 @@
         private System.Windows.Forms.Label labelContactName;
         private System.Windows.Forms.Panel panelContactHeader;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelChat;
-        private System.Windows.Forms.Panel panelChat;
-        private System.Windows.Forms.ListBox listBoxChat;
         private System.Windows.Forms.TextBox textBoxMessage;
         private System.Windows.Forms.PictureBox btnKirim;
         private System.Windows.Forms.Panel panelSendMessage;
+        private System.Windows.Forms.PictureBox pictureBoxCari;
+        private System.Windows.Forms.NumericUpDown numericUpDownCariChat;
+        private System.Windows.Forms.ListBox listBoxChat;
     }
 }

@@ -1,4 +1,5 @@
-﻿using PamerYukFormsApp.Prototype;
+﻿using AxWMPLib;
+using PamerYukFormsApp.Prototype;
 using PamerYukLibrary;
 using PamerYukLibrary.DAO;
 using System;
@@ -29,17 +30,26 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void UC_TambahKonten_Load(object sender, EventArgs e)
         {
-            buffer = new Konten();
-            dataGridViewTeman.DataSource = MainForm.service.ListTeman;
-            if (dataGridViewTeman.Columns.Count == 3)
+            try
             {
-                DataGridViewButtonColumn buttonTambahTag = new DataGridViewButtonColumn();
-                buttonTambahTag.Text = "Tambah Tag";
-                buttonTambahTag.HeaderText = "Aksi";
-                buttonTambahTag.UseColumnTextForButtonValue = true;
-                buttonTambahTag.Name = "buttonTambahTag";
-                dataGridViewTeman.Columns.Add(buttonTambahTag);
+                buffer = new Konten();
+                dataGridViewTeman.DataSource = MainForm.service.ListTeman;
+                videoPlayer.Visible = false;
+                if (dataGridViewTeman.Columns.Count == 3)
+                {
+                    DataGridViewButtonColumn buttonTambahTag = new DataGridViewButtonColumn();
+                    buttonTambahTag.Text = "Tambah Tag";
+                    buttonTambahTag.HeaderText = "Aksi";
+                    buttonTambahTag.UseColumnTextForButtonValue = true;
+                    buttonTambahTag.Name = "buttonTambahTag";
+                    dataGridViewTeman.Columns.Add(buttonTambahTag);
+                }
             }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
 
         private void buttonUploadImage_Click(object sender, EventArgs e)
@@ -47,24 +57,32 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             try
             {
                 fileDialog = new OpenFileDialog();
-                //openFileDialogVideo = new OpenFileDialog();
-                if (fileDialog.ShowDialog() == DialogResult.OK && Path.GetExtension(fileDialog.FileName) == ".jpg")
+                if (fileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    Image selectedFoto = new Bitmap(fileDialog.FileName);
-                    pictureBoxKonten.BackgroundImage = selectedFoto;
-                    pictureBoxKonten.BackgroundImageLayout = ImageLayout.Zoom;
-                    pictureBoxKonten.Visible = true;
-                    pictureBoxKonten.Image = null;
-                    buffer.Foto = fileDialog.FileName;
+                    if(Path.GetExtension(fileDialog.FileName) == ".jpg")
+                    {
+                        Image selectedFoto = new Bitmap(fileDialog.FileName);
+                        pictureBoxKonten.BackgroundImage = selectedFoto;
+                        pictureBoxKonten.BackgroundImageLayout = ImageLayout.Zoom;
+                        pictureBoxKonten.Visible = true;
+                        buffer.Foto = fileDialog.FileName;
+                    }
+                    else if (Path.GetExtension(fileDialog.FileName) == ".mp4")
+                    {
+                        videoPlayer.stretchToFit = true;
+                        videoPlayer.URL = fileDialog.FileName;
+                        videoPlayer.MaximumSize = new Size(300, 300);
+                        videoPlayer.Size = new Size(300, 300);
+                        videoPlayer.stretchToFit = true;
+                        videoPlayer.Ctlenabled = true;
+                        videoPlayer.Ctlcontrols.play();
+                        videoPlayer.Visible = true;
+                        var location = pictureBoxKonten.Location;
+                        videoPlayer.Location = location;
+                        pictureBoxKonten.Visible = false;
+                        buffer.Video = fileDialog.FileName;
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Only support .jpg");
-                }
-                /*              else if (openFileDialogVideo.ShowDialog() == DialogResult.OK && Path.GetExtension(openFileDialogVideo.FileName) == ".mp4")
-                                {
-
-                                }*/
                 
             }
             catch (Exception ex)
@@ -87,5 +105,8 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             buffer.Caption = textBoxCaption.Text;
             MainForm.service.Tambah_Konten(buffer);
         }
+
+        #region METHOD
+        #endregion
     }
 }
