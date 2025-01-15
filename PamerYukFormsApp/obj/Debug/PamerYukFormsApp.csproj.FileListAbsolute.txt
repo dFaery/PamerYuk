@@ -88,7 +88,6 @@ E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\
 E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukFormsApp.exe
 E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukFormsApp.pdb
 E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukLibrary.dll
-E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\MySql.Data.dll
 E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\PamerYukLibrary.pdb
 E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\Interop.WMPLib.dll
 E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\AxInterop.WMPLib.dll
@@ -318,3 +317,4 @@ C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\bin\Debug\System.Memory.dll
 C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\bin\Debug\System.Buffers.dll
+E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\MySql.Data.dll
