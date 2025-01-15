@@ -35,7 +35,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void buttonMasuk_Click(object sender, EventArgs e)
         {
-            try
+            //try
             {
                 string username = textBoxUsername.Text;
                 string password = textBoxPassword.Text;
@@ -49,9 +49,9 @@ namespace PamerYukFormsApp.Prototype2.User_Control
                 mainForm.panelUtama.Controls.Add(uc_home);
                 mainForm.panel1.Show();
             }
-            catch (Exception ex)
+            //catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+               // MessageBox.Show(ex.Message);
             }
         }
 

@@ -1,9 +1,11 @@
-﻿using PamerYukLibrary;
+﻿using PamerYukFormsApp.Prototype;
+using PamerYukLibrary;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +17,9 @@ namespace PamerYukFormsApp.Prototype2.User_Control
     {
         UC_Home uc;
         User selectedUser;
+        Konten selectedKonten;
+        MainForm mainForm;
+
         public UC_ProfilTeman(UC_Home uc, Teman selectedTeman)
         {
             InitializeComponent();
@@ -23,19 +28,66 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         }
         private void UC_ProfilTeman_Load(object sender, EventArgs e)
         {
-            flowLayoutPanelKonten.AutoScroll = true;
-            flowLayoutPanelKonten.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanelKonten.WrapContents = false;
-
-            //Console.WriteLine("From UC_Chat Current User : "+MainForm.service.Current_user.ToString());
-
-            //menyesuaikan jumlah konten yang sudah diuplaod pengguna
-            for (int i = 0; i < 3; i++)
+            DisplayOnLoad();
+            if (this.selectedUser.FotoProfil != "null")
             {
-                UC_KontenDetail cli = new UC_KontenDetail(this);
+                if (File.Exists(this.selectedUser.FotoProfil))
+                {
+                    Image image = new Bitmap(File.OpenRead(this.selectedUser.FotoProfil));
+                    panelFotoProfil.BackgroundImage = image;
+                    panelFotoProfil.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+            }            
+        }
 
-                this.flowLayoutPanelKonten.Controls.Add(cli);
+        #region Method
+        private void DisplayOnLoad()
+        {            
+            labelUsername.Text = selectedUser.Username;
+            labelTanggalLahir.Text = selectedUser.TglLahir.ToString("yyyy-MM-dd");
+            labelKota.Text = selectedUser.Kota.ToString();
+            foreach (KisahHidup kisahHidup in selectedUser.ListKisahHidup)
+            {
+                listBoxKisahHidup.Items.Add(kisahHidup.Deskripsi.ToString());
             }
+            DisplayDaftarKonten();
+        }
+
+        private void DisplayDaftarKonten()
+        {
+
+            dataGridViewKontenTeman.DataSource = selectedUser.ListKonten;
+            dataGridViewKontenTeman.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            
+            if (dataGridViewKontenTeman.Columns.Count == 6)
+            {
+                DataGridViewButtonColumn btnLihat = new DataGridViewButtonColumn();
+                btnLihat.Text = "Lihat";
+                btnLihat.HeaderText = "Lihat Konten";
+                btnLihat.UseColumnTextForButtonValue = true;
+                btnLihat.Name = "btnLihat";
+                dataGridViewKontenTeman.Columns.Add(btnLihat);
+            }
+        }
+        #endregion
+
+        private void dataGridViewKontenTeman_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dataGridViewKontenTeman.Columns["btnLihat"].Index)
+            {
+                int kid = int.Parse(dataGridViewKontenTeman.CurrentRow.Cells["id"].Value.ToString());
+
+                panelKontenUtama.Controls.Clear();
+                UC_KontenDetail uc_kontenDetail = new UC_KontenDetail(this, kid);
+                panelKontenUtama.Controls.Remove(this);
+                panelKontenUtama.Controls.Add(uc_kontenDetail);
+                
+            }
+        }
+
+        private void panelKontenUtama_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

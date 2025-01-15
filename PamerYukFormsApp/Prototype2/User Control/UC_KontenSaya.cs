@@ -1,4 +1,5 @@
 ﻿using PamerYukFormsApp.Prototype2.User_Control;
+using PamerYukLibrary;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,10 +32,9 @@ namespace PamerYukFormsApp.Prototype2
             //Console.WriteLine("From UC_Chat Current User : "+MainForm.service.Current_user.ToString());
 
             //menyesuaikan jumlah konten yang sudah diuplaod pengguna
-            for (int i = 0; i < 3; i++)
+            foreach (Konten kSaya in MainForm.service.Current_user.ListKonten)
             {
-                UC_KontenDetail cli = new UC_KontenDetail(this);
-
+                UC_KontenDetail cli = new UC_KontenDetail(this,kSaya);
                 this.flowLayoutPanelKontenSaya.Controls.Add(cli);
             }
         }

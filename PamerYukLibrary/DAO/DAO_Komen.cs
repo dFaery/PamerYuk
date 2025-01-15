@@ -41,14 +41,13 @@ namespace PamerYukLibrary.DAO
         {
             string command = "select id from komen order by id desc limit 1;";
             MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(command);
-            int result=-1;
+            int result=0;
             if (dr.Read())
             {
                 //User
                 result = int.Parse(dr.GetValue(0).ToString());
-                result++;
             }
-            return result;
+            return (result+1);
         }
 
     }

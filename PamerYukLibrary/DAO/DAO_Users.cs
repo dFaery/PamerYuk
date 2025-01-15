@@ -193,16 +193,16 @@ namespace PamerYukLibrary.DAO
             {
                 //User
                 string usname = dr.GetValue(0).ToString();
-                string namaLengkap = dr.GetValue(2).ToString();
-                DateTime tgllahir = DateTime.Parse(dr.GetValue(3).ToString());
-                string noKTP = dr.GetValue(4).ToString();
-                string fotoDiri = dr.GetValue(5).ToString(); //Still confuse with this image data format
-                string fotoProfil = dr.GetValue(6).ToString();
-                string email = dr.GetValue(7).ToString();
-                int kota_id_fk = int.Parse(dr.GetValue(8).ToString());
+                string namaLengkap = dr.GetValue(1).ToString();
+                DateTime tgllahir = DateTime.Parse(dr.GetValue(2).ToString());                
+                string noKTP = dr.GetValue(3).ToString();
+                string fotoDiri = dr.GetValue(4).ToString(); //Still confuse with this image data format
+                string fotoProfil = dr.GetValue(5).ToString();
+                string email = dr.GetValue(6).ToString();
+                int kota_id_fk = int.Parse(dr.GetValue(7).ToString());
 
                 //Kota
-                string nama = dr.GetValue(9).ToString();
+                string nama = dr.GetValue(8).ToString();
 
                 //Create Kota
                 Kota newKota = new Kota(kota_id_fk, nama);
