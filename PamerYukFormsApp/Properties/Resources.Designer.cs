@@ -123,6 +123,16 @@ namespace PamerYukFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Close_Button {
+            get {
+                object obj = ResourceManager.GetObject("Close-Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap default_profile_picture {
             get {
                 object obj = ResourceManager.GetObject("default_profile_picture", resourceCulture);
@@ -206,6 +216,16 @@ namespace PamerYukFormsApp.Properties {
         internal static System.Drawing.Bitmap Profile_true {
             get {
                 object obj = ResourceManager.GetObject("Profile-true", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Search_button {
+            get {
+                object obj = ResourceManager.GetObject("Search-button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

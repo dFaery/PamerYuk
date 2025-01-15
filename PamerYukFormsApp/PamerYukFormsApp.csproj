@@ -454,5 +454,11 @@
   <ItemGroup>
     <None Include="Resources\SendMessage.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-Button.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

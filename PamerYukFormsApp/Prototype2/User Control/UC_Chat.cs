@@ -30,6 +30,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             flowLayoutPanelChat.AutoScroll = true;
             flowLayoutPanelChat.FlowDirection = FlowDirection.TopDown;
             flowLayoutPanelChat.WrapContents = false;
+            SearchChatOnLoad();
 
             if(MainForm.service.ListTeman.Count>0)
             {
@@ -101,8 +102,28 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             return listBoxChat.Items.Count;
         }
 
-        private void pictureBoxCari_Click(object sender, EventArgs e)
+        private void SearchChatOnLoad()
         {
+            textBoxCariChat.Hide();
+            numericUpDownCariChat.Hide();
+            dateTimePickerChatDate.Hide();
+            btnCloseChat.Hide();
+        }
+
+        private void btnSearchChatClicked()
+        {
+            btnCariChat.Visible = false;
+            textBoxCariChat.Visible = true;
+            numericUpDownCariChat.Visible = true;
+            dateTimePickerChatDate.Visible = true;
+            btnCloseChat.Visible = true;            
+            textBoxCariChat.Focus();
+        }
+
+        private void pictureBoxCari_Click(object sender, EventArgs e)
+        {           
+            btnSearchChatClicked();
+
             string pesan = textBoxMessage.Text;
             textBoxMessage.Clear();
             cariIndex = MainForm.service.Cari_Chat(this.chat, this.penerimaUser.Username, pesan);
@@ -130,6 +151,15 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         {
             cariIndex = new List<int>();
             numericUpDownCariChat.Value = 0;
+        }    
+
+        private void btnCloseChat_Click(object sender, EventArgs e)
+        {
+            textBoxCariChat.Visible = false;
+            numericUpDownCariChat.Visible = false;
+            dateTimePickerChatDate.Visible = false;
+            btnCloseChat.Visible = false;
+            btnCariChat.Visible = true;
         }
     }
 }
