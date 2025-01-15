@@ -47,6 +47,7 @@
             this.dataGridViewCariTeman.RowTemplate.Height = 28;
             this.dataGridViewCariTeman.Size = new System.Drawing.Size(1188, 401);
             this.dataGridViewCariTeman.TabIndex = 78;
+            this.dataGridViewCariTeman.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCariTeman_CellContentClick);
             // 
             // label1
             // 
@@ -80,6 +81,7 @@
             this.buttonCari.TabIndex = 75;
             this.buttonCari.Text = "Cari";
             this.buttonCari.UseVisualStyleBackColor = false;
+            this.buttonCari.Click += new System.EventHandler(this.buttonCari_Click);
             // 
             // comboBoxOrganisasi
             // 
@@ -90,6 +92,7 @@
             this.comboBoxOrganisasi.Name = "comboBoxOrganisasi";
             this.comboBoxOrganisasi.Size = new System.Drawing.Size(313, 40);
             this.comboBoxOrganisasi.TabIndex = 74;
+            this.comboBoxOrganisasi.SelectedIndexChanged += new System.EventHandler(this.comboBoxOrganisasi_SelectedIndexChanged);
             // 
             // labelNamaOrganisasi
             // 

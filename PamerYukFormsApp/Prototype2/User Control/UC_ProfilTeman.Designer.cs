@@ -30,16 +30,19 @@
         {
             this.panelFotoProfil = new System.Windows.Forms.Panel();
             this.labelUsername = new System.Windows.Forms.Label();
-            this.labelTanggalLahir = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.listBoxKisahHidup = new System.Windows.Forms.ListBox();
-            this.labelKota = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.labelKisahHidup = new System.Windows.Forms.Label();
             this.panelInformasiAkun = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelTanggalLahir = new System.Windows.Forms.Label();
+            this.labelKota = new System.Windows.Forms.Label();
+            this.panelKontenUtama = new System.Windows.Forms.Panel();
+            this.dataGridViewKontenTeman = new System.Windows.Forms.DataGridView();
             this.labelKonten = new System.Windows.Forms.Label();
-            this.flowLayoutPanelKonten = new System.Windows.Forms.FlowLayoutPanel();
             this.panelInformasiAkun.SuspendLayout();
+            this.panelKontenUtama.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKontenTeman)).BeginInit();
             this.SuspendLayout();
             // 
             // panelFotoProfil
@@ -61,16 +64,16 @@
             this.labelUsername.TabIndex = 106;
             this.labelUsername.Text = "Nama Teman";
             // 
-            // labelTanggalLahir
+            // label2
             // 
-            this.labelTanggalLahir.AutoSize = true;
-            this.labelTanggalLahir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTanggalLahir.Location = new System.Drawing.Point(16, 364);
-            this.labelTanggalLahir.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelTanggalLahir.Name = "labelTanggalLahir";
-            this.labelTanggalLahir.Size = new System.Drawing.Size(148, 25);
-            this.labelTanggalLahir.TabIndex = 109;
-            this.labelTanggalLahir.Text = "Tanggal Lahir : ";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(16, 364);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 25);
+            this.label2.TabIndex = 109;
+            this.label2.Text = "Tanggal Lahir : ";
             // 
             // listBoxKisahHidup
             // 
@@ -84,16 +87,16 @@
             this.listBoxKisahHidup.Size = new System.Drawing.Size(296, 140);
             this.listBoxKisahHidup.TabIndex = 112;
             // 
-            // labelKota
+            // label4
             // 
-            this.labelKota.AutoSize = true;
-            this.labelKota.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelKota.Location = new System.Drawing.Point(16, 325);
-            this.labelKota.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelKota.Name = "labelKota";
-            this.labelKota.Size = new System.Drawing.Size(69, 25);
-            this.labelKota.TabIndex = 107;
-            this.labelKota.Text = "Kota : ";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(16, 325);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 25);
+            this.label4.TabIndex = 107;
+            this.label4.Text = "Kota : ";
             // 
             // labelKisahHidup
             // 
@@ -109,61 +112,74 @@
             // panelInformasiAkun
             // 
             this.panelInformasiAkun.BackColor = System.Drawing.Color.AliceBlue;
-            this.panelInformasiAkun.Controls.Add(this.label1);
-            this.panelInformasiAkun.Controls.Add(this.label2);
+            this.panelInformasiAkun.Controls.Add(this.labelTanggalLahir);
+            this.panelInformasiAkun.Controls.Add(this.labelKota);
             this.panelInformasiAkun.Controls.Add(this.panelFotoProfil);
             this.panelInformasiAkun.Controls.Add(this.labelUsername);
-            this.panelInformasiAkun.Controls.Add(this.labelTanggalLahir);
+            this.panelInformasiAkun.Controls.Add(this.label2);
             this.panelInformasiAkun.Controls.Add(this.listBoxKisahHidup);
-            this.panelInformasiAkun.Controls.Add(this.labelKota);
+            this.panelInformasiAkun.Controls.Add(this.label4);
             this.panelInformasiAkun.Controls.Add(this.labelKisahHidup);
             this.panelInformasiAkun.Location = new System.Drawing.Point(2, 1);
             this.panelInformasiAkun.Name = "panelInformasiAkun";
             this.panelInformasiAkun.Size = new System.Drawing.Size(337, 676);
             this.panelInformasiAkun.TabIndex = 118;
             // 
-            // label1
+            // labelTanggalLahir
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(195, 364);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 25);
-            this.label1.TabIndex = 114;
-            this.label1.Text = "dd-MM-yyyy";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelTanggalLahir.AutoSize = true;
+            this.labelTanggalLahir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTanggalLahir.Location = new System.Drawing.Point(195, 364);
+            this.labelTanggalLahir.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTanggalLahir.Name = "labelTanggalLahir";
+            this.labelTanggalLahir.Size = new System.Drawing.Size(122, 25);
+            this.labelTanggalLahir.TabIndex = 114;
+            this.labelTanggalLahir.Text = "dd-MM-yyyy";
+            this.labelTanggalLahir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label2
+            // labelKota
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(264, 325);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 25);
-            this.label2.TabIndex = 113;
-            this.label2.Text = "Kota";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.labelKota.AutoSize = true;
+            this.labelKota.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelKota.Location = new System.Drawing.Point(264, 325);
+            this.labelKota.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelKota.Name = "labelKota";
+            this.labelKota.Size = new System.Drawing.Size(53, 25);
+            this.labelKota.TabIndex = 113;
+            this.labelKota.Text = "Kota";
+            this.labelKota.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // panelKontenUtama
+            // 
+            this.panelKontenUtama.Controls.Add(this.dataGridViewKontenTeman);
+            this.panelKontenUtama.Controls.Add(this.labelKonten);
+            this.panelKontenUtama.Location = new System.Drawing.Point(342, 0);
+            this.panelKontenUtama.Name = "panelKontenUtama";
+            this.panelKontenUtama.Size = new System.Drawing.Size(936, 678);
+            this.panelKontenUtama.TabIndex = 122;
+            // 
+            // dataGridViewKontenTeman
+            // 
+            this.dataGridViewKontenTeman.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewKontenTeman.Location = new System.Drawing.Point(52, 177);
+            this.dataGridViewKontenTeman.Name = "dataGridViewKontenTeman";
+            this.dataGridViewKontenTeman.RowHeadersWidth = 62;
+            this.dataGridViewKontenTeman.RowTemplate.Height = 28;
+            this.dataGridViewKontenTeman.Size = new System.Drawing.Size(832, 429);
+            this.dataGridViewKontenTeman.TabIndex = 123;
+            this.dataGridViewKontenTeman.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewKontenTeman_CellContentClick);
             // 
             // labelKonten
             // 
             this.labelKonten.AutoSize = true;
             this.labelKonten.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold);
-            this.labelKonten.Location = new System.Drawing.Point(683, 50);
+            this.labelKonten.Location = new System.Drawing.Point(336, 72);
             this.labelKonten.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelKonten.Name = "labelKonten";
             this.labelKonten.Size = new System.Drawing.Size(243, 73);
-            this.labelKonten.TabIndex = 117;
+            this.labelKonten.TabIndex = 122;
             this.labelKonten.Text = "Konten";
             this.labelKonten.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanelKonten
-            // 
-            this.flowLayoutPanelKonten.Location = new System.Drawing.Point(339, 144);
-            this.flowLayoutPanelKonten.Name = "flowLayoutPanelKonten";
-            this.flowLayoutPanelKonten.Size = new System.Drawing.Size(936, 466);
-            this.flowLayoutPanelKonten.TabIndex = 119;
             // 
             // UC_ProfilTeman
             // 
@@ -171,15 +187,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.panelInformasiAkun);
-            this.Controls.Add(this.labelKonten);
-            this.Controls.Add(this.flowLayoutPanelKonten);
+            this.Controls.Add(this.panelKontenUtama);
             this.Name = "UC_ProfilTeman";
             this.Size = new System.Drawing.Size(1278, 678);
             this.Load += new System.EventHandler(this.UC_ProfilTeman_Load);
             this.panelInformasiAkun.ResumeLayout(false);
             this.panelInformasiAkun.PerformLayout();
+            this.panelKontenUtama.ResumeLayout(false);
+            this.panelKontenUtama.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewKontenTeman)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -187,14 +204,15 @@
 
         private System.Windows.Forms.Panel panelFotoProfil;
         private System.Windows.Forms.Label labelUsername;
-        private System.Windows.Forms.Label labelTanggalLahir;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox listBoxKisahHidup;
-        private System.Windows.Forms.Label labelKota;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label labelKisahHidup;
         private System.Windows.Forms.Panel panelInformasiAkun;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelTanggalLahir;
+        private System.Windows.Forms.Label labelKota;
+        private System.Windows.Forms.Panel panelKontenUtama;
+        private System.Windows.Forms.DataGridView dataGridViewKontenTeman;
         private System.Windows.Forms.Label labelKonten;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelKonten;
     }
 }

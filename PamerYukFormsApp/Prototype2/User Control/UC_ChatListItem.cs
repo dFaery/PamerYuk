@@ -14,31 +14,27 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 {
     public partial class UC_ChatListItem : UserControl
     {
+        #region Data Member
         UC_Chat uc_Chat;
         Panel panel;
 
-        private string name;
-        private string message;
+        private string name;        
         private Image image;
+        #endregion
 
+        #region Properties
         public string Name1
         {
             get { return name; }
             set { name = value; labelContactName.Text = value; }
-        }
-
-        public string Message
-        {
-            get { return message; }
-            set { Message = value; labelLastMessage.Text = value; }
-        }
+        }        
 
         public Image Image
         {
             get { return image; }
-            set { Image = value; profilePicture.Image = value; }
+            set { Image = value; profilePicture.Image = Properties.Resources.default_profile_picture; }
         }
-
+        #endregion
         public UC_ChatListItem(UC_Chat uc_Chat)
         {
             InitializeComponent();
@@ -49,7 +45,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void UC_ChatListItem_Load(object sender, EventArgs e)
         {
-            /*List<Chat> listChat = MainForm.service.Buka_Chat();*/
+            
         }
 
         public void Testing(int index)
@@ -62,6 +58,11 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             {
                 labelContactName.Text = "Nama2";
             }
+        }
+
+        private void UC_ChatListItem_Click(object sender, EventArgs e)
+        {
+            List<Chat> listChat = MainForm.service.Buka_Chat(this.Name1);
         }
     }
 }

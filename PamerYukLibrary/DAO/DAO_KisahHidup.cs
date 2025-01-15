@@ -55,7 +55,7 @@ namespace PamerYukLibrary.DAO
 
         public static void Insert_KisahHidup(KisahHidup newKisah, User current_user)
         {
-            string command = "INSERT INTO `pameryuk`.`kisahhidup` (`organisasi_id`, `username`, `thawal`, `thakhir`, `deskripsi`) VALUES ('" + newKisah.Organisasi.Id + "', '" + current_user.Username + "', '" + newKisah.Thawal + "', '" + newKisah.Thakhir + "', '"+newKisah.Deskripsi+"');";
+            string command = "INSERT INTO pameryuk.kisahhidup (organisasi_id, username, thawal, thakhir, deskripsi) VALUES ('" + newKisah.Organisasi.Id + "', '" + current_user.Username + "', '" + newKisah.Thawal + "', '" + newKisah.Thakhir + "', '" + newKisah.Deskripsi + "');";
             KoneksiDatabase.DatabaseDMLCommand(command);
         }
     }

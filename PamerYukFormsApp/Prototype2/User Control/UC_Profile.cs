@@ -98,25 +98,33 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void buttonSimpanUpdateProfile_Click(object sender, EventArgs e)
         {
-            string new_usn = textBoxUsername.Text;
-            string new_ktp = textBoxNoKtp.Text;
-            string new_email = textBoxEmail.Text;
-            string new_nama = textBoxNamaLengkap.Text;
-            DateTime newTanggal = dateTimePickerTglLahir.Value;
-            Kota newKota = (Kota)comboBoxKota.SelectedItem;
+            try
+            {
+                string new_usn = textBoxUsername.Text;
+                string new_ktp = textBoxNoKtp.Text;
+                string new_email = textBoxEmail.Text;
+                string new_nama = textBoxNamaLengkap.Text;
+                DateTime newTanggal = dateTimePickerTglLahir.Value;
+                Kota newKota = (Kota)comboBoxKota.SelectedItem;
 
-            //Kalau ada waktu nanti bisa dibuat lebih storage efficient
-            string new_fd = MainForm.service.Current_user.FotoDiri;
-            string new_fp = MainForm.service.Current_user.FotoProfil;
-            if (fileDialogFotoDiri.FileName != null)
-            {
-                new_fd = fileDialogFotoDiri.FileName;
+                //Kalau ada waktu nanti bisa dibuat lebih storage efficient
+                string new_fd = MainForm.service.Current_user.FotoDiri;
+                string new_fp = MainForm.service.Current_user.FotoProfil;
+                if (fileDialogFotoDiri.FileName != null)
+                {
+                    new_fd = fileDialogFotoDiri.FileName;
+                }
+                if (fileDialogFotoProfil.FileName != null)
+                {
+                    new_fp = fileDialogFotoProfil.FileName;
+                }
+                MainForm.service.UpdateUser(new_usn, new_nama, newTanggal, new_ktp, new_fd, new_fp, new_email, newKota);
+                MessageBox.Show("Profil berhasil diperbarui.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            if (fileDialogFotoProfil.FileName != null)
+            catch (Exception ex)
             {
-                new_fp = fileDialogFotoProfil.FileName;
+                MessageBox.Show(ex.Message);
             }
-            MainForm.service.UpdateUser(new_usn,new_nama,newTanggal,new_ktp,new_fd,new_fp,new_email,newKota);
         }
 
         #region METHOD
@@ -138,7 +146,21 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             panelFotoProfil.BackgroundImage = profilePictureFotoProfil;
             panelFotoProfil.BackgroundImageLayout = ImageLayout.Zoom;
 
-            listBoxKisahHidup.DataSource = MainForm.service.Current_user.ListKisahHidup;
+            DisplayListKisahHidup();
+        }
+        private void DisplayListKisahHidup()
+        {
+            foreach (KisahHidup kh in MainForm.service.Current_user.ListKisahHidup)
+            {
+                string[] buffer = new string[5];
+                buffer = kh.ToString().Split('\n');
+                foreach (string isiBuffer in buffer)
+                {
+                    listBoxKisahHidup.Items.Add(isiBuffer);
+
+                }
+                listBoxKisahHidup.Items.Add("====================");
+            }
         }
         #endregion
     }
