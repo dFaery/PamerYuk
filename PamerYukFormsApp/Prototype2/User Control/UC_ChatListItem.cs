@@ -18,7 +18,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         UC_Chat uc_Chat;
         Panel panel;
 
-        private string name;        
+        string name;
         private Image image;
         #endregion
 
@@ -27,7 +27,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         {
             get { return name; }
             set { name = value; labelContactName.Text = value; }
-        }        
+        }
 
         public Image Image
         {
@@ -45,7 +45,8 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void UC_ChatListItem_Load(object sender, EventArgs e)
         {
-            
+            profilePicture.BackgroundImage = new Bitmap(MainForm.service.Cari_AkunTeman(this.Name1).FotoProfil);
+            profilePicture.BackgroundImageLayout = ImageLayout.Zoom;
         }
 
         public void Testing(int index)
@@ -62,7 +63,12 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void UC_ChatListItem_Click(object sender, EventArgs e)
         {
-            List<Chat> listChat = MainForm.service.Buka_Chat(this.Name1);
+        }
+
+        private void labelContactName_Click(object sender, EventArgs e)
+        {
+            uc_Chat.Open_Chat_Room(this.Name1);
         }
     }
 }
+

@@ -54,10 +54,5 @@ namespace PamerYukFormsApp.Prototype2.User_Control
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void panelKonten_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

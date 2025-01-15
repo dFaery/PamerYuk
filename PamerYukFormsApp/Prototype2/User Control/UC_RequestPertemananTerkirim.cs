@@ -39,7 +39,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void buttonKirimUlang_Click(object sender, EventArgs e)
         {
-            MainForm.service.Terima_Pertemanan(this.Username);
+            MainForm.service.KirimUlang_Pertemanan(this.Username);
             MessageBox.Show("Berhasil Mengirim Ulang Pertemanan.");
         }
     }

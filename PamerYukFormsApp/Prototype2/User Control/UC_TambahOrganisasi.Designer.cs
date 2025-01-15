@@ -40,10 +40,10 @@
             // 
             this.comboBoxKota.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.comboBoxKota.FormattingEnabled = true;
-            this.comboBoxKota.Location = new System.Drawing.Point(149, 387);
-            this.comboBoxKota.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxKota.Location = new System.Drawing.Point(265, 600);
+            this.comboBoxKota.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.comboBoxKota.Name = "comboBoxKota";
-            this.comboBoxKota.Size = new System.Drawing.Size(980, 40);
+            this.comboBoxKota.Size = new System.Drawing.Size(1739, 62);
             this.comboBoxKota.TabIndex = 119;
             // 
             // buttonSimpan
@@ -53,23 +53,24 @@
             this.buttonSimpan.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonSimpan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSimpan.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonSimpan.Location = new System.Drawing.Point(149, 473);
-            this.buttonSimpan.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonSimpan.Location = new System.Drawing.Point(265, 733);
+            this.buttonSimpan.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonSimpan.Name = "buttonSimpan";
-            this.buttonSimpan.Size = new System.Drawing.Size(980, 50);
+            this.buttonSimpan.Size = new System.Drawing.Size(1742, 78);
             this.buttonSimpan.TabIndex = 118;
             this.buttonSimpan.Text = "Simpan";
             this.buttonSimpan.UseVisualStyleBackColor = false;
+            this.buttonSimpan.Click += new System.EventHandler(this.buttonSimpan_Click);
             // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(139, 128);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(247, 198);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(460, 55);
+            this.label10.Size = new System.Drawing.Size(748, 91);
             this.label10.TabIndex = 117;
             this.label10.Text = "Tambah Organisasi";
             // 
@@ -78,10 +79,10 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(144, 219);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(256, 339);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(146, 29);
+            this.label7.Size = new System.Drawing.Size(232, 46);
             this.label7.TabIndex = 115;
             this.label7.Text = "Organisasi:";
             // 
@@ -90,10 +91,10 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(144, 338);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(256, 524);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 29);
+            this.label1.Size = new System.Drawing.Size(118, 46);
             this.label1.TabIndex = 114;
             this.label1.Text = "Kota:";
             // 
@@ -103,15 +104,15 @@
             this.textBoxOrganisasi.BackColor = System.Drawing.Color.White;
             this.textBoxOrganisasi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.textBoxOrganisasi.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxOrganisasi.Location = new System.Drawing.Point(149, 266);
-            this.textBoxOrganisasi.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxOrganisasi.Location = new System.Drawing.Point(265, 412);
+            this.textBoxOrganisasi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxOrganisasi.Name = "textBoxOrganisasi";
-            this.textBoxOrganisasi.Size = new System.Drawing.Size(980, 39);
+            this.textBoxOrganisasi.Size = new System.Drawing.Size(1739, 60);
             this.textBoxOrganisasi.TabIndex = 123;
             // 
             // UC_TambahOrganisasi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.textBoxOrganisasi);
@@ -120,8 +121,9 @@
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "UC_TambahOrganisasi";
-            this.Size = new System.Drawing.Size(1296, 816);
+            this.Size = new System.Drawing.Size(2304, 1265);
             this.Load += new System.EventHandler(this.UC_TambahOrganisasi_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

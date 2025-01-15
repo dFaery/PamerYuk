@@ -84,5 +84,10 @@ namespace PamerYukFormsApp.Prototype2.User_Control
                 
             }
         }
+
+        private void panelKontenUtama_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

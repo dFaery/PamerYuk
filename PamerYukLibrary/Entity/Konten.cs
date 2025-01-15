@@ -39,6 +39,7 @@ namespace PamerYukLibrary
             this.Foto = "null";
             this.Video = "null";
             this.Tag = new List<User>();
+            this.Comment = new List<Komen>();
         }
 
         public int Id { get => id; set => id = value; }
