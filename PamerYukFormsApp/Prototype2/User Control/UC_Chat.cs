@@ -95,6 +95,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         private void Make_Chat_On_Top2(int index)
         {
             listBoxChat.TopIndex = index;
+            listBoxChat.SelectedIndex = index;
         }
 
         private int Newest_Chat()
@@ -104,31 +105,30 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void SearchChatOnLoad()
         {
-            textBoxCariChat.Hide();
-            numericUpDownCariChat.Hide();
-            dateTimePickerChatDate.Hide();
-            btnCloseChat.Hide();
+            btnCloseChat.Visible = false;
         }
 
         private void btnSearchChatClicked()
         {
-            btnCariChat.Visible = false;
-            textBoxCariChat.Visible = true;
-            numericUpDownCariChat.Visible = true;
-            dateTimePickerChatDate.Visible = true;
-            btnCloseChat.Visible = true;            
-            textBoxCariChat.Focus();
         }
 
         private void pictureBoxCari_Click(object sender, EventArgs e)
-        {           
-            btnSearchChatClicked();
-
-            string pesan = textBoxMessage.Text;
-            textBoxMessage.Clear();
+        {
+            btnCariChat.Visible = false;
+            btnCloseChat.Visible = true;
+            string pesan = textBoxCariChat.Text;
             cariIndex = MainForm.service.Cari_Chat(this.chat, this.penerimaUser.Username, pesan);
-            numericUpDownCariChat.Value = cariIndex.Count;
-            Make_Chat_On_Top2(cariIndex[(int)numericUpDownCariChat.Value - 1]);
+            if(cariIndex.Count >0)
+            {
+                numericUpDownCariChat.Value = cariIndex.Count;
+                Make_Chat_On_Top2(cariIndex[(int)numericUpDownCariChat.Value - 1]);
+            }
+            else
+            {
+                textBoxCariChat.Clear();
+                numericUpDownCariChat.Value = 0;
+                btnCloseChat_Click(sender, e);
+            }
         }
 
         private void numericUpDownCariChat_ValueChanged(object sender, EventArgs e)
@@ -155,11 +155,9 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void btnCloseChat_Click(object sender, EventArgs e)
         {
-            textBoxCariChat.Visible = false;
-            numericUpDownCariChat.Visible = false;
-            dateTimePickerChatDate.Visible = false;
-            btnCloseChat.Visible = false;
             btnCariChat.Visible = true;
+            textBoxCariChat.Clear();
+            numericUpDownCariChat.Value = 0;
         }
     }
 }

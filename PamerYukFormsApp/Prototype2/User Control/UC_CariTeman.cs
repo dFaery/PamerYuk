@@ -23,7 +23,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void UC_CariTeman_Load(object sender, EventArgs e)
         {
-            comboBoxOrganisasi.DataSource = MainForm.service.ListOrganisasi;
+            comboBoxOrganisasi.DataSource = MainForm.service.Lihat_Organisasi_User();
             comboBoxOrganisasi.DisplayMember = "Nama";
             comboBoxOrganisasi.SelectedIndex = -1;            
         }

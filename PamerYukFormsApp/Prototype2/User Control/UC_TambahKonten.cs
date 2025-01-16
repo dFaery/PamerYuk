@@ -104,6 +104,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         {
             buffer.Caption = textBoxCaption.Text;
             MainForm.service.Tambah_Konten(buffer);
+            MessageBox.Show("Konten Berhasil di Tambahkan");
         }
 
         #region METHOD

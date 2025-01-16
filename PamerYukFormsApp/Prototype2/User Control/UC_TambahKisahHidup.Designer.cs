@@ -57,15 +57,16 @@
             this.panelKonten.Controls.Add(this.label1);
             this.panelKonten.Controls.Add(this.buttonTambahKisahHidup);
             this.panelKonten.Location = new System.Drawing.Point(2, 3);
-            this.panelKonten.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panelKonten.Margin = new System.Windows.Forms.Padding(5);
             this.panelKonten.Name = "panelKonten";
             this.panelKonten.Size = new System.Drawing.Size(2302, 1262);
             this.panelKonten.TabIndex = 0;
+            this.panelKonten.Paint += new System.Windows.Forms.PaintEventHandler(this.panelKonten_Paint);
             // 
             // richTextBoxDeskripsi
             // 
             this.richTextBoxDeskripsi.Location = new System.Drawing.Point(297, 570);
-            this.richTextBoxDeskripsi.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.richTextBoxDeskripsi.Margin = new System.Windows.Forms.Padding(5);
             this.richTextBoxDeskripsi.Name = "richTextBoxDeskripsi";
             this.richTextBoxDeskripsi.Size = new System.Drawing.Size(1721, 308);
             this.richTextBoxDeskripsi.TabIndex = 122;
@@ -215,7 +216,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.panelKonten);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "UC_TambahKisahHidup";
             this.Size = new System.Drawing.Size(2304, 1265);
             this.Load += new System.EventHandler(this.UC_TambahKisahHidup_Load);

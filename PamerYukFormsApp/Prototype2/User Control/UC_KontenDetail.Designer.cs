@@ -36,7 +36,7 @@
             this.pictureBoxKonten = new System.Windows.Forms.PictureBox();
             this.listBoxCaption = new System.Windows.Forms.ListBox();
             this.listBoxKomentar = new System.Windows.Forms.ListBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxTag = new System.Windows.Forms.ComboBox();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             ((System.ComponentModel.ISupportInitialize)(this.buttonLike)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnKirim)).BeginInit();
@@ -124,15 +124,15 @@
             this.listBoxKomentar.Size = new System.Drawing.Size(726, 314);
             this.listBoxKomentar.TabIndex = 92;
             // 
-            // comboBox1
+            // comboBoxTag
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(720, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(729, 46);
-            this.comboBox1.TabIndex = 93;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBoxTag.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.comboBoxTag.FormattingEnabled = true;
+            this.comboBoxTag.Location = new System.Drawing.Point(720, 36);
+            this.comboBoxTag.Name = "comboBoxTag";
+            this.comboBoxTag.Size = new System.Drawing.Size(729, 46);
+            this.comboBoxTag.TabIndex = 93;
+            this.comboBoxTag.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // axWindowsMediaPlayer1
             // 
@@ -150,7 +150,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.pictureBoxKonten);
             this.Controls.Add(this.axWindowsMediaPlayer1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxTag);
             this.Controls.Add(this.listBoxKomentar);
             this.Controls.Add(this.listBoxCaption);
             this.Controls.Add(this.labelLikeQuantity);
@@ -179,7 +179,7 @@
         private System.Windows.Forms.PictureBox pictureBoxKonten;
         private System.Windows.Forms.ListBox listBoxCaption;
         private System.Windows.Forms.ListBox listBoxKomentar;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxTag;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
     }
 }

@@ -81,11 +81,12 @@
             this.listBoxKisahHidup.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.listBoxKisahHidup.FormattingEnabled = true;
             this.listBoxKisahHidup.ItemHeight = 31;
-            this.listBoxKisahHidup.Location = new System.Drawing.Point(37, 687);
+            this.listBoxKisahHidup.Location = new System.Drawing.Point(35, 685);
             this.listBoxKisahHidup.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listBoxKisahHidup.Name = "listBoxKisahHidup";
             this.listBoxKisahHidup.Size = new System.Drawing.Size(526, 217);
             this.listBoxKisahHidup.TabIndex = 112;
+            this.listBoxKisahHidup.SelectedIndexChanged += new System.EventHandler(this.listBoxKisahHidup_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -121,10 +122,11 @@
             this.panelInformasiAkun.Controls.Add(this.label4);
             this.panelInformasiAkun.Controls.Add(this.labelKisahHidup);
             this.panelInformasiAkun.Location = new System.Drawing.Point(4, 2);
-            this.panelInformasiAkun.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panelInformasiAkun.Margin = new System.Windows.Forms.Padding(5);
             this.panelInformasiAkun.Name = "panelInformasiAkun";
             this.panelInformasiAkun.Size = new System.Drawing.Size(599, 1048);
             this.panelInformasiAkun.TabIndex = 118;
+            this.panelInformasiAkun.Paint += new System.Windows.Forms.PaintEventHandler(this.panelInformasiAkun_Paint);
             // 
             // labelTanggalLahir
             // 
@@ -155,7 +157,7 @@
             this.panelKontenUtama.Controls.Add(this.dataGridViewKontenTeman);
             this.panelKontenUtama.Controls.Add(this.labelKonten);
             this.panelKontenUtama.Location = new System.Drawing.Point(608, 0);
-            this.panelKontenUtama.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panelKontenUtama.Margin = new System.Windows.Forms.Padding(5);
             this.panelKontenUtama.Name = "panelKontenUtama";
             this.panelKontenUtama.Size = new System.Drawing.Size(1664, 1051);
             this.panelKontenUtama.TabIndex = 122;
@@ -165,7 +167,7 @@
             // 
             this.dataGridViewKontenTeman.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewKontenTeman.Location = new System.Drawing.Point(92, 274);
-            this.dataGridViewKontenTeman.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dataGridViewKontenTeman.Margin = new System.Windows.Forms.Padding(5);
             this.dataGridViewKontenTeman.Name = "dataGridViewKontenTeman";
             this.dataGridViewKontenTeman.RowHeadersWidth = 62;
             this.dataGridViewKontenTeman.RowTemplate.Height = 28;
@@ -192,7 +194,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.panelInformasiAkun);
             this.Controls.Add(this.panelKontenUtama);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "UC_ProfilTeman";
             this.Size = new System.Drawing.Size(2272, 1051);
             this.Load += new System.EventHandler(this.UC_ProfilTeman_Load);

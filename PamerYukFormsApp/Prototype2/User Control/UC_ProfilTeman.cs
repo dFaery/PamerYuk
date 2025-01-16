@@ -48,7 +48,13 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             labelKota.Text = selectedUser.Kota.ToString();
             foreach (KisahHidup kisahHidup in selectedUser.ListKisahHidup)
             {
-                listBoxKisahHidup.Items.Add(kisahHidup.Deskripsi.ToString());
+                string[] buffer = new string[5];
+                buffer = kisahHidup.ToString().Split('\n');
+                foreach (string s in buffer)
+                {
+                    listBoxKisahHidup.Items.Add(s);
+                }
+                listBoxKisahHidup.Items.Add("================");
             }
             DisplayDaftarKonten();
         }
@@ -86,6 +92,16 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         }
 
         private void panelKontenUtama_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelInformasiAkun_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void listBoxKisahHidup_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

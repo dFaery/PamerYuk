@@ -23,7 +23,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void UC_TambahKisahHidup_Load(object sender, EventArgs e)
         {
-            comboBoxOrganisasi.DataSource = FormUtama.service.ListOrganisasi;
+            comboBoxOrganisasi.DataSource = MainForm.service.ListOrganisasi;
             comboBoxOrganisasi.DisplayMember = "Nama";
         }
 
@@ -53,6 +53,11 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void panelKonten_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

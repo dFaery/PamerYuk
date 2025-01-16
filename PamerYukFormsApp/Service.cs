@@ -196,6 +196,7 @@ namespace PamerYukFormsApp
             {
                 DAO_Tag.Insert_Tag(konten_id, us.Username);
             }
+            this.Current_user.ListKonten = DAO_Konten.Select_ListKonten(this.current_user.Username);
         }
 
         public User Tambah_Tag(string username)
@@ -276,6 +277,10 @@ namespace PamerYukFormsApp
             int index = 0;
             for(int i=0;i<chat.Count;i++)
             {
+                if(idChat.Count == 0)
+                {
+                    return idChat;
+                }
                 if (chat[i].Id == idChat[index])
                 {
                     indexList.Add(i);

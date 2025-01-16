@@ -67,11 +67,11 @@ namespace PamerYukFormsApp.Prototype2.User_Control
                 axWindowsMediaPlayer1.Location = location;
                 pictureBoxKonten.Visible = false;
             }
-            if(this.selectedKonten.Tag.Count >0)
+            if(this.selectedKonten.Tag.Count > 0)
             {
-                comboBox1.DataSource = this.selectedKonten.Tag;
-                comboBox1.SelectedIndex = -1;
-                comboBox1.Text = "Tag";
+                comboBoxTag.DataSource = this.selectedKonten.Tag;
+                comboBoxTag.SelectedIndex = -1;
+                comboBoxTag.Text = "Tag";
             }
             labelLikeQuantity.Text = this.selectedKonten.Like.ToString();
             listBoxCaption.Items.Clear();
