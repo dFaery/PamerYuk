@@ -71,7 +71,7 @@
             this.panelContactHeader.Controls.Add(this.pictureBoxProfile);
             this.panelContactHeader.Controls.Add(this.btnCloseChat);
             this.panelContactHeader.Location = new System.Drawing.Point(786, 0);
-            this.panelContactHeader.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panelContactHeader.Margin = new System.Windows.Forms.Padding(5);
             this.panelContactHeader.Name = "panelContactHeader";
             this.panelContactHeader.Size = new System.Drawing.Size(1486, 138);
             this.panelContactHeader.TabIndex = 7;
@@ -82,7 +82,7 @@
             this.btnCariChat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCariChat.Image = global::PamerYukFormsApp.Properties.Resources.Search_button;
             this.btnCariChat.Location = new System.Drawing.Point(1366, 37);
-            this.btnCariChat.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnCariChat.Margin = new System.Windows.Forms.Padding(5);
             this.btnCariChat.Name = "btnCariChat";
             this.btnCariChat.Size = new System.Drawing.Size(71, 62);
             this.btnCariChat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -104,16 +104,17 @@
             // 
             this.dateTimePickerChatDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePickerChatDate.Location = new System.Drawing.Point(652, 45);
-            this.dateTimePickerChatDate.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.dateTimePickerChatDate.Margin = new System.Windows.Forms.Padding(5);
             this.dateTimePickerChatDate.Name = "dateTimePickerChatDate";
             this.dateTimePickerChatDate.Size = new System.Drawing.Size(237, 45);
             this.dateTimePickerChatDate.TabIndex = 17;
+            this.dateTimePickerChatDate.ValueChanged += new System.EventHandler(this.dateTimePickerChatDate_ValueChanged);
             // 
             // textBoxCariChat
             // 
             this.textBoxCariChat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxCariChat.Location = new System.Drawing.Point(923, 45);
-            this.textBoxCariChat.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.textBoxCariChat.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxCariChat.Name = "textBoxCariChat";
             this.textBoxCariChat.Size = new System.Drawing.Size(303, 45);
             this.textBoxCariChat.TabIndex = 16;
@@ -122,7 +123,7 @@
             // 
             this.pictureBoxProfile.Image = global::PamerYukFormsApp.Properties.Resources.default_profile_picture;
             this.pictureBoxProfile.Location = new System.Drawing.Point(36, 8);
-            this.pictureBoxProfile.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBoxProfile.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxProfile.Name = "pictureBoxProfile";
             this.pictureBoxProfile.Size = new System.Drawing.Size(133, 116);
             this.pictureBoxProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -134,7 +135,7 @@
             this.btnCloseChat.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnCloseChat.Image = global::PamerYukFormsApp.Properties.Resources.Close_Button;
             this.btnCloseChat.Location = new System.Drawing.Point(1365, 39);
-            this.btnCloseChat.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnCloseChat.Margin = new System.Windows.Forms.Padding(5);
             this.btnCloseChat.Name = "btnCloseChat";
             this.btnCloseChat.Size = new System.Drawing.Size(62, 54);
             this.btnCloseChat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -148,7 +149,7 @@
             this.flowLayoutPanelChat.BackColor = System.Drawing.Color.AliceBlue;
             this.flowLayoutPanelChat.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanelChat.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanelChat.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.flowLayoutPanelChat.Margin = new System.Windows.Forms.Padding(5);
             this.flowLayoutPanelChat.Name = "flowLayoutPanelChat";
             this.flowLayoutPanelChat.Size = new System.Drawing.Size(786, 1059);
             this.flowLayoutPanelChat.TabIndex = 6;
@@ -158,7 +159,7 @@
             // 
             this.textBoxMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxMessage.Location = new System.Drawing.Point(27, 31);
-            this.textBoxMessage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.textBoxMessage.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxMessage.Name = "textBoxMessage";
             this.textBoxMessage.Size = new System.Drawing.Size(1264, 68);
             this.textBoxMessage.TabIndex = 7;
@@ -170,7 +171,7 @@
             this.panelSendMessage.Controls.Add(this.btnKirim);
             this.panelSendMessage.Controls.Add(this.textBoxMessage);
             this.panelSendMessage.Location = new System.Drawing.Point(786, 910);
-            this.panelSendMessage.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panelSendMessage.Margin = new System.Windows.Forms.Padding(5);
             this.panelSendMessage.Name = "panelSendMessage";
             this.panelSendMessage.Size = new System.Drawing.Size(1486, 296);
             this.panelSendMessage.TabIndex = 9;
@@ -180,7 +181,7 @@
             this.btnKirim.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnKirim.Image = global::PamerYukFormsApp.Properties.Resources.SendMessage;
             this.btnKirim.Location = new System.Drawing.Point(1348, 28);
-            this.btnKirim.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnKirim.Margin = new System.Windows.Forms.Padding(5);
             this.btnKirim.Name = "btnKirim";
             this.btnKirim.Size = new System.Drawing.Size(89, 78);
             this.btnKirim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -208,7 +209,7 @@
             this.Controls.Add(this.panelSendMessage);
             this.Controls.Add(this.flowLayoutPanelChat);
             this.Controls.Add(this.panelContactHeader);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "UC_Chat";
             this.Size = new System.Drawing.Size(2272, 1206);
             this.Load += new System.EventHandler(this.UC_Chat_Load);

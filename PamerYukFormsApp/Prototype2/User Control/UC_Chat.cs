@@ -159,5 +159,20 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             textBoxCariChat.Clear();
             numericUpDownCariChat.Value = 0;
         }
+
+        private void dateTimePickerChatDate_ValueChanged(object sender, EventArgs e)
+        {
+            cariIndex = MainForm.service.Cari_Chat_ByTanggal(this.chat,dateTimePickerChatDate.Value);
+            if(cariIndex.Count >0)
+            {
+                numericUpDownCariChat.Value = cariIndex.Count;
+                Make_Chat_On_Top2(cariIndex[(int)numericUpDownCariChat.Value - 1]);
+            }
+            else
+            {
+                numericUpDownCariChat.Value = 0;
+                btnCloseChat_Click(sender, e);
+            }
+        }
     }
 }

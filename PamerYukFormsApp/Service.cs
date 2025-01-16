@@ -297,6 +297,25 @@ namespace PamerYukFormsApp
 
             return indexList;
         }
+
+        public List<int> Cari_Chat_ByTanggal(List<Chat>chat, DateTime Date)
+        {
+            List<int> idCari = new List<int>();
+
+            if (Date > DateTime.Now)
+            {
+                idCari.Add((chat.Count-1));
+                return idCari;
+            }
+            for(int i=0;i<chat.Count;i++)
+            {
+                if (chat[i].TglTerkirim.Date == Date.Date)
+                {
+                    idCari.Add(i);
+                }
+            }
+            return idCari;
+        }
         #endregion
     }
 }
