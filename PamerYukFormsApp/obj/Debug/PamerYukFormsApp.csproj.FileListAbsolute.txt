@@ -314,4 +314,7 @@ C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYuk.DC7583D1.U
 C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.exe
 C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.pdb
 E:\UBAYA\Semester 3\Database\UAS_DB_PROJECT\PamerYuk\PamerYukFormsApp\bin\Debug\MySql.Data.dll
-C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\bin\Debug\MySql.Data.dll
+C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\bin\Debug\System.Memory.dll
+C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\bin\Debug\System.Buffers.dll

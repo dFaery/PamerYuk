@@ -35,7 +35,7 @@ namespace PamerYukFormsApp.Prototype
         private void buttonKirim_Click(object sender, EventArgs e)
         {
             string message = textBoxPesan.Text;
-            Chat newChat = new Chat(message, FormUtama.service.Current_user.Username,this.temanChat.Username);
+            Chat newChat = new Chat(message, FormUtama.service.Current_user.Username,this.temanChat.Username,"pesan");
             FormUtama.service.Kirim_Chat(newChat);
             textBoxPesan.Clear();
             textBoxPesan.Focus();

@@ -9,21 +9,33 @@ namespace PamerYukLibrary.Entity
     public class Group
     {
         private int id;
+        private string nama;
         private List<User> members = new List<User>();
         private string fotoProfil;
         private DateTime tglDibuat;
         private string deskripsi;
 
-        public Group(int id, List<User> members, string fotoProfil, DateTime tglDibuat, string deskripsi)
+        public Group(int id, string nama,string fotoProfil, DateTime tglDibuat, string deskripsi)
         {
             this.Id = id;
-            this.Members = members;
+            this.Nama = nama;
+            //this.Members = DAO_Members.Select_ListMembers(id);
             this.FotoProfil = fotoProfil;
             this.TglDibuat = tglDibuat;
             this.Deskripsi = deskripsi;
         }
 
+        public Group(string nama,  List<User> members, string fotoProfil, string deskripsi) //New Group
+        {
+            this.Nama = nama;
+            this.Members = members;
+            this.FotoProfil = fotoProfil;
+            this.TglDibuat = DateTime.Now;
+            this.Deskripsi = deskripsi;
+        }
+
         public int Id { get => id; set => id = value; }
+        public string Nama { get => nama; set => nama = value; }
         public List<User> Members { get => members; set => members = value; }
         public string FotoProfil { get => fotoProfil; set => fotoProfil = value; }
         public DateTime TglDibuat { get => tglDibuat; set => tglDibuat = value; }

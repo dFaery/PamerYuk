@@ -52,7 +52,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         private void btnKirim_Click(object sender, EventArgs e)
         {
             string pesan = textBoxMessage.Text;
-            MainForm.service.Kirim_Chat(new Chat(pesan, MainForm.service.Current_user.Username, this.penerimaUser.Username));
+            MainForm.service.Kirim_Chat(new Chat(pesan, MainForm.service.Current_user.Username, this.penerimaUser.Username,"pesan"));
             Refresh_Chat_Room();
         }
 
