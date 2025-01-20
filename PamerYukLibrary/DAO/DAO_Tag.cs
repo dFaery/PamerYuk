@@ -27,6 +27,22 @@ namespace PamerYukLibrary.DAO
             }
             return listAkun;
         }
+        public static List<Konten> Select_TaggedKonten(string username)
+        {
+            string command = "select * from tag where username = '" + username + "';";
+
+            MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(command);
+            List<Konten> listKonten = new List<Konten>();
+            User user;
+            while (dr.Read())
+            {
+                int kid = int.Parse(dr.GetValue(0).ToString());
+                string usn = dr.GetValue(1).ToString();
+                Konten newKonten = DAO_Konten.Select_Konten(kid);
+                listKonten.Add(newKonten);
+            }
+            return listKonten;
+        }
 
         public static void Insert_Tag(int konten_id, string username)
         {
