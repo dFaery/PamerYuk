@@ -23,9 +23,10 @@ namespace PamerYukLibrary.DAO
                 int id = int.Parse(dr.GetValue(0).ToString());
                 string pesan = dr.GetValue(1).ToString();
                 DateTime tglTerkirim = DateTime.Parse(dr.GetValue(2).ToString());
-                string pengirim = dr.GetValue(3).ToString();
-                string penerima = dr.GetValue(4).ToString();
-                Chat newChat = new Chat(id,pesan,pengirim,penerima,tglTerkirim);
+                string tipePesan = dr.GetValue(3).ToString();
+                string pengirim = dr.GetValue(4).ToString();
+                string penerima = dr.GetValue(5).ToString();
+                Chat newChat = new Chat(id,pesan,pengirim,penerima,tglTerkirim,tipePesan);
                 listChat.Add(newChat);
             }
             return listChat;
@@ -46,7 +47,7 @@ namespace PamerYukLibrary.DAO
         }
         public static void Insert_Chat(Chat chat)
         {
-            string command = "INSERT INTO `pameryuk`.`chat` (`id`, `pesan`,`tglTerkirim`, `pengirim`,`penerima`) VALUES ('" + Get_NewChat_Id() + "', '" + chat.Pesan + "','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','" + chat.Pengirim + "','" + chat.Penerima +"');";
+            string command = "INSERT INTO `pameryuk`.`chat` (`id`, `pesan`,`tglTerkirim`, `pengirim`,`penerima`,`tipePesan`) VALUES ('" + Get_NewChat_Id() + "', '" + chat.Pesan + "','" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "','" + chat.Pengirim + "','" + chat.Penerima +"','" + chat.TipePesan + "');";
             KoneksiDatabase.DatabaseDMLCommand(command);
         }
 

@@ -60,6 +60,7 @@
     <Compile Include="DAO\DAO_Users.cs" />
     <Compile Include="Database\KoneksiDatabase.cs" />
     <Compile Include="Entity\Chat.cs" />
+    <Compile Include="Entity\Group.cs" />
     <Compile Include="Entity\KisahHidup.cs" />
     <Compile Include="Entity\User.cs" />
     <Compile Include="Entity\Konten.cs" />
@@ -69,7 +70,9 @@
     <Compile Include="Entity\Komen.cs" />
     <Compile Include="Entity\Teman.cs" />
     <Compile Include="Repositories\Repositories.cs" />
-    <Compile Include="Value\StatusPertemanan.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Value\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
