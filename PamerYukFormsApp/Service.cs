@@ -317,5 +317,32 @@ namespace PamerYukFormsApp
             return idCari;
         }
         #endregion
+
+        #region FITUR BARU
+
+        //Group
+
+        public List<Group> Buka_Group(string username)
+        {
+            return DAO_Group.Select_ListGroup(username);
+        }
+
+        public void Buat_Group(Group group)
+        {
+            DAO_Group.Insert_New_Group(group);
+        }
+
+        //Members
+
+        public List<User> Akses_Member_Group(string group_id)
+        {
+            return DAO_Members.Select_ListMember(group_id);
+        }
+
+        public void Tambah_Member_Group(string group_id, List<User> members)
+        {
+            DAO_Members.Insert_ListMember(group_id, members);
+        }
+        #endregion
     }
 }
