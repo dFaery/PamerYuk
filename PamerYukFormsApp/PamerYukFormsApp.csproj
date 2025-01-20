@@ -60,6 +60,12 @@
     <Compile Include="Prototype2\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prototype2\User Control\UC_HomeNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_HomeNew.Designer.cs">
+      <DependentUpon>UC_HomeNew.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prototype2\User Control\UC_KontenSaya.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,6 +114,24 @@
     <Compile Include="Prototype2\User Control\UC_ChatListItem.Designer.cs">
       <DependentUpon>UC_ChatListItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prototype2\User Control\UC_PermintaanPertemanan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_PermintaanPertemanan.Designer.cs">
+      <DependentUpon>UC_PermintaanPertemanan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_ProfileNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_ProfileNew.Designer.cs">
+      <DependentUpon>UC_ProfileNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_ProfilePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_ProfilePanel.Designer.cs">
+      <DependentUpon>UC_ProfilePanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prototype2\User Control\UC_ProfilTeman.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -125,6 +149,12 @@
     </Compile>
     <Compile Include="Prototype2\User Control\UC_RequestPertemananTerkirim.Designer.cs">
       <DependentUpon>UC_RequestPertemananTerkirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_TambahGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_TambahGroup.Designer.cs">
+      <DependentUpon>UC_TambahGroup.cs</DependentUpon>
     </Compile>
     <Compile Include="Prototype2\User Control\UC_TambahKisahHidup.cs">
       <SubType>UserControl</SubType>
@@ -156,11 +186,23 @@
     <Compile Include="Prototype2\User Control\UC_TambahKonten.Designer.cs">
       <DependentUpon>UC_TambahKonten.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prototype2\User Control\UC_TambahKontenNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_TambahKontenNew.Designer.cs">
+      <DependentUpon>UC_TambahKontenNew.cs</DependentUpon>
+    </Compile>
     <Compile Include="Prototype2\User Control\UC_TambahOrganisasi.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Prototype2\User Control\UC_TambahOrganisasi.Designer.cs">
       <DependentUpon>UC_TambahOrganisasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_UbahProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\UC_UbahProfile.Designer.cs">
+      <DependentUpon>UC_UbahProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="Prototype\FormAkun.cs">
       <SubType>Form</SubType>
@@ -252,6 +294,9 @@
     <EmbeddedResource Include="Prototype2\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_HomeNew.resx">
+      <DependentUpon>UC_HomeNew.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Prototype2\User Control\UC_KontenSaya.resx">
       <DependentUpon>UC_KontenSaya.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,6 +321,15 @@
     <EmbeddedResource Include="Prototype2\User Control\UC_ChatListItem.resx">
       <DependentUpon>UC_ChatListItem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_PermintaanPertemanan.resx">
+      <DependentUpon>UC_PermintaanPertemanan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_ProfileNew.resx">
+      <DependentUpon>UC_ProfileNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_ProfilePanel.resx">
+      <DependentUpon>UC_ProfilePanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Prototype2\User Control\UC_ProfilTeman.resx">
       <DependentUpon>UC_ProfilTeman.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,6 +338,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Prototype2\User Control\UC_RequestPertemananTerkirim.resx">
       <DependentUpon>UC_RequestPertemananTerkirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_TambahGroup.resx">
+      <DependentUpon>UC_TambahGroup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prototype2\User Control\UC_TambahKisahHidup.resx">
       <DependentUpon>UC_TambahKisahHidup.cs</DependentUpon>
@@ -300,8 +357,14 @@
     <EmbeddedResource Include="Prototype2\User Control\UC_TambahKonten.resx">
       <DependentUpon>UC_TambahKonten.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_TambahKontenNew.resx">
+      <DependentUpon>UC_TambahKontenNew.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Prototype2\User Control\UC_TambahOrganisasi.resx">
       <DependentUpon>UC_TambahOrganisasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\UC_UbahProfile.resx">
+      <DependentUpon>UC_UbahProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prototype\FormAkun.resx">
       <DependentUpon>FormAkun.cs</DependentUpon>
@@ -459,6 +522,75 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Close-Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBuatGroup-False.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBuatGroup-True.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShareImageInChat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultGroupIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewGroupBtn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewGroup-GroupIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newBtnAddContent-False.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newBtnAddContent-True.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newBtnChat-False.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newBtnChat-True.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newBtnHome-False.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newBtnHome-True.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newBtnProfile-False.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newBtnProfile-True.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home-btnSearchFriend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home-headerbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home-headerAsset1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset-Birthday.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnKontenSaya-False.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnKontenSaya-True.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnKontenTag-False.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnKontenTag-True.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

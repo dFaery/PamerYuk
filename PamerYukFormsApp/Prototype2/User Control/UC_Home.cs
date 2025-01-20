@@ -35,7 +35,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             labelPertemananMasuk.ForeColor = Color.Gray;
             labelPertemananTerkirim.ForeColor = SystemColors.MenuHighlight;
 
-            DisplayKirimUlangRequestPertemanan();
+            //DisplayKirimUlangRequestPertemanan();
         }
 
         private void labelPertemananMasuk_Click(object sender, EventArgs e)
@@ -44,21 +44,21 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             labelPertemananTerkirim.ForeColor = Color.Gray;
             labelPertemananMasuk.ForeColor = SystemColors.MenuHighlight;
 
-            DisplayRequestPertemananMasuk();            
+            //DisplayRequestPertemananMasuk();            
         }
 
         private void buttonCariTeman_Click(object sender, EventArgs e)
         {
-            mainForm.panelUtama.Controls.Clear();
+            /*mainForm.panelUtama.Controls.Clear();
 
             UC_CariTeman uC_Daftar = new UC_CariTeman(this);
             mainForm.panelUtama.Controls.Remove(this);
-            mainForm.panelUtama.Controls.Add(uC_Daftar);
+            mainForm.panelUtama.Controls.Add(uC_Daftar);*/
         }
 
         private void dataGridViewDaftarTeman_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dataGridViewDaftarTeman.Columns["buttonLihatAkun"].Index)
+            /*if (e.ColumnIndex == dataGridViewDaftarTeman.Columns["buttonLihatAkun"].Index)
             {
                 string username = dataGridViewDaftarTeman.CurrentRow.Cells["username"].Value.ToString();
                 DateTime tglBerteman = DateTime.Parse(dataGridViewDaftarTeman.CurrentRow.Cells["tglBerteman"].Value.ToString());
@@ -69,7 +69,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
                 UC_ProfilTeman uc_profileTeman = new UC_ProfilTeman(this, new Teman(username, tglBerteman, status));
                 mainForm.panelUtama.Controls.Remove(this);
                 mainForm.panelUtama.Controls.Add(uc_profileTeman);
-            }
+            }*/
         }
 
         private void panelHeader_Paint(object sender, PaintEventArgs e)
@@ -85,7 +85,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             labelHariIni.Text = DateTime.Now.ToString("D");
             flowLayoutPanelRequestPertemanan.Controls.Clear();
 
-            DisplayRequestPertemananMasuk();
+            //DisplayRequestPertemananMasuk();
             DisplayDaftarTeman();            
         }
 
@@ -105,7 +105,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             }
         }
 
-        private void DisplayKirimUlangRequestPertemanan()
+        /*private void DisplayKirimUlangRequestPertemanan()
         {
             List<Teman> listTeman = MainForm.service.Request_Pertemanan(true);
 
@@ -141,7 +141,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
                 this.flowLayoutPanelRequestPertemanan.Controls.Add(uc_masuk);
             }
-        }
+        }*/
         #endregion
     }
 }

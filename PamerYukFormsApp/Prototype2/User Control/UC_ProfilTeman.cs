@@ -15,12 +15,12 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 {
     public partial class UC_ProfilTeman : UserControl
     {
-        UC_Home uc;
+        UC_HomeNew uc;
         User selectedUser;
         Konten selectedKonten;
         MainForm mainForm;
 
-        public UC_ProfilTeman(UC_Home uc, Teman selectedTeman)
+        public UC_ProfilTeman(UC_HomeNew uc, Teman selectedTeman)
         {
             InitializeComponent();
             this.uc = uc;

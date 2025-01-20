@@ -49,9 +49,10 @@
             this.panel1.Controls.Add(this.NavigationBar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 832);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1278, 106);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 3;
             // 
             // NavigationBar
             // 
@@ -74,21 +75,23 @@
             this.NavigationBar.Controls.Add(this.buttonChat, 2, 0);
             this.NavigationBar.Controls.Add(this.buttonTambahKonten, 1, 0);
             this.NavigationBar.Controls.Add(this.buttonProfile, 3, 0);
-            this.NavigationBar.Location = new System.Drawing.Point(451, 16);
+            this.NavigationBar.Location = new System.Drawing.Point(236, 0);
+            this.NavigationBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NavigationBar.Name = "NavigationBar";
             this.NavigationBar.RowCount = 1;
             this.NavigationBar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.NavigationBar.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.NavigationBar.Size = new System.Drawing.Size(376, 78);
+            this.NavigationBar.Size = new System.Drawing.Size(785, 78);
             this.NavigationBar.TabIndex = 1;
             // 
             // buttonHome
             // 
             this.buttonHome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonHome.Image = global::PamerYukFormsApp.Properties.Resources.Home_true;
-            this.buttonHome.Location = new System.Drawing.Point(31, 23);
+            this.buttonHome.Image = global::PamerYukFormsApp.Properties.Resources.newBtnHome_True;
+            this.buttonHome.Location = new System.Drawing.Point(27, 13);
+            this.buttonHome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonHome.Name = "buttonHome";
-            this.buttonHome.Size = new System.Drawing.Size(32, 32);
+            this.buttonHome.Size = new System.Drawing.Size(141, 51);
             this.buttonHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.buttonHome.TabIndex = 3;
             this.buttonHome.TabStop = false;
@@ -97,10 +100,11 @@
             // buttonChat
             // 
             this.buttonChat.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonChat.Image = global::PamerYukFormsApp.Properties.Resources.Chat_false;
-            this.buttonChat.Location = new System.Drawing.Point(219, 23);
+            this.buttonChat.Image = global::PamerYukFormsApp.Properties.Resources.newBtnChat_False;
+            this.buttonChat.Location = new System.Drawing.Point(419, 13);
+            this.buttonChat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonChat.Name = "buttonChat";
-            this.buttonChat.Size = new System.Drawing.Size(32, 32);
+            this.buttonChat.Size = new System.Drawing.Size(141, 51);
             this.buttonChat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.buttonChat.TabIndex = 2;
             this.buttonChat.TabStop = false;
@@ -109,10 +113,11 @@
             // buttonTambahKonten
             // 
             this.buttonTambahKonten.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonTambahKonten.Image = global::PamerYukFormsApp.Properties.Resources.Tambahkonten_false;
-            this.buttonTambahKonten.Location = new System.Drawing.Point(125, 23);
+            this.buttonTambahKonten.Image = global::PamerYukFormsApp.Properties.Resources.newBtnAddContent_False;
+            this.buttonTambahKonten.Location = new System.Drawing.Point(223, 13);
+            this.buttonTambahKonten.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonTambahKonten.Name = "buttonTambahKonten";
-            this.buttonTambahKonten.Size = new System.Drawing.Size(32, 32);
+            this.buttonTambahKonten.Size = new System.Drawing.Size(141, 51);
             this.buttonTambahKonten.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.buttonTambahKonten.TabIndex = 1;
             this.buttonTambahKonten.TabStop = false;
@@ -121,10 +126,11 @@
             // buttonProfile
             // 
             this.buttonProfile.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonProfile.Image = global::PamerYukFormsApp.Properties.Resources.Profile_false;
-            this.buttonProfile.Location = new System.Drawing.Point(313, 23);
+            this.buttonProfile.Image = global::PamerYukFormsApp.Properties.Resources.newBtnProfile_False;
+            this.buttonProfile.Location = new System.Drawing.Point(616, 13);
+            this.buttonProfile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonProfile.Name = "buttonProfile";
-            this.buttonProfile.Size = new System.Drawing.Size(32, 32);
+            this.buttonProfile.Size = new System.Drawing.Size(141, 51);
             this.buttonProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.buttonProfile.TabIndex = 0;
             this.buttonProfile.TabStop = false;
@@ -137,10 +143,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelUtama.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panelUtama.Location = new System.Drawing.Point(0, 0);
+            this.panelUtama.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelUtama.Name = "panelUtama";
-            this.panelUtama.Size = new System.Drawing.Size(1278, 842);
-            this.panelUtama.TabIndex = 2;
-            //this.panelUtama.Paint += new System.Windows.Forms.PaintEventHandler(this.panelUtama_Paint);
+            this.panelUtama.Size = new System.Drawing.Size(1278, 841);
+            this.panelUtama.TabIndex = 4;
             // 
             // MainForm
             // 

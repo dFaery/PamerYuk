@@ -45,8 +45,8 @@ namespace PamerYukFormsApp.Prototype2.User_Control
                 
                 //Proses login selesai, User Control close, Clear object yg show di panelUtama
                 mainForm.panelUtama.Controls.Remove(this);
-                UC_Home uc_home = new UC_Home(mainForm);
-                mainForm.panelUtama.Controls.Add(uc_home);
+                UC_HomeNew uc_homeNew = new UC_HomeNew(mainForm);
+                mainForm.panelUtama.Controls.Add(uc_homeNew);
                 mainForm.panel1.Show();
             }
             //catch (Exception ex)

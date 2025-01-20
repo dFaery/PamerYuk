@@ -12,8 +12,8 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 {
     public partial class UC_RequestPertemananMasuk : UserControl
     {
-        UC_Home uc;
-        public UC_RequestPertemananMasuk(UC_Home uc)
+        UC_PermintaanPertemanan uc;
+        public UC_RequestPertemananMasuk(UC_PermintaanPertemanan uc)
         {
             InitializeComponent();
             this.uc = uc;

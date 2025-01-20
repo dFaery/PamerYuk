@@ -89,11 +89,11 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void buttonTambahKisahHidup_Click(object sender, EventArgs e)
         {
-            mainForm.panelUtama.Controls.Clear();
+            /*mainForm.panelUtama.Controls.Clear();
 
             UC_TambahKisahHidup uC_TambahKisah = new UC_TambahKisahHidup(this);
             mainForm.panelUtama.Controls.Remove(this);
-            mainForm.panelUtama.Controls.Add(uC_TambahKisah);
+            mainForm.panelUtama.Controls.Add(uC_TambahKisah);*/
         }
 
         private void buttonSimpanUpdateProfile_Click(object sender, EventArgs e)

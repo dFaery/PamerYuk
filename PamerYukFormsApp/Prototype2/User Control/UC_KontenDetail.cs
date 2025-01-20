@@ -16,11 +16,11 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 {
     public partial class UC_KontenDetail : UserControl
     {
-        UC_KontenSaya uc;
+        UC_ProfilePanel uc;
         UC_ProfilTeman uC_ProfilTeman;
         private Konten selectedKonten;
 
-        public UC_KontenDetail(UC_KontenSaya uc, Konten konten)
+        public UC_KontenDetail(UC_ProfilePanel uc, Konten konten)
         {
             this.uc = uc;
             this.selectedKonten = konten;
