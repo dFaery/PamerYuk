@@ -12,10 +12,10 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 {
     public partial class UC_RequestPertemananTerkirim : UserControl
     {
-        UC_Home uc;
+        UC_PermintaanPertemanan uc;
         private string username;
         private DateTime dateTime;
-        public UC_RequestPertemananTerkirim(UC_Home uc)
+        public UC_RequestPertemananTerkirim(UC_PermintaanPertemanan uc)
         {
             InitializeComponent();
             this.uc = uc;

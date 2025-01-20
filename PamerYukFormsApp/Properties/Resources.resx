@@ -118,67 +118,136 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Chat-false" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Chat-false.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Login-rafiki" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login-rafiki.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Profile-true" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Profile-true.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Profile-false" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Profile-false.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Checked-true" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Checked-true.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Chat-true" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Chat-true.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Home-false" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Home-false.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Like-false" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Like-false.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Checked-false" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Checked-false.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Home-true" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Home-true.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tambahkonten-false" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tambahkonten-false.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="newBtnChat-False" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newBtnChat-False.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Like-true" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Like-true.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Chat-false" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chat-false.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Button1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Close-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tambahkonten-true" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tambahkonten-true.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NewGroupBtn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewGroupBtn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Self confidence-bro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Self confidence-bro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PencilEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PencilEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Search-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Search-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ShareImageInChat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ShareImageInChat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newBtnProfile-False" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newBtnProfile-False.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Chat-true" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Chat-true.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="default_profile_picture" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\default_profile_picture1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="newBtnAddContent-False" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newBtnAddContent-False.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Profile-true" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Profile-true.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Self confidence-bro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Self confidence-bro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="SendMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SendMessage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PencilEdit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PencilEdit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnBuatGroup-True" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnBuatGroup-True.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Close-Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Close-Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="newBtnHome-True" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newBtnHome-True.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Search-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Search-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Checked-true" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checked-true.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Profile-false" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Profile-false.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home-false" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home-false.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\warning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NewGroup-GroupIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NewGroup-GroupIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home-btnSearchFriend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home-btnSearchFriend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnBuatGroup-False" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnBuatGroup-False.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newBtnProfile-True" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newBtnProfile-True.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DefaultGroupIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DefaultGroupIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tambahkonten-true" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tambahkonten-true.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Asset-Birthday" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Asset-Birthday.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home-headerbg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home-headerbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Like-true" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Like-true.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login-rafiki" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login-rafiki.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Checked-false" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Checked-false.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newBtnAddContent-True" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newBtnAddContent-True.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home-headerAsset1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home-headerAsset1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newBtnHome-False" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newBtnHome-False.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tambahkonten-false" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tambahkonten-false.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Like-false" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Like-false.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="newBtnChat-True" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\newBtnChat-True.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnKontenSaya-False" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnKontenSaya-False.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnKontenSaya-True" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnKontenSaya-True.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnKontenTag-False" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnKontenTag-False.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btnKontenTag-True" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btnKontenTag-True.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

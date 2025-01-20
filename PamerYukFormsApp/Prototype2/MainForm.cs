@@ -53,18 +53,18 @@ namespace PamerYukFormsApp.Prototype2
 
         private void buttonHome_Click(object sender, EventArgs e)
         {
-            UC_Home uc_home = new UC_Home(this);
+            UC_HomeNew uc_home = new UC_HomeNew(this);
             AddUserControl(uc_home);
             ResetNavigationBar();
-            this.buttonHome.Image = Properties.Resources.Home_true;
+            this.buttonHome.Image = Properties.Resources.newBtnHome_True;
         }
 
         private void buttonTambahKonten_Click(object sender, EventArgs e)
         {
-            UC_DaftarKonten uc_tambah = new UC_DaftarKonten(this);
+            UC_TambahKontenNew uc_tambah = new UC_TambahKontenNew(this);
             AddUserControl(uc_tambah);
             ResetNavigationBar();
-            this.buttonTambahKonten.Image = Properties.Resources.Tambahkonten_true;
+            this.buttonTambahKonten.Image = Properties.Resources.newBtnAddContent_True;
         }
 
         private void buttonChat_Click(object sender, EventArgs e)
@@ -72,23 +72,23 @@ namespace PamerYukFormsApp.Prototype2
             UC_Chat uc_chat = new UC_Chat(this);
             AddUserControl(uc_chat);
             ResetNavigationBar();
-            this.buttonChat.Image = Properties.Resources.Chat_true;
+            this.buttonChat.Image = Properties.Resources.newBtnChat_True;
         }
 
         private void buttonProfile_Click(object sender, EventArgs e)
         {
-            UC_Profile uc_profile = new UC_Profile(this);
+            UC_ProfileNew uc_profile = new UC_ProfileNew(this);
             AddUserControl(uc_profile);
             ResetNavigationBar();
-            this.buttonProfile.Image = Properties.Resources.Profile_true;
+            this.buttonProfile.Image = Properties.Resources.newBtnProfile_True;
         }
 
         private void ResetNavigationBar()
         {
-            this.buttonHome.Image = Properties.Resources.Home_false;
-            this.buttonChat.Image = Properties.Resources.Chat_false;
-            this.buttonTambahKonten.Image = Properties.Resources.Tambahkonten_false;
-            this.buttonProfile.Image = Properties.Resources.Profile_false;
+            this.buttonHome.Image = Properties.Resources.newBtnHome_False;
+            this.buttonChat.Image = Properties.Resources.newBtnChat_False;
+            this.buttonTambahKonten.Image = Properties.Resources.newBtnAddContent_False;
+            this.buttonProfile.Image = Properties.Resources.newBtnProfile_False;
         }
 
         private void panelUtama_Paint(object sender, PaintEventArgs e)

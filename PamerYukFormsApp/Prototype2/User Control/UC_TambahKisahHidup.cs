@@ -14,8 +14,8 @@ namespace PamerYukFormsApp.Prototype2.User_Control
     public partial class UC_TambahKisahHidup : UserControl
     {
         MainForm mainForm;
-        UC_Profile uc;
-        public UC_TambahKisahHidup(UC_Profile uc)
+        UC_ProfilePanel uc;
+        public UC_TambahKisahHidup(UC_ProfilePanel uc)
         {
             InitializeComponent();
             this.uc = uc;
