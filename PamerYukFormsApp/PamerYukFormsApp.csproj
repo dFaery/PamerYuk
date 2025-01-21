@@ -54,11 +54,58 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>PamerYuk.settings</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Prototype2\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Prototype2\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_BubbleChat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_BubbleChat.Designer.cs">
+      <DependentUpon>UC_BubbleChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_BubbleChatShareImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_BubbleChatShareImage.Designer.cs">
+      <DependentUpon>UC_BubbleChatShareImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_BubbleChatShareKonten.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_BubbleChatShareKonten.Designer.cs">
+      <DependentUpon>UC_BubbleChatShareKonten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_ChatNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_ChatNew.Designer.cs">
+      <DependentUpon>UC_ChatNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_NotesChat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_NotesChat.Designer.cs">
+      <DependentUpon>UC_NotesChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_NotesPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_NotesPanel.Designer.cs">
+      <DependentUpon>UC_NotesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_TambahNotes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_TambahNotes.Designer.cs">
+      <DependentUpon>UC_TambahNotes.cs</DependentUpon>
     </Compile>
     <Compile Include="Prototype2\User Control\UC_HomeNew.cs">
       <SubType>UserControl</SubType>
@@ -149,6 +196,12 @@
     </Compile>
     <Compile Include="Prototype2\User Control\UC_RequestPertemananTerkirim.Designer.cs">
       <DependentUpon>UC_RequestPertemananTerkirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_TambahBroadCast.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype2\User Control\FiturChat\UC_TambahBroadCast.Designer.cs">
+      <DependentUpon>UC_TambahBroadCast.cs</DependentUpon>
     </Compile>
     <Compile Include="Prototype2\User Control\UC_TambahGroup.cs">
       <SubType>UserControl</SubType>
@@ -294,6 +347,27 @@
     <EmbeddedResource Include="Prototype2\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\FiturChat\UC_BubbleChat.resx">
+      <DependentUpon>UC_BubbleChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\FiturChat\UC_BubbleChatShareImage.resx">
+      <DependentUpon>UC_BubbleChatShareImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\FiturChat\UC_BubbleChatShareKonten.resx">
+      <DependentUpon>UC_BubbleChatShareKonten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\FiturChat\UC_ChatNew.resx">
+      <DependentUpon>UC_ChatNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\FiturChat\UC_NotesChat.resx">
+      <DependentUpon>UC_NotesChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\FiturChat\UC_NotesPanel.resx">
+      <DependentUpon>UC_NotesPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\FiturChat\UC_TambahNotes.resx">
+      <DependentUpon>UC_TambahNotes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Prototype2\User Control\UC_HomeNew.resx">
       <DependentUpon>UC_HomeNew.cs</DependentUpon>
     </EmbeddedResource>
@@ -338,6 +412,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Prototype2\User Control\UC_RequestPertemananTerkirim.resx">
       <DependentUpon>UC_RequestPertemananTerkirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prototype2\User Control\FiturChat\UC_TambahBroadCast.resx">
+      <DependentUpon>UC_TambahBroadCast.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prototype2\User Control\UC_TambahGroup.resx">
       <DependentUpon>UC_TambahGroup.cs</DependentUpon>
@@ -410,14 +487,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="PamerYuk.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>PamerYuk.Designer.cs</LastGenOutput>
@@ -591,6 +663,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btnKontenTag-True.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset-ProfileBorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewBubbleChat-Receive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewBubbleChat-Sent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnReplyChat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnBroadCast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PencilEdit1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

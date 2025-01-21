@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PamerYukFormsApp.Prototype2.User_Control.FiturChat;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,8 +13,8 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 {
     public partial class UC_TambahGroup : UserControl
     {
-        UC_Chat uc;        
-        public UC_TambahGroup(UC_Chat uc)
+        UC_ChatNew uc;        
+        public UC_TambahGroup(UC_ChatNew uc)
         {
             InitializeComponent();
             this.uc = uc;
