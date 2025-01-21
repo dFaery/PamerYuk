@@ -177,11 +177,11 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void buttonNewGroup_Click(object sender, EventArgs e)
         {
-            mainForm.panelUtama.Controls.Clear();
+            /*mainForm.panelUtama.Controls.Clear();
 
             UC_TambahGroup uC_Daftar = new UC_TambahGroup(this);
             mainForm.panelUtama.Controls.Remove(this);
-            mainForm.panelUtama.Controls.Add(uC_Daftar);
+            mainForm.panelUtama.Controls.Add(uC_Daftar);*/
         }
     }
 }

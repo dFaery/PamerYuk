@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using PamerYukLibrary.Database;
 using PamerYukFormsApp.Prototype2.User_Control;
+using PamerYukFormsApp.Prototype2.User_Control.FiturChat;
 
 namespace PamerYukFormsApp.Prototype2
 {
@@ -19,7 +20,7 @@ namespace PamerYukFormsApp.Prototype2
         public MainForm()
         {
             InitializeComponent();
-            this.FormBorderStyle = FormBorderStyle.Sizable;
+            this.FormBorderStyle = FormBorderStyle.Sizable;            
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -69,7 +70,7 @@ namespace PamerYukFormsApp.Prototype2
 
         private void buttonChat_Click(object sender, EventArgs e)
         {
-            UC_Chat uc_chat = new UC_Chat(this);
+            UC_ChatNew uc_chat = new UC_ChatNew(this);
             AddUserControl(uc_chat);
             ResetNavigationBar();
             this.buttonChat.Image = Properties.Resources.newBtnChat_True;

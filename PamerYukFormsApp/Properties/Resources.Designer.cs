@@ -73,6 +73,26 @@ namespace PamerYukFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Asset_ProfileBorder {
+            get {
+                object obj = ResourceManager.GetObject("Asset-ProfileBorder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnBroadCast {
+            get {
+                object obj = ResourceManager.GetObject("btnBroadCast", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap btnBuatGroup_False {
             get {
                 object obj = ResourceManager.GetObject("btnBuatGroup-False", resourceCulture);
@@ -126,6 +146,46 @@ namespace PamerYukFormsApp.Properties {
         internal static System.Drawing.Bitmap btnKontenTag_True {
             get {
                 object obj = ResourceManager.GetObject("btnKontenTag-True", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnReplyChat {
+            get {
+                object obj = ResourceManager.GetObject("btnReplyChat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BubbleChat_Receive {
+            get {
+                object obj = ResourceManager.GetObject("BubbleChat-Receive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BubbleChat_Sent {
+            get {
+                object obj = ResourceManager.GetObject("BubbleChat-Sent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap BubbleChat_Sent1 {
+            get {
+                object obj = ResourceManager.GetObject("BubbleChat-Sent1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,6 +443,26 @@ namespace PamerYukFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap NewBubbleChat_Receive {
+            get {
+                object obj = ResourceManager.GetObject("NewBubbleChat-Receive", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NewBubbleChat_Sent {
+            get {
+                object obj = ResourceManager.GetObject("NewBubbleChat-Sent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NewGroup_GroupIcon {
             get {
                 object obj = ResourceManager.GetObject("NewGroup-GroupIcon", resourceCulture);
@@ -406,6 +486,16 @@ namespace PamerYukFormsApp.Properties {
         internal static System.Drawing.Bitmap PencilEdit {
             get {
                 object obj = ResourceManager.GetObject("PencilEdit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PencilEdit1 {
+            get {
+                object obj = ResourceManager.GetObject("PencilEdit1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
