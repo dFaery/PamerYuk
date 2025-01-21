@@ -134,6 +134,11 @@ namespace PamerYukFormsApp
             return DAO_Users.Select_User(username);
         }
 
+        public User Cari_AkunTeman_Data(string username)
+        {
+            return DAO_Users.Select_User_Data(username);
+        }
+
         public void Request_Pertemanan(string username)
         {
             DAO_Teman.Insert_RequestPertemanan(this.Current_user.Username, username);
@@ -261,7 +266,7 @@ namespace PamerYukFormsApp
         #endregion
 
         #region CHAT
-
+        //ENUM('Chat', 'Media', 'Konten', 'Reply', 'Catatan')
         public List<Chat> Buka_Chat(string username)
         {
             return DAO_Chat.Select_Chat(username, this.Current_user.Username);
@@ -271,6 +276,23 @@ namespace PamerYukFormsApp
         {
             DAO_Chat.Insert_Chat(chat);
         }
+
+        public void Kirim_Chat_BroadCast(string pesan)
+        {
+            foreach(Teman teman in ListTeman)
+            {
+                Chat chat = new Chat(pesan, this.Current_user.Username, teman.Username, "Chat");
+                chat.Penerima = teman.Username;
+                DAO_Chat.Insert_Chat(chat);
+            }
+        }
+
+        /*
+        public List<Chat> Buka_Catatan(string username)
+        {
+            return DAO_Chat.Select_Catatan(username);
+        }
+        */
 
         public List<int> Cari_Chat(List<Chat> chat, string username, string pesan)
         {
@@ -320,7 +342,7 @@ namespace PamerYukFormsApp
         }
         #endregion
 
-        #region FITUR BARU
+        #region GROUP
 
         //Group
 

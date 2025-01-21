@@ -33,5 +33,10 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
 
             this.flowLayoutPanelNotes.Controls.Add(notes);
         }
+
+        private void panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

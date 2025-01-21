@@ -38,28 +38,32 @@
             // 
             this.buttonKirim.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.buttonKirim.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.buttonKirim.Location = new System.Drawing.Point(956, 615);
+            this.buttonKirim.Location = new System.Drawing.Point(1700, 953);
+            this.buttonKirim.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.buttonKirim.Name = "buttonKirim";
-            this.buttonKirim.Size = new System.Drawing.Size(196, 55);
+            this.buttonKirim.Size = new System.Drawing.Size(348, 85);
             this.buttonKirim.TabIndex = 124;
             this.buttonKirim.Text = "Kirim";
             this.buttonKirim.UseVisualStyleBackColor = false;
+            this.buttonKirim.Click += new System.EventHandler(this.buttonKirim_Click);
             // 
             // buttonBatal
             // 
-            this.buttonBatal.Location = new System.Drawing.Point(748, 615);
+            this.buttonBatal.Location = new System.Drawing.Point(1330, 953);
+            this.buttonBatal.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.buttonBatal.Name = "buttonBatal";
-            this.buttonBatal.Size = new System.Drawing.Size(196, 55);
+            this.buttonBatal.Size = new System.Drawing.Size(348, 85);
             this.buttonBatal.TabIndex = 123;
             this.buttonBatal.Text = "Batal";
             this.buttonBatal.UseVisualStyleBackColor = true;
             // 
             // textBoxBroadcast
             // 
-            this.textBoxBroadcast.Location = new System.Drawing.Point(127, 108);
+            this.textBoxBroadcast.Location = new System.Drawing.Point(226, 167);
+            this.textBoxBroadcast.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.textBoxBroadcast.Multiline = true;
             this.textBoxBroadcast.Name = "textBoxBroadcast";
-            this.textBoxBroadcast.Size = new System.Drawing.Size(1025, 476);
+            this.textBoxBroadcast.Size = new System.Drawing.Size(1819, 736);
             this.textBoxBroadcast.TabIndex = 122;
             this.textBoxBroadcast.Text = "Tulis pesan untuk semua teman";
             // 
@@ -70,25 +74,27 @@
             this.labelTambahBroadCast.BackColor = System.Drawing.Color.Transparent;
             this.labelTambahBroadCast.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTambahBroadCast.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelTambahBroadCast.Location = new System.Drawing.Point(120, 55);
-            this.labelTambahBroadCast.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelTambahBroadCast.Location = new System.Drawing.Point(213, 85);
+            this.labelTambahBroadCast.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTambahBroadCast.Name = "labelTambahBroadCast";
-            this.labelTambahBroadCast.Size = new System.Drawing.Size(313, 37);
+            this.labelTambahBroadCast.Size = new System.Drawing.Size(510, 63);
             this.labelTambahBroadCast.TabIndex = 125;
             this.labelTambahBroadCast.Text = "Tambah BroadCast";
             this.labelTambahBroadCast.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UC_TambahBroadCast
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.labelTambahBroadCast);
             this.Controls.Add(this.buttonKirim);
             this.Controls.Add(this.buttonBatal);
             this.Controls.Add(this.textBoxBroadcast);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "UC_TambahBroadCast";
-            this.Size = new System.Drawing.Size(1278, 778);
+            this.Size = new System.Drawing.Size(2272, 1206);
+            this.Load += new System.EventHandler(this.UC_TambahBroadCast_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

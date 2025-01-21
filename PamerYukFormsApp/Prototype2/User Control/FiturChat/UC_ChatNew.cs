@@ -17,7 +17,8 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
         MainForm mainForm;
         private User penerimaUser;
         private List<int> cariIndex = new List<int>();
-        private List<Chat> chat = new List<Chat>();
+        private List<Chat> listChat = new List<Chat>();
+        public string namaPenerima = "";
         public UC_ChatNew(MainForm mainForm)
         {
             InitializeComponent();
@@ -59,6 +60,68 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             UC_TambahBroadCast uc_tambahBroadcast = new UC_TambahBroadCast(this);
             mainForm.panelUtama.Controls.Remove(this);
             mainForm.panelUtama.Controls.Add(uc_tambahBroadcast);
+        }
+
+        public void Open_Chat_Room(string receiver)
+        {
+            flowLayoutPanelChatHistory.Controls.Clear();
+            if (receiver != "")
+            {
+                this.penerimaUser = MainForm.service.Cari_AkunTeman(receiver);
+                this.labelContactName.Text = penerimaUser.Username;
+                this.listChat = MainForm.service.Buka_Chat(receiver);
+                pictureBoxProfile.Image = new Bitmap(penerimaUser.FotoProfil);
+                pictureBoxProfile.BackgroundImageLayout = ImageLayout.Zoom;
+                //MakeChatOnTop
+            }
+        }
+
+        private void DisplayChat()
+        {
+            foreach (Chat chat in this.listChat)
+            {
+                if (chat.TipePesan == "Chat" || chat.TipePesan == "Reply")
+                {
+                    UC_BubbleChat uc = new UC_BubbleChat(this, chat);
+                    flowLayoutPanelChatHistory.Controls.Add(uc);   
+                }
+                if (chat.TipePesan == "Media")
+                {
+                    UC_BubbleChatShareImage uc = new UC_BubbleChatShareImage(this, chat);
+                    flowLayoutPanelChatHistory.Controls.Add(uc);
+                }
+                if (chat.TipePesan == "Konten")
+                {
+                    UC_BubbleChatShareKonten uc = new UC_BubbleChatShareKonten(this, chat);
+                    flowLayoutPanelChatHistory.Controls.Add(uc);
+                }
+                if (chat.TipePesan == "Reply")
+                {
+                    UC_BubbleChat uc = new UC_BubbleChat(this, chat);
+                    flowLayoutPanelChatHistory.Controls.Add(uc);
+                }
+            }
+        }
+
+        private void DisplayAllFriend()
+        {
+            foreach (Teman teman in MainForm.service.ListTeman)
+            {
+                UC_ChatListItem uc = new UC_ChatListItem(this);
+                uc.Name1 = teman.Username;
+                flowLayoutPanelChat.Controls.Add(uc);
+            }
+        }
+
+        private void DisplayAllGroup()
+        {
+            foreach (Group group in MainForm.service.ListGroup)
+            {
+                UC_ChatListItem uc = new UC_ChatListItem(this);
+                uc.Name1 = group.Id.ToString();
+                    uc.type="group";
+                flowLayoutPanelChat.Controls.Add(uc);
+            }
         }
     }
 }

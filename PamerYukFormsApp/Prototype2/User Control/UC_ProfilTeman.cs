@@ -24,7 +24,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         {
             InitializeComponent();
             this.uc = uc;
-            selectedUser = MainForm.service.Cari_AkunTeman(selectedTeman.Username);
+            selectedUser = MainForm.service.Cari_AkunTeman_Data(selectedTeman.Username);
         }
         private void UC_ProfilTeman_Load(object sender, EventArgs e)
         {

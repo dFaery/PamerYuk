@@ -55,6 +55,11 @@ namespace PamerYukLibrary
             this.ListKonten = new List<Konten>();
             this.ListKisahHidup = new List<KisahHidup>();
         }
+
+        public User(string username, string namaLengkap, string fotoProfil)
+        {
+
+        }
         #endregion
 
         #region PROPERTIES

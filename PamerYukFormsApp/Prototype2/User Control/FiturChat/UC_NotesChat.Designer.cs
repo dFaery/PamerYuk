@@ -42,9 +42,11 @@
             this.panel.Controls.Add(this.buttonNewNote);
             this.panel.Controls.Add(this.flowLayoutPanelNotes);
             this.panel.Location = new System.Drawing.Point(0, 0);
+            this.panel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(1278, 778);
+            this.panel.Size = new System.Drawing.Size(2272, 1206);
             this.panel.TabIndex = 0;
+            this.panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Paint);
             // 
             // pictureBoxPencil
             // 
@@ -53,18 +55,20 @@
             this.pictureBoxPencil.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxPencil.BackgroundImage = global::PamerYukFormsApp.Properties.Resources.PencilEdit1;
             this.pictureBoxPencil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxPencil.Location = new System.Drawing.Point(75, 40);
+            this.pictureBoxPencil.Location = new System.Drawing.Point(133, 62);
+            this.pictureBoxPencil.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pictureBoxPencil.Name = "pictureBoxPencil";
-            this.pictureBoxPencil.Size = new System.Drawing.Size(27, 29);
+            this.pictureBoxPencil.Size = new System.Drawing.Size(48, 45);
             this.pictureBoxPencil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxPencil.TabIndex = 70;
             this.pictureBoxPencil.TabStop = false;
             // 
             // buttonNewNote
             // 
-            this.buttonNewNote.Location = new System.Drawing.Point(59, 30);
+            this.buttonNewNote.Location = new System.Drawing.Point(105, 46);
+            this.buttonNewNote.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.buttonNewNote.Name = "buttonNewNote";
-            this.buttonNewNote.Size = new System.Drawing.Size(1172, 49);
+            this.buttonNewNote.Size = new System.Drawing.Size(2084, 76);
             this.buttonNewNote.TabIndex = 69;
             this.buttonNewNote.Text = "          Buat catatan";
             this.buttonNewNote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -75,19 +79,21 @@
             // 
             this.flowLayoutPanelNotes.AutoScroll = true;
             this.flowLayoutPanelNotes.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanelNotes.Location = new System.Drawing.Point(0, 85);
+            this.flowLayoutPanelNotes.Location = new System.Drawing.Point(17, 132);
+            this.flowLayoutPanelNotes.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.flowLayoutPanelNotes.Name = "flowLayoutPanelNotes";
-            this.flowLayoutPanelNotes.Size = new System.Drawing.Size(1278, 664);
+            this.flowLayoutPanelNotes.Size = new System.Drawing.Size(2233, 1029);
             this.flowLayoutPanelNotes.TabIndex = 68;
             // 
             // UC_NotesChat
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Controls.Add(this.panel);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "UC_NotesChat";
-            this.Size = new System.Drawing.Size(1278, 778);
+            this.Size = new System.Drawing.Size(2272, 1206);
             this.Load += new System.EventHandler(this.UC_NotesChat_Load);
             this.panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPencil)).EndInit();

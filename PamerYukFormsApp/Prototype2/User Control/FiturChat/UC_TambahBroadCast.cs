@@ -1,4 +1,5 @@
 ﻿using PamerYukFormsApp.Prototype2.User_Control.FiturChat;
+using PamerYukLibrary.Entity;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,6 +20,17 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             InitializeComponent();
             this.uc = uc;
             
+        }
+
+        private void UC_TambahBroadCast_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonKirim_Click(object sender, EventArgs e)
+        {
+            string message = textBoxBroadcast.Text;
+            MainForm.service.Kirim_Chat_BroadCast(message);
         }
     }
 }
