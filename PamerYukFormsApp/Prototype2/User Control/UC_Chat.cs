@@ -174,5 +174,14 @@ namespace PamerYukFormsApp.Prototype2.User_Control
                 btnCloseChat_Click(sender, e);
             }
         }
+
+        private void buttonNewGroup_Click(object sender, EventArgs e)
+        {
+            /*mainForm.panelUtama.Controls.Clear();
+
+            UC_TambahGroup uC_Daftar = new UC_TambahGroup(this);
+            mainForm.panelUtama.Controls.Remove(this);
+            mainForm.panelUtama.Controls.Add(uC_Daftar);*/
+        }
     }
 }

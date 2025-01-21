@@ -13,9 +13,9 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 {
     public partial class UC_CariTeman : UserControl
     {
-        UC_Home uc;
+        UC_HomeNew uc;
         Organisasi selectedOrganisasi = new Organisasi();
-        public UC_CariTeman(UC_Home uc)
+        public UC_CariTeman(UC_HomeNew uc)
         {
             InitializeComponent();
             this.uc = uc;
