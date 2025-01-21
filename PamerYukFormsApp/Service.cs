@@ -23,6 +23,7 @@ namespace PamerYukFormsApp
         private List<Kota> listKota;
         private List<Organisasi> listOrganisasi;
         private List<Teman> listTeman;
+        private List<Group> listGroup;
         private string MediafilePath = @"C:\PamerYuk\";
         private string MediafilePathDB = @"C:\\PamerYuk\\";
         #endregion
@@ -42,6 +43,7 @@ namespace PamerYukFormsApp
         public List<Kota> ListKota { get => listKota; set => listKota = value; }
         public List<Organisasi> ListOrganisasi { get => listOrganisasi; set => listOrganisasi = value; }
         public List<Teman> ListTeman { get => listTeman; set => listTeman = value; }
+        public List<Group> ListGroup { get => listGroup; set => listGroup = value; }
         #endregion
 
         #region ONLOAD
@@ -322,14 +324,21 @@ namespace PamerYukFormsApp
 
         //Group
 
-        public List<Group> Buka_Group(string username)
+        public void Buka_Group(string username)
         {
-            return DAO_Group.Select_ListGroup(username);
+            this.ListGroup =  DAO_Group.Select_ListGroup(username);
+        }
+
+        public User Tambah_Member_Group(string usn)
+        {
+            return DAO_Users.Select_User(usn);
         }
 
         public void Buat_Group(Group group)
         {
             DAO_Group.Insert_New_Group(group);
+            DAO_Members.Insert_ListMember(group.Id, group.Members);
+            Buka_Group(this.Current_user.Username);
         }
 
         //Members
@@ -337,11 +346,6 @@ namespace PamerYukFormsApp
         public List<User> Akses_Member_Group(string group_id)
         {
             return DAO_Members.Select_ListMember(group_id);
-        }
-
-        public void Tambah_Member_Group(string group_id, List<User> members)
-        {
-            DAO_Members.Insert_ListMember(group_id, members);
         }
         #endregion
     }

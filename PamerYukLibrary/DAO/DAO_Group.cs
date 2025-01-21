@@ -32,7 +32,7 @@ namespace PamerYukLibrary.DAO
 
         public static void Insert_New_Group(Group newGroup)
         {
-            string command = "INSERT INTO `pameryuk`.`groups` (`id`, `nama`, `fotoProfil`, `tglDibuat`, `deskripsi`) VALUES ('" + Get_NewGroup_Id() + "', '" + newGroup.Nama + "', '" + newGroup.FotoProfil + "', '" + newGroup.TglDibuat + "', '" + newGroup.Deskripsi + "');";
+            string command = "INSERT INTO `pameryuk`.`groups` (`id`, `nama`, `fotoProfil`, `tglDibuat`, `deskripsi`) VALUES ('" + Get_NewGroup_Id() + "', '" + newGroup.Nama + "', '" + newGroup.FotoProfil + "', '" + newGroup.TglDibuat.ToString("yyyy-MM-dd HH:mm:ss") + "', '" + newGroup.Deskripsi + "');";
             KoneksiDatabase.DatabaseDMLCommand(command);
         }
 

@@ -34,6 +34,18 @@ namespace PamerYukLibrary.Entity
             this.Deskripsi = deskripsi;
         }
 
+
+
+        public Group() //New Group
+        {
+            this.Nama = "";
+            this.Members = new List<User>();
+            this.FotoProfil = "";
+            this.TglDibuat = DateTime.Now;
+            this.Deskripsi = "null";
+        }
+
+
         public int Id { get => id; set => id = value; }
         public string Nama { get => nama; set => nama = value; }
         public List<User> Members { get => members; set => members = value; }

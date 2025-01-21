@@ -25,7 +25,7 @@ namespace PamerYukLibrary.Entity
             return listUser;
         }
 
-        public static void Insert_ListMember(string group_id, List<User> members)
+        public static void Insert_ListMember(int group_id, List<User> members)
         {
             foreach(User user in members)
             {
