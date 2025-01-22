@@ -15,6 +15,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
     {
         UC_ChatNew uc_chatNew;
         Chat chat;
+        GroupChat groupChat;
         private bool isReply = false;
         public string replyContent = "";
         public UC_BubbleChat(UC_ChatNew bubbleChat, Chat chat, bool isReply)
@@ -22,22 +23,48 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             InitializeComponent();
             this.uc_chatNew = bubbleChat;
             this.chat = chat;
-            this. isReply = isReply;
+            this.isReply = isReply;
+        }
+
+        public UC_BubbleChat(UC_ChatNew bubbleChat, GroupChat groupChat, bool isReply)
+        {
+            InitializeComponent();
+            this.uc_chatNew = bubbleChat;
+            this.groupChat = groupChat;
+            this.isReply = isReply;
         }
 
         private void UC_BubbleChat_Load(object sender, EventArgs e)
         {
-            if(this.chat.Pengirim != MainForm.service.Current_user.Username)
+            if (this.chat != null)
             {
-                pictureBoxTeman.BackgroundImage = DisplayChat(this.chat.Pesan, this.chat.TglTerkirim, this.chat.Pengirim);
-                pictureBoxTeman.BackgroundImageLayout = ImageLayout.Zoom;
-                pictureBoxUIser.Visible = false;
+                if (this.chat.Pengirim != MainForm.service.Current_user.Username)
+                {
+                    pictureBoxTeman.BackgroundImage = DisplayChat(this.chat.Pesan, this.chat.TglTerkirim, this.chat.Pengirim);
+                    pictureBoxTeman.BackgroundImageLayout = ImageLayout.Zoom;
+                    pictureBoxUIser.Visible = false;
+                }
+                else
+                {
+                    pictureBoxUIser.BackgroundImage = DisplayChat(this.chat.Pesan, this.chat.TglTerkirim, this.chat.Pengirim);
+                    pictureBoxUIser.BackgroundImageLayout = ImageLayout.Zoom;
+                    pictureBoxTeman.Visible = false;
+                }
             }
             else
             {
-                pictureBoxUIser.BackgroundImage = DisplayChat(this.chat.Pesan, this.chat.TglTerkirim, this.chat.Pengirim);
-                pictureBoxUIser.BackgroundImageLayout = ImageLayout.Zoom;
-                pictureBoxTeman.Visible = false;
+                if (this.groupChat.Pengirim != MainForm.service.Current_user.Username)
+                {
+                    pictureBoxTeman.BackgroundImage = DisplayChat(this.groupChat.Pesan, this.groupChat.TglTerkirim, this.groupChat.Pengirim);
+                    pictureBoxTeman.BackgroundImageLayout = ImageLayout.Zoom;
+                    pictureBoxUIser.Visible = false;
+                }
+                else
+                {
+                    pictureBoxUIser.BackgroundImage = DisplayChat(this.groupChat.Pesan, this.groupChat.TglTerkirim, this.groupChat.Pengirim);
+                    pictureBoxUIser.BackgroundImageLayout = ImageLayout.Zoom;
+                    pictureBoxTeman.Visible = false;
+                }
             }
         }
 

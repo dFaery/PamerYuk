@@ -15,6 +15,8 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
     {
         UC_ChatNew uc_chatNew;
         Chat chat;
+        GroupChat groupChat;
+
         public UC_BubbleChatShareImage(UC_ChatNew bubbleChat, Chat chat)
         {
             InitializeComponent();
@@ -22,20 +24,44 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             this.chat=chat;
         }
 
+        public UC_BubbleChatShareImage(UC_ChatNew bubbleChat, GroupChat groupChat)
+        {
+            InitializeComponent();
+            this.uc_chatNew = bubbleChat;
+            this.groupChat = groupChat;
+        }
+
         private void UC_BubbleChatShareImage_Load(object sender, EventArgs e)
         {
-
-            if (this.chat.Pengirim != MainForm.service.Current_user.Username)
+            if (this.chat != null)
             {
-                pictureBoxTeman.BackgroundImage = DisplayChat(this.chat.Pesan, this.chat.TglTerkirim, this.chat.Pengirim);
-                pictureBoxTeman.BackgroundImageLayout = ImageLayout.Zoom;
-                pictureBoxUser.Visible = false;
+                if (this.chat.Pengirim != MainForm.service.Current_user.Username)
+                {
+                    pictureBoxTeman.BackgroundImage = DisplayChat(this.chat.Pesan, this.chat.TglTerkirim, this.chat.Pengirim);
+                    pictureBoxTeman.BackgroundImageLayout = ImageLayout.Zoom;
+                    pictureBoxUser.Visible = false;
+                }
+                else
+                {
+                    pictureBoxUser.BackgroundImage = DisplayChat(this.chat.Pesan, this.chat.TglTerkirim, this.chat.Pengirim);
+                    pictureBoxUser.BackgroundImageLayout = ImageLayout.Zoom;
+                    pictureBoxTeman.Visible = false;
+                }
             }
             else
             {
-                pictureBoxUser.BackgroundImage = DisplayChat(this.chat.Pesan, this.chat.TglTerkirim, this.chat.Pengirim);
-                pictureBoxUser.BackgroundImageLayout = ImageLayout.Zoom;
-                pictureBoxTeman.Visible = false;
+                if (this.groupChat.Pengirim != MainForm.service.Current_user.Username)
+                {
+                    pictureBoxTeman.BackgroundImage = DisplayChat(this.groupChat.Pesan, this.groupChat.TglTerkirim, this.groupChat.Pengirim);
+                    pictureBoxTeman.BackgroundImageLayout = ImageLayout.Zoom;
+                    pictureBoxUser.Visible = false;
+                }
+                else
+                {
+                    pictureBoxUser.BackgroundImage = DisplayChat(this.groupChat.Pesan, this.groupChat.TglTerkirim, this.groupChat.Pengirim);
+                    pictureBoxUser.BackgroundImageLayout = ImageLayout.Zoom;
+                    pictureBoxTeman.Visible = false;
+                }
             }
         }
 
@@ -44,11 +70,17 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             labelTanggal.Text = tglKirim.ToString();
             return new Bitmap(MainForm.service.Cari_AkunTeman(senderUSN).FotoProfil);
         }
+
         private void DisplayImage()
         {
             if (this.chat.Pesan != "null")
             {
                 pictureBoxPhoto.BackgroundImage = new Bitmap(this.chat.Pesan);
+                pictureBoxPhoto.BackgroundImageLayout = ImageLayout.Zoom;
+            }
+            else if (this.groupChat.Pesan != "null")
+            {
+                pictureBoxPhoto.BackgroundImage = new Bitmap(this.groupChat.Pesan);
                 pictureBoxPhoto.BackgroundImageLayout = ImageLayout.Zoom;
             }
         }

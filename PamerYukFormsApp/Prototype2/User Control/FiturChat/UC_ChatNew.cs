@@ -19,6 +19,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
         private Group penerimaGroup;
         private List<int> cariIndex = new List<int>();
         private List<Chat> listChat = new List<Chat>();
+        private List<GroupChat> listGroupChat = new List<GroupChat>();
         private List<Size> BubbleSize = new List<Size>(); //BUat yang cari chat
         public string namaPenerima = "";
         private string currentType = "Chat";
@@ -106,12 +107,12 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             if (receiver != "")
             {
                 //Ganti semua jadi group
-                this.penerimaUser = MainForm.service.Cari_AkunTeman(receiver);
-                this.labelContactName.Text = penerimaUser.Username;
-                this.listChat = MainForm.service.Buka_Chat(receiver);
-                pictureBoxProfile.Image = new Bitmap(penerimaUser.FotoProfil);
+                this.penerimaGroup = MainForm.service.Cari_Group(receiver);
+                this.labelContactName.Text = penerimaGroup.Nama;
+                this.listGroupChat = MainForm.service.Buka_Group_Chat(receiver);
+                pictureBoxProfile.Image = new Bitmap(penerimaGroup.FotoProfil);
                 pictureBoxProfile.BackgroundImageLayout = ImageLayout.Zoom;
-                DisplayChat();
+                DisplayGroupChat();
             }
         }
 
@@ -120,6 +121,12 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
         {
             flowLayoutPanelChatHistory.Controls.Clear();
             DisplayChat();
+        }
+
+        private void RefreshGroupChart()
+        {
+            flowLayoutPanelChatHistory.Controls.Clear();
+            DisplayGroupChat();
         }
 
         private void DisplayChat()
@@ -144,6 +151,33 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
                 if (chat.TipePesan == "Reply")
                 {
                     UC_BubbleChat uc = new UC_BubbleChat(this, chat,true);
+                    flowLayoutPanelChatHistory.Controls.Add(uc);
+                }
+            }
+        }
+
+        private void DisplayGroupChat()
+        {
+            foreach (GroupChat groupChat in this.listGroupChat)
+            {
+                if (groupChat.TipePesan == "Chat")
+                {
+                    UC_BubbleChat uc = new UC_BubbleChat(this, groupChat, false);
+                    flowLayoutPanelChatHistory.Controls.Add(uc);
+                }
+                if (groupChat.TipePesan == "Media")
+                {
+                    UC_BubbleChatShareImage uc = new UC_BubbleChatShareImage(this, groupChat);
+                    flowLayoutPanelChatHistory.Controls.Add(uc);
+                }
+                if (groupChat.TipePesan == "Konten")
+                {
+                    UC_BubbleChatShareKonten uc = new UC_BubbleChatShareKonten(this, groupChat);
+                    flowLayoutPanelChatHistory.Controls.Add(uc);
+                }
+                if (groupChat.TipePesan == "Reply")
+                {
+                    UC_BubbleChat uc = new UC_BubbleChat(this, groupChat, true);
                     flowLayoutPanelChatHistory.Controls.Add(uc);
                 }
             }

@@ -54,8 +54,8 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             }
             if(this.type=="group")
             {
-                //labelContactName.Text = MainForm.service.Cari_Group(this.Name1).Nama;
-                //profilePicture.BackgroundImage = new Bitmap(MainForm.service.Cari_Group(this.Name1).FotoProfil);
+                labelContactName.Text = MainForm.service.Cari_Group(this.Name1).Nama;
+                profilePicture.BackgroundImage = new Bitmap(MainForm.service.Cari_Group(this.Name1).FotoProfil);
                 profilePicture.BackgroundImageLayout = ImageLayout.Zoom;
             }
         }
@@ -73,7 +73,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             }
             if(this.type=="group")
             {
-                //uc_Chat.Open_Chat_Room_Group(this.Name1);
+                uc_Chat.Open_Chat_Room_Group(this.Name1);
             }
         }
     }

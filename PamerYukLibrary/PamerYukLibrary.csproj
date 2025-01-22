@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="DAO\DAO_Chat.cs" />
     <Compile Include="DAO\DAO_Group.cs" />
+    <Compile Include="DAO\DAO_GroupChat.cs" />
     <Compile Include="DAO\DAO_KisahHidup.cs" />
     <Compile Include="DAO\DAO_Komen.cs" />
     <Compile Include="DAO\DAO_Konten.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Entity\Chat.cs" />
     <Compile Include="DAO\DAO_Members.cs" />
     <Compile Include="Entity\Group.cs" />
+    <Compile Include="Entity\GroupChat.cs" />
     <Compile Include="Entity\KisahHidup.cs" />
     <Compile Include="Entity\User.cs" />
     <Compile Include="Entity\Konten.cs" />
