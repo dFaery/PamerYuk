@@ -47,8 +47,17 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void UC_ChatListItem_Load(object sender, EventArgs e)
         {
-            profilePicture.BackgroundImage = new Bitmap(MainForm.service.Cari_AkunTeman(this.Name1).FotoProfil);
-            profilePicture.BackgroundImageLayout = ImageLayout.Zoom;
+            if(this.type=="teman")
+            {
+                profilePicture.BackgroundImage = new Bitmap(MainForm.service.Cari_AkunTeman(this.Name1).FotoProfil);
+                profilePicture.BackgroundImageLayout = ImageLayout.Zoom;
+            }
+            if(this.type=="group")
+            {
+                //labelContactName.Text = MainForm.service.Cari_Group(this.Name1).Nama;
+                //profilePicture.BackgroundImage = new Bitmap(MainForm.service.Cari_Group(this.Name1).FotoProfil);
+                profilePicture.BackgroundImageLayout = ImageLayout.Zoom;
+            }
         }
 
 
@@ -58,7 +67,14 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void labelContactName_Click(object sender, EventArgs e)
         {
-            uc_Chat.Open_Chat_Room(this.Name1);
+            if(this.type=="teman")
+            {
+                uc_Chat.Open_Chat_Room(this.Name1);
+            }
+            if(this.type=="group")
+            {
+                //uc_Chat.Open_Chat_Room_Group(this.Name1);
+            }
         }
     }
 }

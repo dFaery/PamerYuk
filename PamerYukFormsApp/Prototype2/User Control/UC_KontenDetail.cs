@@ -117,5 +117,10 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
+
+        private void pictureBoxShare_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

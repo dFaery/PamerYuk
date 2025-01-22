@@ -28,118 +28,99 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelReceiverProfilePicture = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelSenderProfilePicture = new System.Windows.Forms.Panel();
-            this.pictureBoxProfileBorder = new System.Windows.Forms.PictureBox();
-            this.btnReply = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panelReceiverProfilePicture.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelSenderProfilePicture.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfileBorder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnReply)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBoxTeman = new System.Windows.Forms.PictureBox();
+            this.btnReplyTeman = new System.Windows.Forms.PictureBox();
+            this.labelPesan = new System.Windows.Forms.Label();
+            this.pictureBoxUIser = new System.Windows.Forms.PictureBox();
+            this.labelTanggal = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeman)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnReplyTeman)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUIser)).BeginInit();
             this.SuspendLayout();
             // 
-            // panelReceiverProfilePicture
+            // pictureBoxTeman
             // 
-            this.panelReceiverProfilePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelReceiverProfilePicture.Controls.Add(this.pictureBox1);
-            this.panelReceiverProfilePicture.Location = new System.Drawing.Point(1241, 42);
-            this.panelReceiverProfilePicture.Margin = new System.Windows.Forms.Padding(5);
-            this.panelReceiverProfilePicture.Name = "panelReceiverProfilePicture";
-            this.panelReceiverProfilePicture.Size = new System.Drawing.Size(178, 155);
-            this.panelReceiverProfilePicture.TabIndex = 2;
+            this.pictureBoxTeman.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxTeman.Location = new System.Drawing.Point(14, 42);
+            this.pictureBoxTeman.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxTeman.Name = "pictureBoxTeman";
+            this.pictureBoxTeman.Size = new System.Drawing.Size(150, 150);
+            this.pictureBoxTeman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxTeman.TabIndex = 0;
+            this.pictureBoxTeman.TabStop = false;
             // 
-            // pictureBox1
+            // btnReplyTeman
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(178, 155);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.btnReplyTeman.BackColor = System.Drawing.Color.Transparent;
+            this.btnReplyTeman.Cursor = System.Windows.Forms.Cursors.PanSE;
+            this.btnReplyTeman.Image = global::PamerYukFormsApp.Properties.Resources.btnReplyChat;
+            this.btnReplyTeman.Location = new System.Drawing.Point(1230, 219);
+            this.btnReplyTeman.Margin = new System.Windows.Forms.Padding(5);
+            this.btnReplyTeman.Name = "btnReplyTeman";
+            this.btnReplyTeman.Size = new System.Drawing.Size(59, 48);
+            this.btnReplyTeman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnReplyTeman.TabIndex = 3;
+            this.btnReplyTeman.TabStop = false;
             // 
-            // panelSenderProfilePicture
+            // labelPesan
             // 
-            this.panelSenderProfilePicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelSenderProfilePicture.Controls.Add(this.pictureBoxProfileBorder);
-            this.panelSenderProfilePicture.Location = new System.Drawing.Point(55, 42);
-            this.panelSenderProfilePicture.Margin = new System.Windows.Forms.Padding(5);
-            this.panelSenderProfilePicture.Name = "panelSenderProfilePicture";
-            this.panelSenderProfilePicture.Size = new System.Drawing.Size(178, 155);
-            this.panelSenderProfilePicture.TabIndex = 1;
+            this.labelPesan.AutoSize = true;
+            this.labelPesan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.labelPesan.Location = new System.Drawing.Point(201, 42);
+            this.labelPesan.Name = "labelPesan";
+            this.labelPesan.Size = new System.Drawing.Size(254, 54);
+            this.labelPesan.TabIndex = 5;
+            this.labelPesan.Text = "labelPesan";
             // 
-            // pictureBoxProfileBorder
+            // pictureBoxUIser
             // 
-            this.pictureBoxProfileBorder.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxProfileBorder.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxProfileBorder.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBoxProfileBorder.Name = "pictureBoxProfileBorder";
-            this.pictureBoxProfileBorder.Size = new System.Drawing.Size(178, 155);
-            this.pictureBoxProfileBorder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxProfileBorder.TabIndex = 0;
-            this.pictureBoxProfileBorder.TabStop = false;
+            this.pictureBoxUIser.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxUIser.Location = new System.Drawing.Point(1310, 42);
+            this.pictureBoxUIser.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxUIser.Name = "pictureBoxUIser";
+            this.pictureBoxUIser.Size = new System.Drawing.Size(150, 150);
+            this.pictureBoxUIser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxUIser.TabIndex = 0;
+            this.pictureBoxUIser.TabStop = false;
             // 
-            // btnReply
+            // labelTanggal
             // 
-            this.btnReply.BackColor = System.Drawing.Color.Transparent;
-            this.btnReply.Cursor = System.Windows.Forms.Cursors.PanSE;
-            this.btnReply.Image = global::PamerYukFormsApp.Properties.Resources.btnReplyChat;
-            this.btnReply.Location = new System.Drawing.Point(1148, 149);
-            this.btnReply.Margin = new System.Windows.Forms.Padding(5);
-            this.btnReply.Name = "btnReply";
-            this.btnReply.Size = new System.Drawing.Size(59, 48);
-            this.btnReply.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnReply.TabIndex = 3;
-            this.btnReply.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.PanSE;
-            this.pictureBox2.Image = global::PamerYukFormsApp.Properties.Resources.btnReplyChat;
-            this.pictureBox2.Location = new System.Drawing.Point(243, 149);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(59, 48);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
+            this.labelTanggal.AutoSize = true;
+            this.labelTanggal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.labelTanggal.Location = new System.Drawing.Point(187, 219);
+            this.labelTanggal.Name = "labelTanggal";
+            this.labelTanggal.Size = new System.Drawing.Size(169, 31);
+            this.labelTanggal.TabIndex = 6;
+            this.labelTanggal.Text = "labelTanggal";
             // 
             // UC_BubbleChat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.btnReply);
-            this.Controls.Add(this.panelReceiverProfilePicture);
-            this.Controls.Add(this.panelSenderProfilePicture);
+            this.Controls.Add(this.labelTanggal);
+            this.Controls.Add(this.pictureBoxTeman);
+            this.Controls.Add(this.pictureBoxUIser);
+            this.Controls.Add(this.labelPesan);
+            this.Controls.Add(this.btnReplyTeman);
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "UC_BubbleChat";
-            this.Size = new System.Drawing.Size(1486, 253);
+            this.Size = new System.Drawing.Size(1486, 282);
             this.Load += new System.EventHandler(this.UC_BubbleChat_Load);
-            this.panelReceiverProfilePicture.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelSenderProfilePicture.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxProfileBorder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnReply)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeman)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnReplyTeman)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUIser)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBoxProfileBorder;
-        private System.Windows.Forms.Panel panelSenderProfilePicture;
-        private System.Windows.Forms.Panel panelReceiverProfilePicture;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox btnReply;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxTeman;
+        private System.Windows.Forms.PictureBox btnReplyTeman;
+        private System.Windows.Forms.Label labelPesan;
+        private System.Windows.Forms.PictureBox pictureBoxUIser;
+        private System.Windows.Forms.Label labelTanggal;
     }
 }

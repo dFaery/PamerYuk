@@ -16,9 +16,14 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
     {
         MainForm mainForm;
         private User penerimaUser;
+        private Group penerimaGroup;
         private List<int> cariIndex = new List<int>();
         private List<Chat> listChat = new List<Chat>();
+        private List<Size> BubbleSize = new List<Size>(); //BUat yang cari chat
         public string namaPenerima = "";
+        private string currentType = "Chat";
+        private string currentReceiverType = "teman";
+        private int reply_pesan_id=0;
         public UC_ChatNew(MainForm mainForm)
         {
             InitializeComponent();
@@ -27,12 +32,31 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
 
         private void UC_ChatNew_Load(object sender, EventArgs e)
         {
-            
+            if(MainForm.service.ListTeman.Count >0)
+            {
+                DisplayAllFriend();
+            }
+            labelReply.Visible = false;
         }
 
         private void btnKirim_Click(object sender, EventArgs e)
         {
-            
+            if(currentReceiverType== "teman")
+            {
+                string pesan = textBoxMessage.Text;
+                if (this.currentType == "Reply")
+                {
+                    ReplyChatChanger(pesan, this.reply_pesan_id);
+                }
+                Chat newChat = new Chat(textBoxMessage.Text, MainForm.service.Current_user.Username, this.penerimaUser.Username, this.currentType);
+                MainForm.service.Kirim_Chat(newChat);
+                //After Send To Service
+                this.currentType = "Chat";
+            }
+            if(currentReceiverType=="group")
+            {
+
+            }
         }
 
         private void buttonNewGroup_Click(object sender, EventArgs e)
@@ -48,7 +72,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
         {
             mainForm.panelUtama.Controls.Clear();
 
-            UC_NotesChat uC_Daftar = new UC_NotesChat(this);
+            UC_NotesChat uC_Daftar = new UC_NotesChat(this,this.penerimaUser.Username);
             mainForm.panelUtama.Controls.Remove(this);
             mainForm.panelUtama.Controls.Add(uC_Daftar);
         }
@@ -72,17 +96,39 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
                 this.listChat = MainForm.service.Buka_Chat(receiver);
                 pictureBoxProfile.Image = new Bitmap(penerimaUser.FotoProfil);
                 pictureBoxProfile.BackgroundImageLayout = ImageLayout.Zoom;
-                //MakeChatOnTop
+                DisplayChat();
             }
+        }
+
+        public void Open_Chat_Room_Group(string receiver)
+        {
+            flowLayoutPanelChatHistory.Controls.Clear();
+            if (receiver != "")
+            {
+                //Ganti semua jadi group
+                this.penerimaUser = MainForm.service.Cari_AkunTeman(receiver);
+                this.labelContactName.Text = penerimaUser.Username;
+                this.listChat = MainForm.service.Buka_Chat(receiver);
+                pictureBoxProfile.Image = new Bitmap(penerimaUser.FotoProfil);
+                pictureBoxProfile.BackgroundImageLayout = ImageLayout.Zoom;
+                DisplayChat();
+            }
+        }
+
+
+        private void RefreshChat()
+        {
+            flowLayoutPanelChatHistory.Controls.Clear();
+            DisplayChat();
         }
 
         private void DisplayChat()
         {
             foreach (Chat chat in this.listChat)
             {
-                if (chat.TipePesan == "Chat" || chat.TipePesan == "Reply")
+                if (chat.TipePesan == "Chat")
                 {
-                    UC_BubbleChat uc = new UC_BubbleChat(this, chat);
+                    UC_BubbleChat uc = new UC_BubbleChat(this, chat, false);
                     flowLayoutPanelChatHistory.Controls.Add(uc);   
                 }
                 if (chat.TipePesan == "Media")
@@ -97,7 +143,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
                 }
                 if (chat.TipePesan == "Reply")
                 {
-                    UC_BubbleChat uc = new UC_BubbleChat(this, chat);
+                    UC_BubbleChat uc = new UC_BubbleChat(this, chat,true);
                     flowLayoutPanelChatHistory.Controls.Add(uc);
                 }
             }
@@ -119,9 +165,42 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             {
                 UC_ChatListItem uc = new UC_ChatListItem(this);
                 uc.Name1 = group.Id.ToString();
-                    uc.type="group";
+                uc.type="group";
                 flowLayoutPanelChat.Controls.Add(uc);
             }
+        }
+
+        private void ChangeToGroup()
+        {
+            this.currentReceiverType = "group";
+        }
+
+        private void btnShareImage_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog fd = new OpenFileDialog();
+            if(fd.ShowDialog() == DialogResult.OK)
+            {
+                FormKirimGambar frm = new FormKirimGambar(this.penerimaUser.Username, fd);
+                frm.Owner = mainForm;
+                frm.ShowDialog();
+            }
+        }
+
+        public void Now_Reply(int id, string msg)
+        {
+            this.reply_pesan_id = id;
+            labelReply.Text = "Replying : " + msg;
+            labelReply.Visible = true;
+        }
+        private void ReplyChatChanger(string pesan,int id)
+        {
+            pesan = id.ToString().PadLeft(10,'0')+" "+pesan;
+        }
+
+        private void pictureBoxGroup_Click(object sender, EventArgs e)
+        {
+            flowLayoutPanelChat.Controls.Clear();
+            DisplayAllGroup();
         }
     }
 }

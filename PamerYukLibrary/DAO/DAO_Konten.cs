@@ -63,6 +63,20 @@ namespace PamerYukLibrary.DAO
             else return null;
         }
 
+
+        public static string Select_PemilikKonten(int konten_id)
+        {
+            string perintah = "SELECT * from konten where id = '" + konten_id + "';";
+
+            MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
+            if (dr.Read())
+            {
+                string usn = dr.GetValue(5).ToString();
+                return usn;
+            }
+            else return null;
+        }
+
         public static int Get_NewKonten_Id()
         {
             string command = "select id from konten order by id desc limit 1;";

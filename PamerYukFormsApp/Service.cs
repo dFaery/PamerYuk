@@ -234,7 +234,7 @@ namespace PamerYukFormsApp
         private string New_FileName(bool type)
         {
 
-            string path = this.current_user.Username + "x" + DateTime.Now.ToString("yyyyMMddHHmmss") + "x" + DAO_Konten.Get_NewKonten_Id();
+            string path = this.current_user.Username + "x" + DAO_Konten.Get_NewKonten_Id();
             if (type)
             {
                 path += ".jpg";
@@ -248,11 +248,11 @@ namespace PamerYukFormsApp
 
         private string New_ProfilePictureFileName(string username)
         {
-            return username + "xPFPx" + DateTime.Now.ToString("yyyyMMddHHmmss")+".jpg";
+            return username + "xPFPx" +".jpg";
         }
         private string New_ProfileDiriPictureFileName(string username)
         {
-            return username + "xPFDx" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".jpg";
+            return username + "xPFDx" + ".jpg";
         }
 
         private void CreateDirectory()
@@ -271,12 +271,31 @@ namespace PamerYukFormsApp
         {
             return DAO_Chat.Select_Chat(username, this.Current_user.Username);
         }
+        public List<Chat> Buka_Note(string username)
+        {
+            return DAO_Chat.Select_Catatan(username, this.Current_user.Username);
+        }
 
         public void Kirim_Chat(Chat chat)
         {
+            if(chat.TipePesan == "Media")
+            {
+                chat.Pesan = Kirim_File_Gambar(chat);
+            }
             DAO_Chat.Insert_Chat(chat);
         }
 
+        private string Kirim_File_Gambar(Chat chat)
+        {
+            string newFileName = (this.current_user.Username + "x" + chat.Penerima + "x" + DateTime.Now.ToString("yyMMddHHmmss") + ".jpg");
+            File.Copy(chat.Pesan, Path.Combine(this.MediafilePath, newFileName));
+            return Path.Combine(this.MediafilePathDB, newFileName);
+        }
+
+        public string Lihat_PemilikKonten(int kid)
+        {
+            return DAO_Konten.Select_PemilikKonten(kid);
+        }
         public void Kirim_Chat_BroadCast(string pesan)
         {
             foreach(Teman teman in ListTeman)
