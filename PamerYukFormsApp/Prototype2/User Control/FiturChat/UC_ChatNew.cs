@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PamerYukFormsApp.Properties;
 
 namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
 {
@@ -20,12 +21,13 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
         private List<int> cariIndex = new List<int>();
         private List<Chat> listChat = new List<Chat>();
         private List<GroupChat> listGroupChat = new List<GroupChat>();
-        private List<Size> BubbleSize = new List<Size>(); //BUat yang cari chat
+        private List<Size> BubbleSize = new List<Size>(); //Buat yang cari chat
         private List<UserControl> listUC = new List<UserControl>();
         public string namaPenerima = "";
         private string currentType = "Chat";
         private string currentReceiverType = "teman";
         private int reply_pesan_id=0;
+        private int count = 0;
         public UC_ChatNew(MainForm mainForm)
         {
             InitializeComponent();
@@ -57,7 +59,6 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             }
             if(currentReceiverType=="group")
             {
-
                 string pesan = textBoxMessage.Text;
                 if (this.currentType == "Reply")
                 {
@@ -291,9 +292,21 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
 
         private void pictureBoxGroup_Click(object sender, EventArgs e)
         {
-            flowLayoutPanelChat.Controls.Clear();
-            this.currentReceiverType = "group";
-            DisplayAllGroup();
+            count++;
+            if (count % 2 != 0)
+            {
+                flowLayoutPanelChat.Controls.Clear();
+                this.currentReceiverType = "group";
+                DisplayAllGroup();
+                pictureBoxGroup.Image = Resources.default_profile_picture;
+            }
+            else
+            {
+                flowLayoutPanelChat.Controls.Clear();
+                this.currentReceiverType = "teman";
+                DisplayAllFriend();
+                pictureBoxGroup.Image = Resources.DefaultGroupIcon;
+            }
         }
 
         private void labelContactName_Click(object sender, EventArgs e)
@@ -345,7 +358,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
 
         private void ViewIndex(int index)
         {
-            flowLayoutPanelChatHistory.ScrollControlIntoView(flowLayoutPanelChatHistory.Controls[index]);
+            flowLayoutPanelChatHistory.ScrollControlIntoView(flowLayoutPanelChatHistory.Controls[cariIndex[index]]);
         }
 
         private void dateTimePickerChatDate_ValueChanged(object sender, EventArgs e)
