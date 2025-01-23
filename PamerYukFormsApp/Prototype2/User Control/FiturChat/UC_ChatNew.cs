@@ -21,6 +21,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
         private List<Chat> listChat = new List<Chat>();
         private List<GroupChat> listGroupChat = new List<GroupChat>();
         private List<Size> BubbleSize = new List<Size>(); //BUat yang cari chat
+        private List<UserControl> listUC = new List<UserControl>();
         public string namaPenerima = "";
         private string currentType = "Chat";
         private string currentReceiverType = "teman";
@@ -109,7 +110,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
                 this.listChat = MainForm.service.Buka_Chat(receiver);
                 pictureBoxProfile.Image = new Bitmap(penerimaUser.FotoProfil);
                 pictureBoxProfile.BackgroundImageLayout = ImageLayout.Zoom;
-                DisplayChat();
+                ContaintChat();
             }
         }
 
@@ -137,7 +138,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             if(this.currentReceiverType == "teman")
             {
                 flowLayoutPanelChatHistory.Controls.Clear();
-                DisplayChat();
+                ContaintChat();
             }
             else
             {
@@ -152,34 +153,49 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             DisplayGroupChat();
         }
 
-        private void DisplayChat()
+        private void ContaintChat()
         {
+            UserControl uc;
             this.listChat = MainForm.service.Buka_Chat(this.penerimaUser.Username);
             foreach (Chat chat in this.listChat)
             {
                 if (chat.TipePesan == "Chat")
                 {
-                    UC_BubbleChat uc = new UC_BubbleChat(this, chat, false);
-                    flowLayoutPanelChatHistory.Controls.Add(uc);   
+                    uc = new UC_BubbleChat(this, chat, false);
+                    //flowLayoutPanelChatHistory.Controls.Add(uc);
+                    listUC.Add(uc);
                 }
                 if (chat.TipePesan == "Media")
                 {
-                    UC_BubbleChatShareImage uc = new UC_BubbleChatShareImage(this, chat);
-                    flowLayoutPanelChatHistory.Controls.Add(uc);
+                    uc = new UC_BubbleChatShareImage(this, chat);
+                    //flowLayoutPanelChatHistory.Controls.Add(uc);
+                    listUC.Add(uc);
                 }
                 if (chat.TipePesan == "Konten")
                 {
-                    UC_BubbleChatShareKonten uc = new UC_BubbleChatShareKonten(this, chat);
-                    flowLayoutPanelChatHistory.Controls.Add(uc);
+                    uc = new UC_BubbleChatShareKonten(this, chat);
+                    //flowLayoutPanelChatHistory.Controls.Add(uc);
+                    listUC.Add(uc);
                 }
                 if (chat.TipePesan == "Reply")
                 {
-                    UC_BubbleChat uc = new UC_BubbleChat(this, chat,true);
-                    flowLayoutPanelChatHistory.Controls.Add(uc);
+                    uc = new UC_BubbleChat(this, chat,true);
+                    //flowLayoutPanelChatHistory.Controls.Add(uc);
+                    listUC.Add(uc);
                 }
             }
+            DisplayChat();
         }
 
+        private void DisplayChat()
+        {
+            flowLayoutPanelChatHistory.Controls.Clear();
+            foreach (UserControl uc in listUC)
+            {
+                flowLayoutPanelChatHistory.Controls.Add(uc);
+            }
+            flowLayoutPanelChatHistory.ScrollControlIntoView(flowLayoutPanelChatHistory.Controls[listUC.Count - 1]);
+        }
         private void DisplayGroupChat()
         {
             this.listGroupChat = MainForm.service.Buka_Group_Chat(this.penerimaGroup.Id);
@@ -287,6 +303,62 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             UC_NotesChat uC_Daftar = new UC_NotesChat(this, this.penerimaUser.Username);
             mainForm.panelUtama.Controls.Remove(this);
             mainForm.panelUtama.Controls.Add(uC_Daftar);
+        }
+
+        private void btnCariChat_Click(object sender, EventArgs e)
+        {
+            string pesan = textBoxCariChat.Text;
+            cariIndex = MainForm.service.Cari_Chat(this.listChat, this.penerimaUser.Username, pesan);
+            if (cariIndex.Count > 0)
+            {
+                numericUpDownCariChat.Value = cariIndex.Count;
+            }
+            else
+            {
+                textBoxCariChat.Clear();
+                numericUpDownCariChat.Value = 0;
+            }
+            HighLightUCBackground();
+        }
+
+        private void HighLightUCBackground()
+        {
+            foreach (int index in cariIndex)
+            {
+                listUC[index].BackColor = Color.CadetBlue;
+            }
+            DisplayChat();
+        }
+
+        private void numericUpDownCariChat_ValueChanged(object sender, EventArgs e)
+        {
+            if (numericUpDownCariChat.Value < 1)
+            {
+                numericUpDownCariChat.Value = cariIndex.Count;
+            }
+            if (numericUpDownCariChat.Value > cariIndex.Count)
+            {
+                numericUpDownCariChat.Value = 1;
+            }
+            ViewIndex((int)(numericUpDownCariChat.Value-1));
+        }
+
+        private void ViewIndex(int index)
+        {
+            flowLayoutPanelChatHistory.ScrollControlIntoView(flowLayoutPanelChatHistory.Controls[index]);
+        }
+
+        private void dateTimePickerChatDate_ValueChanged(object sender, EventArgs e)
+        {
+            cariIndex = MainForm.service.Cari_Chat_ByTanggal(this.listChat, dateTimePickerChatDate.Value);
+            if (cariIndex.Count > 0)
+            {
+                numericUpDownCariChat.Value = cariIndex.Count;
+            }
+            else
+            {
+                numericUpDownCariChat.Value = 0;
+            }
         }
     }
 }

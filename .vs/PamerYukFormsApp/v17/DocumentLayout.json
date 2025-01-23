@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\joshu\\Downloads\\PamerYuk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_chatnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|c:\\users\\joshu\\downloads\\pameryuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_chatnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_chatnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_chatnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_chatnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\uc_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\uc_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryuklibrary\\dao\\dao_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|solutionrelative:pameryuklibrary\\dao\\dao_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryuklibrary\\entity\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|solutionrelative:pameryuklibrary\\entity\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_bubblechat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_bubblechat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_noteschat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,20 +39,12 @@
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_noteschat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|c:\\users\\joshu\\downloads\\pameryuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_chatnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_chatnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\formkirimgambar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\fiturchat\\formkirimgambar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|c:\\users\\joshu\\downloads\\pameryuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\formkirimgambar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\formkirimgambar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\fiturchat\\formkirimgambar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_bubblechatshareimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,7 +55,7 @@
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_bubblechatshareimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|c:\\users\\joshu\\downloads\\pameryuk\\pameryuklibrary\\dao\\dao_groupchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryuklibrary\\dao\\dao_groupchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|solutionrelative:pameryuklibrary\\dao\\dao_groupchat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -47,7 +63,7 @@
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\uc_chatlistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|c:\\users\\joshu\\downloads\\pameryuk\\pameryukformsapp\\prototype2\\user control\\uc_chatlistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\uc_chatlistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\uc_chatlistitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -71,44 +87,36 @@
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_bubblechatsharekonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|c:\\users\\joshu\\downloads\\pameryuk\\pameryukformsapp\\prototype2\\user control\\uc_kontendetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\uc_kontendetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\uc_kontendetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|c:\\users\\joshu\\downloads\\pameryuk\\pameryukformsapp\\prototype2\\user control\\uc_kontendetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\uc_kontendetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\uc_kontendetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|c:\\users\\joshu\\downloads\\pameryuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\formsharekonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\formsharekonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\fiturchat\\formsharekonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|c:\\users\\joshu\\downloads\\pameryuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\formsharekonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\formsharekonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\fiturchat\\formsharekonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|c:\\users\\joshu\\downloads\\pameryuk\\pameryukformsapp\\prototype2\\user control\\uc_tambahkonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\uc_tambahkonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\uc_tambahkonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|c:\\users\\joshu\\downloads\\pameryuk\\pameryukformsapp\\prototype2\\user control\\uc_tambahkonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\uc_tambahkonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\uc_tambahkonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_bubblechat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_bubblechat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|c:\\users\\joshu\\downloads\\pameryuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_bubblechat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_bubblechat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_bubblechat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|c:\\users\\joshu\\downloads\\pameryuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_bubblechatsharekonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_bubblechatsharekonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_bubblechatsharekonten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryuklibrary\\dao\\dao_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|solutionrelative:pameryuklibrary\\dao\\dao_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\fiturchat\\uc_notespanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -137,14 +145,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryuklibrary\\dao\\dao_konten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|solutionrelative:pameryuklibrary\\dao\\dao_konten.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\uc_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\uc_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\uc_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|solutionrelative:pameryukformsapp\\prototype2\\user control\\uc_chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F027A04C-8BD0-49E6-BCF1-0E29B55208A4}|PamerYukFormsApp\\PamerYukFormsApp.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryukformsapp\\prototype2\\user control\\uc_cariteman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -399,10 +399,6 @@
       "RelativeMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|solutionrelative:pameryuklibrary\\dao\\dao_tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryuklibrary\\entity\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|solutionrelative:pameryuklibrary\\entity\\chat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|C:\\Users\\joshu\\Downloads\\PamerYuk\\pameryuklibrary\\dao\\dao_teman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3340F94C-97CE-4363-9111-B5A8516B31FB}|PamerYukLibrary\\PamerYukLibrary.csproj|solutionrelative:pameryuklibrary\\dao\\dao_teman.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -486,13 +482,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Service.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Service.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Service.cs",
               "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Service.cs",
               "RelativeToolTip": "PamerYukFormsApp\\Service.cs",
-              "ViewState": "AgIAAIYBAAAAAAAAAAAgwJQBAABPAAAAAAAAAA==",
+              "ViewState": "AgIAAEEBAAAAAAAAAIA2wFoBAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-11T04:30:51.745Z",
               "IsPinned": true,
@@ -506,14 +502,53 @@
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_ChatNew.cs",
               "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_ChatNew.cs",
               "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_ChatNew.cs",
-              "ViewState": "AgIAABYBAAAAAAAAAAApwBsBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACMBAAAAAAAAAIA7wGcBAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-22T10:25:15.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "UC_Chat.cs",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_Chat.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_Chat.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_Chat.cs",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_Chat.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAApwKMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T11:37:36.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DAO_Chat.cs",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_Chat.cs",
+              "RelativeDocumentMoniker": "PamerYukLibrary\\DAO\\DAO_Chat.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_Chat.cs",
+              "RelativeToolTip": "PamerYukLibrary\\DAO\\DAO_Chat.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAewEoAAAA0AQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T10:46:01.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Chat.cs",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\Entity\\Chat.cs",
+              "RelativeDocumentMoniker": "PamerYukLibrary\\Entity\\Chat.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\Entity\\Chat.cs",
+              "RelativeToolTip": "PamerYukLibrary\\Entity\\Chat.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwBIAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T01:06:13.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UC_ChatNew.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_ChatNew.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_ChatNew.cs",
@@ -525,257 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UC_NotesChat.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs [Design]",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T08:04:49.871Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UC_NotesChat.cs",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAwDMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T08:11:11.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FormKirimGambar.cs",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAkwBIAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T10:42:48.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UC_BubbleChatShareImage.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs [Design]",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T06:38:15.253Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormKirimGambar.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs [Design]",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T06:09:58.485Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UC_BubbleChatShareImage.cs",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T11:40:41.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UC_TambahGroup.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs [Design]",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T15:44:25.471Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DAO_GroupChat.cs",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_GroupChat.cs",
-              "RelativeDocumentMoniker": "PamerYukLibrary\\DAO\\DAO_GroupChat.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_GroupChat.cs",
-              "RelativeToolTip": "PamerYukLibrary\\DAO\\DAO_GroupChat.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAAwGEAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T03:37:23.697Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UC_TambahKisahHidup.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKisahHidup.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKisahHidup.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKisahHidup.cs [Design]",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKisahHidup.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T10:50:18.198Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UC_ChatListItem.cs",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAwDwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T06:18:21.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UC_ChatListItem.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs [Design]",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T05:59:15.774Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "UC_TambahGroup.cs",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAxwB8AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T08:08:14.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DAO_Group.cs",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_Group.cs",
-              "RelativeDocumentMoniker": "PamerYukLibrary\\DAO\\DAO_Group.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_Group.cs",
-              "RelativeToolTip": "PamerYukLibrary\\DAO\\DAO_Group.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwCQAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T07:44:39.343Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FormShareKonten.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs [Design]",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T05:24:12.938Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UC_BubbleChatShareKonten.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareKonten.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareKonten.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareKonten.cs [Design]",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareKonten.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T06:38:29.568Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FormShareKonten.cs",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T05:24:14.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UC_KontenDetail.cs",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAQwHoAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T05:27:19.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UC_KontenDetail.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs [Design]",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T05:27:16.128Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UC_TambahKonten.cs",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAArwCYAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T05:23:58.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "UC_TambahKonten.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs [Design]",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T05:23:57.242Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 6,
               "Title": "UC_BubbleChat.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChat.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChat.cs",
@@ -787,7 +572,237 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UC_NotesChat.cs",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T08:11:11.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UC_NotesChat.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs [Design]",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesChat.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T08:04:49.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormKirimGambar.cs",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwBIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T10:42:48.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UC_BubbleChatShareImage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs [Design]",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T06:38:15.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormKirimGambar.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs [Design]",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormKirimGambar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T06:09:58.485Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UC_BubbleChatShareImage.cs",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareImage.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T11:40:41.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UC_TambahGroup.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs [Design]",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T15:44:25.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DAO_GroupChat.cs",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_GroupChat.cs",
+              "RelativeDocumentMoniker": "PamerYukLibrary\\DAO\\DAO_GroupChat.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_GroupChat.cs",
+              "RelativeToolTip": "PamerYukLibrary\\DAO\\DAO_GroupChat.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAwGEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T03:37:23.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UC_TambahKisahHidup.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKisahHidup.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKisahHidup.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKisahHidup.cs [Design]",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKisahHidup.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-11T10:50:18.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UC_ChatListItem.cs",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAwDwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T06:18:21.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UC_ChatListItem.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs [Design]",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_ChatListItem.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T05:59:15.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UC_TambahGroup.cs",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahGroup.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAxwB8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T08:08:14.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DAO_Group.cs",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_Group.cs",
+              "RelativeDocumentMoniker": "PamerYukLibrary\\DAO\\DAO_Group.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_Group.cs",
+              "RelativeToolTip": "PamerYukLibrary\\DAO\\DAO_Group.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCQAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T07:44:39.343Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 24,
+              "Title": "FormShareKonten.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs [Design]",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T05:24:12.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UC_BubbleChatShareKonten.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareKonten.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareKonten.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareKonten.cs [Design]",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareKonten.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T06:38:29.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FormShareKonten.cs",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\FormShareKonten.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T05:24:14.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UC_KontenDetail.cs",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAQwHoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T05:27:19.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UC_KontenDetail.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs [Design]",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T05:27:16.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UC_TambahKonten.cs",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAArwCYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T05:23:58.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UC_TambahKonten.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs",
+              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs",
+              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs [Design]",
+              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKonten.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T05:23:57.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "UC_BubbleChat.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChat.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChat.cs",
@@ -800,7 +815,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "UC_BubbleChatShareKonten.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareKonten.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareKonten.cs",
@@ -808,25 +823,11 @@
               "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_BubbleChatShareKonten.cs",
               "ViewState": "AgIAAFQAAAAAAAAAAAAvwGIAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T02:38:59.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T02:38:59.704Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "DAO_Chat.cs",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_Chat.cs",
-              "RelativeDocumentMoniker": "PamerYukLibrary\\DAO\\DAO_Chat.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_Chat.cs",
-              "RelativeToolTip": "PamerYukLibrary\\DAO\\DAO_Chat.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAmwDAAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T10:46:01.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "UC_NotesPanel.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesPanel.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesPanel.cs",
@@ -837,7 +838,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "UC_NotesPanel.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesPanel.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_NotesPanel.cs",
@@ -849,7 +850,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "UC_TambahNotes.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_TambahNotes.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_TambahNotes.cs",
@@ -861,7 +862,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "UC_TambahNotes.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_TambahNotes.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_TambahNotes.cs",
@@ -872,7 +873,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "UC_TambahBroadCast.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_TambahBroadCast.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_TambahBroadCast.cs",
@@ -884,7 +885,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "UC_TambahBroadCast.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_TambahBroadCast.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\FiturChat\\UC_TambahBroadCast.cs",
@@ -895,7 +896,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "DAO_Konten.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_Konten.cs",
               "RelativeDocumentMoniker": "PamerYukLibrary\\DAO\\DAO_Konten.cs",
@@ -904,29 +905,6 @@
               "ViewState": "AgIAADQAAAAAAAAAAAAUwEIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-11T11:32:59.698Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "UC_Chat.cs",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_Chat.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_Chat.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_Chat.cs",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_Chat.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAArwC0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T11:37:36.987Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "UC_Chat.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_Chat.cs",
-              "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_Chat.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_Chat.cs [Design]",
-              "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_Chat.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T10:17:42.956Z"
             },
             {
               "$type": "Document",
@@ -1268,7 +1246,8 @@
               "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_Chat.Designer.cs",
               "ViewState": "AgIAAKcAAAAAAAAAAAAuwLMAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T06:19:51.88Z"
+              "WhenOpened": "2025-01-21T06:19:51.88Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -1449,8 +1428,7 @@
               "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_TambahKisahHidup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T10:50:03.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-11T10:50:03.771Z"
             },
             {
               "$type": "Document",
@@ -1660,18 +1638,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 99,
-              "Title": "Chat.cs",
-              "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\Entity\\Chat.cs",
-              "RelativeDocumentMoniker": "PamerYukLibrary\\Entity\\Chat.cs",
-              "ToolTip": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\Entity\\Chat.cs",
-              "RelativeToolTip": "PamerYukLibrary\\Entity\\Chat.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwBIAAABxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T01:06:13.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 100,
               "Title": "DAO_Teman.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_Teman.cs",
               "RelativeDocumentMoniker": "PamerYukLibrary\\DAO\\DAO_Teman.cs",
@@ -1683,7 +1649,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 100,
               "Title": "DAO_Komen.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_Komen.cs",
               "RelativeDocumentMoniker": "PamerYukLibrary\\DAO\\DAO_Komen.cs",
@@ -1695,7 +1661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 101,
               "Title": "UC_KontenDetail.Designer.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.Designer.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.Designer.cs",
@@ -1703,12 +1669,11 @@
               "RelativeToolTip": "PamerYukFormsApp\\Prototype2\\User Control\\UC_KontenDetail.Designer.cs",
               "ViewState": "AgIAAJQAAAAAAAAAAAAWwKYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T10:17:57.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T10:17:57.225Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 102,
               "Title": "DAO_KisahHidup.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_KisahHidup.cs",
               "RelativeDocumentMoniker": "PamerYukLibrary\\DAO\\DAO_KisahHidup.cs",
@@ -1720,7 +1685,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 103,
               "Title": "KisahHidup.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\Entity\\KisahHidup.cs",
               "RelativeDocumentMoniker": "PamerYukLibrary\\Entity\\KisahHidup.cs",
@@ -1732,7 +1697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 104,
               "Title": "DAO_Organisasi.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukLibrary\\DAO\\DAO_Organisasi.cs",
               "RelativeDocumentMoniker": "PamerYukLibrary\\DAO\\DAO_Organisasi.cs",
@@ -1744,7 +1709,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 105,
               "Title": "FormDaftarKonten.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype\\FormDaftarKonten.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype\\FormDaftarKonten.cs",
@@ -1754,7 +1719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 106,
               "Title": "FormAkunTeman.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype\\FormAkunTeman.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype\\FormAkunTeman.cs",
@@ -1764,7 +1729,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 107,
               "Title": "FormDaftarTeman.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype\\FormDaftarTeman.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype\\FormDaftarTeman.cs",
@@ -1774,7 +1739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 108,
               "Title": "FormTeman.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype\\FormTeman.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype\\FormTeman.cs",
@@ -1784,7 +1749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 109,
               "Title": "FormRequestPertemanan.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype\\FormRequestPertemanan.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype\\FormRequestPertemanan.cs",
@@ -1796,7 +1761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 110,
               "Title": "FormRequestPertemanan.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype\\FormRequestPertemanan.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype\\FormRequestPertemanan.cs",
@@ -1806,7 +1771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 111,
               "Title": "FormDaftar.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype\\FormDaftar.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype\\FormDaftar.cs",
@@ -1816,7 +1781,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 112,
               "Title": "FormTambahKonten.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype\\FormTambahKonten.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype\\FormTambahKonten.cs",
@@ -1826,7 +1791,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 113,
               "Title": "FormTambahOrganisasi.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype\\FormTambahOrganisasi.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype\\FormTambahOrganisasi.cs",
@@ -1836,7 +1801,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 114,
               "Title": "FormKisahHidup.cs [Design]",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype\\FormKisahHidup.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype\\FormKisahHidup.cs",
@@ -1846,7 +1811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 115,
               "Title": "UC_RequestPertemananTerkirim.Designer.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_RequestPertemananTerkirim.Designer.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_RequestPertemananTerkirim.Designer.cs",
@@ -1858,7 +1823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 116,
               "Title": "UC_RequestPertemananMasuk.Designer.cs",
               "DocumentMoniker": "C:\\Users\\joshu\\Downloads\\PamerYuk\\PamerYukFormsApp\\Prototype2\\User Control\\UC_RequestPertemananMasuk.Designer.cs",
               "RelativeDocumentMoniker": "PamerYukFormsApp\\Prototype2\\User Control\\UC_RequestPertemananMasuk.Designer.cs",

@@ -137,6 +137,7 @@
             this.numericUpDownCariChat.Name = "numericUpDownCariChat";
             this.numericUpDownCariChat.Size = new System.Drawing.Size(87, 60);
             this.numericUpDownCariChat.TabIndex = 15;
+            this.numericUpDownCariChat.ValueChanged += new System.EventHandler(this.numericUpDownCariChat_ValueChanged);
             // 
             // dateTimePickerChatDate
             // 
@@ -146,6 +147,7 @@
             this.dateTimePickerChatDate.Name = "dateTimePickerChatDate";
             this.dateTimePickerChatDate.Size = new System.Drawing.Size(237, 45);
             this.dateTimePickerChatDate.TabIndex = 17;
+            this.dateTimePickerChatDate.ValueChanged += new System.EventHandler(this.dateTimePickerChatDate_ValueChanged);
             // 
             // textBoxCariChat
             // 
@@ -183,6 +185,7 @@
             this.btnCariChat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCariChat.TabIndex = 10;
             this.btnCariChat.TabStop = false;
+            this.btnCariChat.Click += new System.EventHandler(this.btnCariChat_Click);
             // 
             // labelContactName
             // 

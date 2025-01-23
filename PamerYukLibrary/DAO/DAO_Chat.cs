@@ -72,7 +72,7 @@ namespace PamerYukLibrary.DAO
         public static List<int> Select_Chat_ByPesan(string friend, string user,string pesan)
         {
             //usn2 is current user
-            string perintah = "SELECT id FROM chat  WHERE pengirim = '" + friend + "' and penerima ='" + user + "' and pesan like '%"+pesan+"%' UNION SELECT id FROM chat  WHERE pengirim = '" + user + "' and penerima ='" + friend + "' and pesan like '%"+pesan+"%' order by id asc;";
+            string perintah = "SELECT id FROM chat  WHERE pengirim = '" + friend + "' and penerima ='" + user + "' and pesan like '%"+pesan+"%' and tipePesan = 'Chat' UNION SELECT id FROM chat  WHERE pengirim = '" + user + "' and penerima ='" + friend + "' and pesan like '%"+pesan+ "%' and tipePesan = 'Chat' order by id asc;";
             MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
             List<int> listChatId = new List<int>();
             while (dr.Read())
