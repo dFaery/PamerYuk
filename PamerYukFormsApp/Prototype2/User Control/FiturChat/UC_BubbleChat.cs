@@ -17,7 +17,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
         Chat chat;
         GroupChat groupChat;
         private bool isReply = false;
-        public string replyContent = "";
+        private bool isGroup = false;
         public UC_BubbleChat(UC_ChatNew bubbleChat, Chat chat, bool isReply)
         {
             InitializeComponent();
@@ -32,11 +32,12 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             this.uc_chatNew = bubbleChat;
             this.groupChat = groupChat;
             this.isReply = isReply;
+            this.isGroup = true;
         }
 
         private void UC_BubbleChat_Load(object sender, EventArgs e)
         {
-            if (this.chat != null)
+            if (!this.isGroup)
             {
                 if (this.chat.Pengirim != MainForm.service.Current_user.Username)
                 {
@@ -72,11 +73,30 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
         {
             if(isReply)
             {
-                labelPesan.Text += "Replying\n" + replyContent + "\n";
+                Chat reply = MainForm.service.Buka_Reply(int.Parse(pesan.Substring(0, 10)));
+                string buffer = reply.Pesan;
+                if(reply.TipePesan=="Reply")
+                {
+                    buffer = ReplySplitter(pesan);
+                }
+                labelPesan.Text = "Replying : " + buffer + "\n-\n" + ReplySplitter(pesan);
             }
-            labelPesan.Text = pesan;
+            else
+            {
+                labelPesan.Text = pesan;
+            }
             labelTanggal.Text = tglKirim.ToString();
             return new Bitmap(MainForm.service.Cari_AkunTeman(senderUSN).FotoProfil);
+        }
+
+        private string ReplySplitter(string pesan)
+        {
+            return pesan.Substring(11);
+        }
+
+        private void btnReplyTeman_Click(object sender, EventArgs e)
+        {
+            uc_chatNew.Now_Reply(this.chat.Id, this.chat.Pesan);
         }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panelHeaderChat = new System.Windows.Forms.Panel();
+            this.pictureBoxGroup = new System.Windows.Forms.PictureBox();
             this.buttonNewGroup = new System.Windows.Forms.PictureBox();
             this.btnBroadCast = new System.Windows.Forms.PictureBox();
             this.numericUpDownCariChat = new System.Windows.Forms.NumericUpDown();
@@ -46,8 +47,8 @@
             this.btnKirim = new System.Windows.Forms.PictureBox();
             this.btnShareImage = new System.Windows.Forms.PictureBox();
             this.labelReply = new System.Windows.Forms.Label();
-            this.pictureBoxGroup = new System.Windows.Forms.PictureBox();
             this.panelHeaderChat.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGroup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonNewGroup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBroadCast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCariChat)).BeginInit();
@@ -57,7 +58,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseChat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnKirim)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnShareImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGroup)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -86,6 +86,19 @@
             this.panelHeaderChat.Name = "panelHeaderChat";
             this.panelHeaderChat.Size = new System.Drawing.Size(786, 138);
             this.panelHeaderChat.TabIndex = 66;
+            // 
+            // pictureBoxGroup
+            // 
+            this.pictureBoxGroup.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBoxGroup.Image = global::PamerYukFormsApp.Properties.Resources.Tambahkonten_true;
+            this.pictureBoxGroup.Location = new System.Drawing.Point(416, 24);
+            this.pictureBoxGroup.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxGroup.Name = "pictureBoxGroup";
+            this.pictureBoxGroup.Size = new System.Drawing.Size(98, 78);
+            this.pictureBoxGroup.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxGroup.TabIndex = 62;
+            this.pictureBoxGroup.TabStop = false;
+            this.pictureBoxGroup.Click += new System.EventHandler(this.pictureBoxGroup_Click);
             // 
             // buttonNewGroup
             // 
@@ -181,6 +194,7 @@
             this.labelContactName.Size = new System.Drawing.Size(276, 46);
             this.labelContactName.TabIndex = 4;
             this.labelContactName.Text = "Contact Name";
+            this.labelContactName.Click += new System.EventHandler(this.labelContactName_Click);
             // 
             // pictureBoxProfile
             // 
@@ -225,14 +239,14 @@
             this.flowLayoutPanelChatHistory.Location = new System.Drawing.Point(822, 141);
             this.flowLayoutPanelChatHistory.Margin = new System.Windows.Forms.Padding(5);
             this.flowLayoutPanelChatHistory.Name = "flowLayoutPanelChatHistory";
-            this.flowLayoutPanelChatHistory.Size = new System.Drawing.Size(1400, 845);
+            this.flowLayoutPanelChatHistory.Size = new System.Drawing.Size(1400, 718);
             this.flowLayoutPanelChatHistory.TabIndex = 67;
             this.flowLayoutPanelChatHistory.WrapContents = false;
             // 
             // textBoxMessage
             // 
             this.textBoxMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxMessage.Location = new System.Drawing.Point(945, 1106);
+            this.textBoxMessage.Location = new System.Drawing.Point(932, 941);
             this.textBoxMessage.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxMessage.Name = "textBoxMessage";
             this.textBoxMessage.Size = new System.Drawing.Size(1167, 68);
@@ -242,7 +256,7 @@
             // 
             this.btnKirim.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnKirim.Image = global::PamerYukFormsApp.Properties.Resources.SendMessage;
-            this.btnKirim.Location = new System.Drawing.Point(2133, 1096);
+            this.btnKirim.Location = new System.Drawing.Point(2109, 915);
             this.btnKirim.Margin = new System.Windows.Forms.Padding(5);
             this.btnKirim.Name = "btnKirim";
             this.btnKirim.Size = new System.Drawing.Size(89, 78);
@@ -255,7 +269,7 @@
             // 
             this.btnShareImage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnShareImage.Image = global::PamerYukFormsApp.Properties.Resources.ShareImageInChat;
-            this.btnShareImage.Location = new System.Drawing.Point(822, 1096);
+            this.btnShareImage.Location = new System.Drawing.Point(822, 915);
             this.btnShareImage.Margin = new System.Windows.Forms.Padding(5);
             this.btnShareImage.Name = "btnShareImage";
             this.btnShareImage.Size = new System.Drawing.Size(89, 78);
@@ -268,25 +282,12 @@
             // 
             this.labelReply.AutoSize = true;
             this.labelReply.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelReply.Location = new System.Drawing.Point(814, 1021);
+            this.labelReply.Location = new System.Drawing.Point(814, 864);
             this.labelReply.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labelReply.Name = "labelReply";
             this.labelReply.Size = new System.Drawing.Size(206, 46);
             this.labelReply.TabIndex = 19;
             this.labelReply.Text = "labelReply";
-            // 
-            // pictureBoxGroup
-            // 
-            this.pictureBoxGroup.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBoxGroup.Image = global::PamerYukFormsApp.Properties.Resources.Tambahkonten_true;
-            this.pictureBoxGroup.Location = new System.Drawing.Point(416, 24);
-            this.pictureBoxGroup.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBoxGroup.Name = "pictureBoxGroup";
-            this.pictureBoxGroup.Size = new System.Drawing.Size(98, 78);
-            this.pictureBoxGroup.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxGroup.TabIndex = 62;
-            this.pictureBoxGroup.TabStop = false;
-            this.pictureBoxGroup.Click += new System.EventHandler(this.pictureBoxGroup_Click);
             // 
             // UC_ChatNew
             // 
@@ -307,6 +308,7 @@
             this.Load += new System.EventHandler(this.UC_ChatNew_Load);
             this.panelHeaderChat.ResumeLayout(false);
             this.panelHeaderChat.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGroup)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buttonNewGroup)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnBroadCast)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCariChat)).EndInit();
@@ -317,7 +319,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnCloseChat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnKirim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnShareImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGroup)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

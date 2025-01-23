@@ -30,19 +30,19 @@
         {
             this.panelContent = new System.Windows.Forms.Panel();
             this.labelContentOwnerName = new System.Windows.Forms.Label();
-            this.pictureBoxContentOwnerBorder = new System.Windows.Forms.PictureBox();
             this.buttonLihatKontenDetail = new System.Windows.Forms.Button();
-            this.pictureBoxContent = new System.Windows.Forms.PictureBox();
             this.pictureBoxUser = new System.Windows.Forms.PictureBox();
             this.pictureBoxTeman = new System.Windows.Forms.PictureBox();
             this.pictureBoxReply1 = new System.Windows.Forms.PictureBox();
             this.labelTanggal = new System.Windows.Forms.Label();
+            this.pictureBoxContent = new System.Windows.Forms.PictureBox();
+            this.pictureBoxContentOwnerBorder = new System.Windows.Forms.PictureBox();
             this.panelContent.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxContentOwnerBorder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxContent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeman)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReply1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxContent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxContentOwnerBorder)).BeginInit();
             this.SuspendLayout();
             // 
             // panelContent
@@ -53,41 +53,29 @@
             this.panelContent.Controls.Add(this.labelContentOwnerName);
             this.panelContent.Controls.Add(this.buttonLihatKontenDetail);
             this.panelContent.Controls.Add(this.pictureBoxContent);
-            this.panelContent.Location = new System.Drawing.Point(250, 60);
+            this.panelContent.Location = new System.Drawing.Point(91, 15);
             this.panelContent.Margin = new System.Windows.Forms.Padding(5);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(987, 706);
+            this.panelContent.Size = new System.Drawing.Size(1090, 706);
             this.panelContent.TabIndex = 6;
             // 
             // labelContentOwnerName
             // 
             this.labelContentOwnerName.AutoSize = true;
             this.labelContentOwnerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelContentOwnerName.Location = new System.Drawing.Point(119, 38);
+            this.labelContentOwnerName.Location = new System.Drawing.Point(80, 17);
             this.labelContentOwnerName.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labelContentOwnerName.Name = "labelContentOwnerName";
             this.labelContentOwnerName.Size = new System.Drawing.Size(248, 39);
             this.labelContentOwnerName.TabIndex = 9;
             this.labelContentOwnerName.Text = "Content_owner";
             // 
-            // pictureBoxContentOwnerBorder
-            // 
-            this.pictureBoxContentOwnerBorder.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxContentOwnerBorder.Image = global::PamerYukFormsApp.Properties.Resources.Asset_ProfileBorder;
-            this.pictureBoxContentOwnerBorder.Location = new System.Drawing.Point(20, 17);
-            this.pictureBoxContentOwnerBorder.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBoxContentOwnerBorder.Name = "pictureBoxContentOwnerBorder";
-            this.pictureBoxContentOwnerBorder.Size = new System.Drawing.Size(89, 78);
-            this.pictureBoxContentOwnerBorder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxContentOwnerBorder.TabIndex = 7;
-            this.pictureBoxContentOwnerBorder.TabStop = false;
-            // 
             // buttonLihatKontenDetail
             // 
             this.buttonLihatKontenDetail.BackColor = System.Drawing.SystemColors.GrayText;
             this.buttonLihatKontenDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLihatKontenDetail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonLihatKontenDetail.Location = new System.Drawing.Point(661, 587);
+            this.buttonLihatKontenDetail.Location = new System.Drawing.Point(764, 587);
             this.buttonLihatKontenDetail.Margin = new System.Windows.Forms.Padding(5);
             this.buttonLihatKontenDetail.Name = "buttonLihatKontenDetail";
             this.buttonLihatKontenDetail.Size = new System.Drawing.Size(307, 103);
@@ -96,25 +84,14 @@
             this.buttonLihatKontenDetail.UseVisualStyleBackColor = false;
             this.buttonLihatKontenDetail.Click += new System.EventHandler(this.buttonLihatKontenDetail_Click);
             // 
-            // pictureBoxContent
-            // 
-            this.pictureBoxContent.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pictureBoxContent.Location = new System.Drawing.Point(215, 101);
-            this.pictureBoxContent.Margin = new System.Windows.Forms.Padding(5);
-            this.pictureBoxContent.Name = "pictureBoxContent";
-            this.pictureBoxContent.Size = new System.Drawing.Size(600, 600);
-            this.pictureBoxContent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxContent.TabIndex = 3;
-            this.pictureBoxContent.TabStop = false;
-            // 
             // pictureBoxUser
             // 
             this.pictureBoxUser.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxUser.Image = global::PamerYukFormsApp.Properties.Resources.Asset_ProfileBorder;
-            this.pictureBoxUser.Location = new System.Drawing.Point(1300, 60);
+            this.pictureBoxUser.Location = new System.Drawing.Point(1220, 15);
             this.pictureBoxUser.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxUser.Name = "pictureBoxUser";
-            this.pictureBoxUser.Size = new System.Drawing.Size(150, 150);
+            this.pictureBoxUser.Size = new System.Drawing.Size(50, 50);
             this.pictureBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxUser.TabIndex = 0;
             this.pictureBoxUser.TabStop = false;
@@ -123,10 +100,10 @@
             // 
             this.pictureBoxTeman.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxTeman.Image = global::PamerYukFormsApp.Properties.Resources.Asset_ProfileBorder;
-            this.pictureBoxTeman.Location = new System.Drawing.Point(50, 60);
+            this.pictureBoxTeman.Location = new System.Drawing.Point(15, 15);
             this.pictureBoxTeman.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxTeman.Name = "pictureBoxTeman";
-            this.pictureBoxTeman.Size = new System.Drawing.Size(150, 150);
+            this.pictureBoxTeman.Size = new System.Drawing.Size(50, 50);
             this.pictureBoxTeman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxTeman.TabIndex = 0;
             this.pictureBoxTeman.TabStop = false;
@@ -136,7 +113,7 @@
             this.pictureBoxReply1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxReply1.Cursor = System.Windows.Forms.Cursors.PanSE;
             this.pictureBoxReply1.Image = global::PamerYukFormsApp.Properties.Resources.btnReplyChat;
-            this.pictureBoxReply1.Location = new System.Drawing.Point(1258, 712);
+            this.pictureBoxReply1.Location = new System.Drawing.Point(1122, 754);
             this.pictureBoxReply1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxReply1.Name = "pictureBoxReply1";
             this.pictureBoxReply1.Size = new System.Drawing.Size(59, 48);
@@ -149,12 +126,35 @@
             // 
             this.labelTanggal.AutoSize = true;
             this.labelTanggal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.labelTanggal.Location = new System.Drawing.Point(1068, 781);
+            this.labelTanggal.Location = new System.Drawing.Point(108, 754);
             this.labelTanggal.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.labelTanggal.Name = "labelTanggal";
             this.labelTanggal.Size = new System.Drawing.Size(169, 31);
             this.labelTanggal.TabIndex = 10;
             this.labelTanggal.Text = "labelTanggal";
+            // 
+            // pictureBoxContent
+            // 
+            this.pictureBoxContent.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxContent.Location = new System.Drawing.Point(43, 90);
+            this.pictureBoxContent.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxContent.Name = "pictureBoxContent";
+            this.pictureBoxContent.Size = new System.Drawing.Size(959, 600);
+            this.pictureBoxContent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxContent.TabIndex = 3;
+            this.pictureBoxContent.TabStop = false;
+            // 
+            // pictureBoxContentOwnerBorder
+            // 
+            this.pictureBoxContentOwnerBorder.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxContentOwnerBorder.Image = global::PamerYukFormsApp.Properties.Resources.Asset_ProfileBorder;
+            this.pictureBoxContentOwnerBorder.Location = new System.Drawing.Point(20, 17);
+            this.pictureBoxContentOwnerBorder.Margin = new System.Windows.Forms.Padding(5);
+            this.pictureBoxContentOwnerBorder.Name = "pictureBoxContentOwnerBorder";
+            this.pictureBoxContentOwnerBorder.Size = new System.Drawing.Size(50, 50);
+            this.pictureBoxContentOwnerBorder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxContentOwnerBorder.TabIndex = 7;
+            this.pictureBoxContentOwnerBorder.TabStop = false;
             // 
             // UC_BubbleChatShareKonten
             // 
@@ -168,15 +168,15 @@
             this.Controls.Add(this.panelContent);
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "UC_BubbleChatShareKonten";
-            this.Size = new System.Drawing.Size(1486, 864);
+            this.Size = new System.Drawing.Size(1300, 860);
             this.Load += new System.EventHandler(this.UC_BubbleChatShareKonten_Load);
             this.panelContent.ResumeLayout(false);
             this.panelContent.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxContentOwnerBorder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxContent)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeman)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxReply1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxContent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxContentOwnerBorder)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,11 +187,11 @@
         private System.Windows.Forms.Panel panelContent;
         private System.Windows.Forms.PictureBox pictureBoxUser;
         private System.Windows.Forms.PictureBox pictureBoxTeman;
-        private System.Windows.Forms.PictureBox pictureBoxContent;
         private System.Windows.Forms.Button buttonLihatKontenDetail;
         private System.Windows.Forms.Label labelContentOwnerName;
-        private System.Windows.Forms.PictureBox pictureBoxContentOwnerBorder;
         private System.Windows.Forms.PictureBox pictureBoxReply1;
         private System.Windows.Forms.Label labelTanggal;
+        private System.Windows.Forms.PictureBox pictureBoxContentOwnerBorder;
+        private System.Windows.Forms.PictureBox pictureBoxContent;
     }
 }

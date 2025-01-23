@@ -15,6 +15,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
     {
         private string penerima;
         private OpenFileDialog foto;
+        private bool isGroup = false;
         public FormKirimGambar(string penerima, OpenFileDialog fd)
         {
             InitializeComponent();
@@ -22,6 +23,13 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             this.foto = fd;
         }
 
+        public FormKirimGambar(string penerima_id, OpenFileDialog fd, bool isGroup)
+        {
+            InitializeComponent();
+            this.penerima = penerima_id;
+            this.foto = fd;
+            this.isGroup = isGroup;
+        }
         private void FormKirimGambar_Load(object sender, EventArgs e)
         {
             panel1.BackgroundImage = new Bitmap(this.foto.FileName);
@@ -31,8 +39,16 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
 
         private void btnKirim_Click(object sender, EventArgs e)
         {
-            Chat newChat = new Chat(this.foto.FileName, MainForm.service.Current_user.Username, penerima, "Media");
-            MainForm.service.Kirim_Chat(newChat);
+            if(!this.isGroup)
+            {
+                Chat newChat = new Chat(this.foto.FileName, MainForm.service.Current_user.Username, penerima, "Media");
+                MainForm.service.Kirim_Chat(newChat);
+            }
+            else
+            {
+                GroupChat newChat = new GroupChat(this.foto.FileName, MainForm.service.Current_user.Username, MainForm.service.Cari_Group(int.Parse(this.penerima)) , "Media");
+                MainForm.service.Kirim_Group_Chat(newChat);
+            }
             this.Close();
         }
     }

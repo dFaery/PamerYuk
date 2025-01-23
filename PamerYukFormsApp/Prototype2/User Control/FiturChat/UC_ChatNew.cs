@@ -47,9 +47,9 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
                 string pesan = textBoxMessage.Text;
                 if (this.currentType == "Reply")
                 {
-                    ReplyChatChanger(pesan, this.reply_pesan_id);
+                    ReplyChatChanger(ref pesan, this.reply_pesan_id);
                 }
-                Chat newChat = new Chat(textBoxMessage.Text, MainForm.service.Current_user.Username, this.penerimaUser.Username, this.currentType);
+                Chat newChat = new Chat(pesan, MainForm.service.Current_user.Username, this.penerimaUser.Username, this.currentType);
                 MainForm.service.Kirim_Chat(newChat);
                 //After Send To Service
                 this.currentType = "Chat";
@@ -57,7 +57,19 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             if(currentReceiverType=="group")
             {
 
+                string pesan = textBoxMessage.Text;
+                if (this.currentType == "Reply")
+                {
+                    ReplyChatChanger(ref pesan, this.reply_pesan_id);
+                }
+                GroupChat newChat = new GroupChat(textBoxMessage.Text, MainForm.service.Current_user.Username, this.penerimaGroup, this.currentType);
+                MainForm.service.Kirim_Group_Chat(newChat);
+                //After Send To Service
+                this.currentType = "Chat";
             }
+            RefreshChat();
+            textBoxMessage.Clear();
+            textBoxMessage.Focus();
         }
 
         private void buttonNewGroup_Click(object sender, EventArgs e)
@@ -101,17 +113,20 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             }
         }
 
-        public void Open_Chat_Room_Group(string receiver)
+        public void Open_Chat_Room_Group(int receiver)
         {
             flowLayoutPanelChatHistory.Controls.Clear();
-            if (receiver != "")
+            if (receiver != 0)
             {
                 //Ganti semua jadi group
                 this.penerimaGroup = MainForm.service.Cari_Group(receiver);
                 this.labelContactName.Text = penerimaGroup.Nama;
                 this.listGroupChat = MainForm.service.Buka_Group_Chat(receiver);
-                pictureBoxProfile.Image = new Bitmap(penerimaGroup.FotoProfil);
-                pictureBoxProfile.BackgroundImageLayout = ImageLayout.Zoom;
+                if(penerimaGroup.FotoProfil != "null")
+                {
+                    pictureBoxProfile.Image = new Bitmap(penerimaGroup.FotoProfil);
+                    pictureBoxProfile.BackgroundImageLayout = ImageLayout.Zoom;
+                }
                 DisplayGroupChat();
             }
         }
@@ -119,11 +134,19 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
 
         private void RefreshChat()
         {
-            flowLayoutPanelChatHistory.Controls.Clear();
-            DisplayChat();
+            if(this.currentReceiverType == "teman")
+            {
+                flowLayoutPanelChatHistory.Controls.Clear();
+                DisplayChat();
+            }
+            else
+            {
+                flowLayoutPanelChatHistory.Controls.Clear();
+                DisplayGroupChat();
+            }
         }
 
-        private void RefreshGroupChart()
+        private void RefreshGroupChat()
         {
             flowLayoutPanelChatHistory.Controls.Clear();
             DisplayGroupChat();
@@ -131,6 +154,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
 
         private void DisplayChat()
         {
+            this.listChat = MainForm.service.Buka_Chat(this.penerimaUser.Username);
             foreach (Chat chat in this.listChat)
             {
                 if (chat.TipePesan == "Chat")
@@ -158,6 +182,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
 
         private void DisplayGroupChat()
         {
+            this.listGroupChat = MainForm.service.Buka_Group_Chat(this.penerimaGroup.Id);
             foreach (GroupChat groupChat in this.listGroupChat)
             {
                 if (groupChat.TipePesan == "Chat")
@@ -198,7 +223,8 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             foreach (Group group in MainForm.service.ListGroup)
             {
                 UC_ChatListItem uc = new UC_ChatListItem(this);
-                uc.Name1 = group.Id.ToString();
+                uc.groupId = group.Id;
+                uc.Name1 = group.Nama.ToString();
                 uc.type="group";
                 flowLayoutPanelChat.Controls.Add(uc);
             }
@@ -212,21 +238,37 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
         private void btnShareImage_Click(object sender, EventArgs e)
         {
             OpenFileDialog fd = new OpenFileDialog();
-            if(fd.ShowDialog() == DialogResult.OK)
+            if(this.currentReceiverType == "teman")
             {
-                FormKirimGambar frm = new FormKirimGambar(this.penerimaUser.Username, fd);
-                frm.Owner = mainForm;
-                frm.ShowDialog();
+                if (fd.ShowDialog() == DialogResult.OK)
+                {
+                    FormKirimGambar frm = new FormKirimGambar(this.penerimaUser.Username, fd);
+                    frm.Owner = mainForm;
+                    frm.ShowDialog();
+                }
+                RefreshChat();
+            }
+            else
+            {
+
+                if (fd.ShowDialog() == DialogResult.OK)
+                {
+                    FormKirimGambar frm = new FormKirimGambar(this.penerimaGroup.Id.ToString(), fd,true);
+                    frm.Owner = mainForm;
+                    frm.ShowDialog();
+                }
+                RefreshGroupChat();
             }
         }
 
         public void Now_Reply(int id, string msg)
         {
+            this.currentType = "Reply";
             this.reply_pesan_id = id;
             labelReply.Text = "Replying : " + msg;
             labelReply.Visible = true;
         }
-        private void ReplyChatChanger(string pesan,int id)
+        private void ReplyChatChanger(ref string pesan,int id)
         {
             pesan = id.ToString().PadLeft(10,'0')+" "+pesan;
         }
@@ -234,7 +276,17 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
         private void pictureBoxGroup_Click(object sender, EventArgs e)
         {
             flowLayoutPanelChat.Controls.Clear();
+            this.currentReceiverType = "group";
             DisplayAllGroup();
+        }
+
+        private void labelContactName_Click(object sender, EventArgs e)
+        {
+            mainForm.panelUtama.Controls.Clear();
+
+            UC_NotesChat uC_Daftar = new UC_NotesChat(this, this.penerimaUser.Username);
+            mainForm.panelUtama.Controls.Remove(this);
+            mainForm.panelUtama.Controls.Add(uC_Daftar);
         }
     }
 }

@@ -16,6 +16,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
         UC_ChatNew uc_chatNew;
         Chat chat;
         GroupChat groupChat;
+        private bool isGroup = false;
 
         public UC_BubbleChatShareImage(UC_ChatNew bubbleChat, Chat chat)
         {
@@ -29,11 +30,12 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             InitializeComponent();
             this.uc_chatNew = bubbleChat;
             this.groupChat = groupChat;
+            this.isGroup = true;
         }
 
         private void UC_BubbleChatShareImage_Load(object sender, EventArgs e)
         {
-            if (this.chat != null)
+            if (!this.isGroup)
             {
                 if (this.chat.Pengirim != MainForm.service.Current_user.Username)
                 {
@@ -63,6 +65,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
                     pictureBoxTeman.Visible = false;
                 }
             }
+            DisplayImage();
         }
 
         private Image DisplayChat(string pesan, DateTime tglKirim, string senderUSN)
@@ -73,17 +76,30 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
 
         private void DisplayImage()
         {
-            if (this.chat.Pesan != "null")
+            if(!this.isGroup)
             {
-                pictureBoxPhoto.BackgroundImage = new Bitmap(this.chat.Pesan);
-                pictureBoxPhoto.BackgroundImageLayout = ImageLayout.Zoom;
+                if (this.chat.Pesan != "null")
+                {
+                    pictureBoxPhoto.BackgroundImage = new Bitmap(this.chat.Pesan);
+                    pictureBoxPhoto.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+
             }
-            else if (this.groupChat.Pesan != "null")
+            else
             {
-                pictureBoxPhoto.BackgroundImage = new Bitmap(this.groupChat.Pesan);
-                pictureBoxPhoto.BackgroundImageLayout = ImageLayout.Zoom;
+                if (this.groupChat.Pesan != "null")
+                {
+                    pictureBoxPhoto.BackgroundImage = new Bitmap(this.groupChat.Pesan);
+                    pictureBoxPhoto.BackgroundImageLayout = ImageLayout.Zoom;
+                }
+
             }
         }
 
+        private void btnReply_Click(object sender, EventArgs e)
+        {
+
+            uc_chatNew.Now_Reply(this.chat.Id, this.chat.Pesan + " Media");
+        }
     }
 }

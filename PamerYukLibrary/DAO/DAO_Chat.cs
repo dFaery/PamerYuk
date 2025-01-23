@@ -26,10 +26,27 @@ namespace PamerYukLibrary.DAO
                 string tipePesan = dr.GetValue(3).ToString();
                 string pengirim = dr.GetValue(4).ToString();
                 string penerima = dr.GetValue(5).ToString();
-                Chat newChat = new Chat(id,pesan,pengirim,penerima,tglTerkirim,tipePesan);
+                Chat newChat = new Chat(id, pesan, pengirim, penerima, tglTerkirim, tipePesan);
                 listChat.Add(newChat);
             }
             return listChat;
+        }
+        public static Chat Select_Reply(int id)
+        {
+            //usn2 is current user
+            string perintah = "SELECT * FROM chat  WHERE id = '"+id+"'";
+            MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
+            Chat reply;
+            if (dr.Read())
+            {
+                string pesan = dr.GetValue(1).ToString();
+                DateTime tglTerkirim = DateTime.Parse(dr.GetValue(2).ToString());
+                string tipePesan = dr.GetValue(3).ToString();
+                string pengirim = dr.GetValue(4).ToString();
+                string penerima = dr.GetValue(5).ToString();
+                return reply = new Chat(id, pesan, pengirim, penerima, tglTerkirim, tipePesan);
+            }
+            else return null;
         }
 
 

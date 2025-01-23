@@ -12,9 +12,9 @@ namespace PamerYukLibrary.DAO
 {
     public class DAO_GroupChat
     {
-        public static List<GroupChat> Select_Group_Chat(string groupName)
+        public static List<GroupChat> Select_Group_Chat(int group_id)
         {
-            string perintah = "SELECT * FROM chatgroup c inner join groups g  ON c.groupid = g.id WHERE g.nama = '" + groupName + "' and tipePesan != 'Catatan' order by id asc;";
+            string perintah = "SELECT * FROM chatgroup c inner join groups g  ON c.groupid = g.id WHERE g.id = '" + group_id + "' and tipePesan != 'Catatan' order by c.id asc;";
             MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
             List<GroupChat> listGroupChat = new List<GroupChat>();
             GroupChat groupChat;
@@ -29,14 +29,14 @@ namespace PamerYukLibrary.DAO
                 int group_id_fk = int.Parse(dr.GetValue(5).ToString());
 
                 //Group
-                int group_id = int.Parse(dr.GetValue(6).ToString());
+                int groupid = int.Parse(dr.GetValue(6).ToString());
                 string nama = dr.GetValue(7).ToString();
                 string fotoProfil = dr.GetValue(8).ToString();
                 DateTime tglDibuat = DateTime.Parse(dr.GetValue(9).ToString());
                 string deskripsi = dr.GetValue(10).ToString();
 
                 //Create Group
-                Group newGroup = new Group(group_id, nama, fotoProfil, tglDibuat, deskripsi);
+                Group newGroup = new Group(groupid, nama, fotoProfil, tglDibuat, deskripsi);
 
                 //Create Group Chat
                 groupChat = new GroupChat(id, pesan, pengirim, newGroup, tglTerkirim, tipePesan);
@@ -46,9 +46,9 @@ namespace PamerYukLibrary.DAO
         }
 
 
-        public static List<GroupChat> Select_Catatan_Group(string groupName)
+        public static List<GroupChat> Select_Catatan_Group(int group_id)
         {
-            string perintah = "SELECT * FROM chatgroup c inner join groups g  ON c.groupid = g.id WHERE g.nama = '" + groupName + "' and tipePesan = 'Catatan' order by id asc;";
+            string perintah = "SELECT * FROM chatgroup c inner join groups g  ON c.groupid = g.id WHERE g.id = '" + group_id + "' and tipePesan = 'Catatan' order by c.id asc;";
             MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
             List<GroupChat> listGroupChat = new List<GroupChat>();
             GroupChat groupChat;
@@ -63,14 +63,14 @@ namespace PamerYukLibrary.DAO
                 int group_id_fk = int.Parse(dr.GetValue(5).ToString());
 
                 //Group
-                int group_id = int.Parse(dr.GetValue(6).ToString());
+                int groupid = int.Parse(dr.GetValue(6).ToString());
                 string nama = dr.GetValue(7).ToString();
                 string fotoProfil = dr.GetValue(8).ToString();
                 DateTime tglDibuat = DateTime.Parse(dr.GetValue(9).ToString());
                 string deskripsi = dr.GetValue(10).ToString();
 
                 //Create Group
-                Group newGroup = new Group(group_id, nama, fotoProfil, tglDibuat, deskripsi);
+                Group newGroup = new Group(groupid, nama, fotoProfil, tglDibuat, deskripsi);
 
                 //Create Group Chat
                 groupChat = new GroupChat(id, pesan, pengirim, newGroup, tglTerkirim, tipePesan);

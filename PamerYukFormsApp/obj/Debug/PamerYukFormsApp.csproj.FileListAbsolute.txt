@@ -398,3 +398,5 @@ C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\bin\Debug\System.Memory.dll
 C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\bin\Debug\System.Buffers.dll
+C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.FiturChat.FormKirimGambar.resources
+C:\Users\joshu\Downloads\PamerYuk\PamerYukFormsApp\obj\Debug\PamerYukFormsApp.Prototype2.User_Control.FiturChat.FormShareKonten.resources

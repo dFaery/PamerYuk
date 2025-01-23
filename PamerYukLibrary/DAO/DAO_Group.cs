@@ -32,9 +32,9 @@ namespace PamerYukLibrary.DAO
         }
 
 
-        public static Group Select_Group(string groupName)
+        public static Group Select_Group(int groupId)
         {
-            string perintah = "select * from groups where nama ='" + groupName + "';";
+            string perintah = "select * from groups where id ='" + groupId + "';";
             MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
             Group grup;
             if (dr.Read())
@@ -56,7 +56,7 @@ namespace PamerYukLibrary.DAO
             KoneksiDatabase.DatabaseDMLCommand(command);
         }
 
-        private static int Get_NewGroup_Id()
+        public static int Get_NewGroup_Id()
         {
             int result = 0;//for sementara
             string perintah = "SELECT id FROM groups ORDER BY id DESC LIMIT 1;";

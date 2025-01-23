@@ -18,6 +18,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
         Chat chat;
         GroupChat groupChat;
         Konten selectedKonten;
+        private bool isGroup = false;
         public UC_BubbleChatShareKonten(UC_ChatNew uc, Chat chat)
         {
             InitializeComponent();
@@ -30,11 +31,12 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             InitializeComponent();
             this.uc = uc;
             this.groupChat = groupChat;
+            this.isGroup = true;
         }
 
         private void UC_BubbleChatShareKonten_Load(object sender, EventArgs e)
         {
-            if (this.chat != null)
+            if (!this.isGroup)
             {
                 selectedKonten = MainForm.service.Lihat_Konten(int.Parse(this.chat.Pesan));
                 if (this.chat.Pengirim != MainForm.service.Current_user.Username)
@@ -94,7 +96,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
 
         private void pictureBoxReply1_Click(object sender, EventArgs e)
         {
-
+            uc.Now_Reply(this.chat.Id, this.chat.Pesan + " konten");
         }
     }
 }

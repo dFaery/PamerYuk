@@ -22,6 +22,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         private string name;
         private Image image;
         public string type = "teman";
+        public int groupId = 0;
         #endregion
 
         #region Properties
@@ -54,9 +55,13 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             }
             if(this.type=="group")
             {
-                labelContactName.Text = MainForm.service.Cari_Group(this.Name1).Nama;
-                profilePicture.BackgroundImage = new Bitmap(MainForm.service.Cari_Group(this.Name1).FotoProfil);
-                profilePicture.BackgroundImageLayout = ImageLayout.Zoom;
+                Group select = MainForm.service.Cari_Group(this.groupId);
+                labelContactName.Text = select.Nama;
+                if(select.FotoProfil != "null")
+                {
+                    profilePicture.BackgroundImage = new Bitmap(MainForm.service.Cari_Group(this.groupId).FotoProfil);
+                    profilePicture.BackgroundImageLayout = ImageLayout.Zoom;
+                }
             }
         }
 
@@ -73,7 +78,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             }
             if(this.type=="group")
             {
-                uc_Chat.Open_Chat_Room_Group(this.Name1);
+                uc_Chat.Open_Chat_Room_Group(this.groupId);
             }
         }
     }

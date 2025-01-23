@@ -17,7 +17,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
     public partial class UC_TambahGroup : UserControl
     {
         UC_ChatNew uc;
-        private FileDialog fd;
+        private OpenFileDialog fd;
         private Group buffer;
         public UC_TambahGroup(UC_ChatNew uc)
         {
@@ -28,6 +28,8 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         private void UC_TambahGroup_Load(object sender, EventArgs e)
         {
             buffer = new Group();
+            buffer.Members.Add(MainForm.service.Current_user);
+            buffer.FotoProfil = "null";
             dataGridViewTeman.DataSource = MainForm.service.ListTeman;
             if(dataGridViewTeman.ColumnCount == 3)
             {
@@ -63,6 +65,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
 
         private void label2_Click(object sender, EventArgs e)
         {
+            fd = new OpenFileDialog();
             if(fd.ShowDialog() == DialogResult.OK)
             {
                 if (Path.GetExtension(fd.FileName) == ".jpg")

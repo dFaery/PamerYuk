@@ -84,13 +84,14 @@
             this.buttonLike.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.buttonLike.TabIndex = 132;
             this.buttonLike.TabStop = false;
+            this.buttonLike.Click += new System.EventHandler(this.buttonLike_Click);
             // 
             // listBoxKomentar
             // 
             this.listBoxKomentar.FormattingEnabled = true;
             this.listBoxKomentar.ItemHeight = 31;
             this.listBoxKomentar.Location = new System.Drawing.Point(1129, 445);
-            this.listBoxKomentar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.listBoxKomentar.Margin = new System.Windows.Forms.Padding(5);
             this.listBoxKomentar.Name = "listBoxKomentar";
             this.listBoxKomentar.Size = new System.Drawing.Size(962, 252);
             this.listBoxKomentar.TabIndex = 131;
@@ -100,17 +101,18 @@
             this.btnKirim.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnKirim.Image = global::PamerYukFormsApp.Properties.Resources.SendMessage;
             this.btnKirim.Location = new System.Drawing.Point(2018, 716);
-            this.btnKirim.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnKirim.Margin = new System.Windows.Forms.Padding(5);
             this.btnKirim.Name = "btnKirim";
             this.btnKirim.Size = new System.Drawing.Size(76, 71);
             this.btnKirim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnKirim.TabIndex = 130;
             this.btnKirim.TabStop = false;
+            this.btnKirim.Click += new System.EventHandler(this.btnKirim_Click);
             // 
             // textBoxKomen
             // 
             this.textBoxKomen.Location = new System.Drawing.Point(1129, 716);
-            this.textBoxKomen.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.textBoxKomen.Margin = new System.Windows.Forms.Padding(5);
             this.textBoxKomen.Multiline = true;
             this.textBoxKomen.Name = "textBoxKomen";
             this.textBoxKomen.Size = new System.Drawing.Size(875, 69);
@@ -142,7 +144,7 @@
             // 
             this.pictureBoxProfilePicture.Image = global::PamerYukFormsApp.Properties.Resources.default_profile_picture;
             this.pictureBoxProfilePicture.Location = new System.Drawing.Point(1129, 25);
-            this.pictureBoxProfilePicture.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBoxProfilePicture.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxProfilePicture.Name = "pictureBoxProfilePicture";
             this.pictureBoxProfilePicture.Size = new System.Drawing.Size(110, 96);
             this.pictureBoxProfilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -168,7 +170,7 @@
             this.pictureBoxKonten.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxKonten.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBoxKonten.Location = new System.Drawing.Point(0, 0);
-            this.pictureBoxKonten.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureBoxKonten.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxKonten.Name = "pictureBoxKonten";
             this.pictureBoxKonten.Size = new System.Drawing.Size(1051, 930);
             this.pictureBoxKonten.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -190,7 +192,7 @@
             this.listBoxCaption.FormattingEnabled = true;
             this.listBoxCaption.ItemHeight = 31;
             this.listBoxCaption.Location = new System.Drawing.Point(1129, 146);
-            this.listBoxCaption.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.listBoxCaption.Margin = new System.Windows.Forms.Padding(5);
             this.listBoxCaption.Name = "listBoxCaption";
             this.listBoxCaption.Size = new System.Drawing.Size(962, 159);
             this.listBoxCaption.TabIndex = 135;
@@ -227,7 +229,7 @@
             this.Controls.Add(this.labelCurrentUser);
             this.Controls.Add(this.pictureBoxKonten);
             this.Controls.Add(this.axWindowsMediaPlayer1);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "UC_KontenDetail";
             this.Size = new System.Drawing.Size(2135, 930);
             this.Load += new System.EventHandler(this.UC_KontenDetail_Load);

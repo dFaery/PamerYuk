@@ -13,6 +13,7 @@ using System.Drawing;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 using PamerYukLibrary.Entity;
 using PamerYukLibrary.Database;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace PamerYukFormsApp
 {
@@ -49,7 +50,8 @@ namespace PamerYukFormsApp
         #region ONLOAD
         public void OnLoad()
         {
-            this.ListTeman = DAO_Teman.Select_ListTeman(this.Current_user.Username);       
+            this.ListTeman = DAO_Teman.Select_ListTeman(this.Current_user.Username);
+            this.ListGroup = DAO_Group.Select_ListGroup(this.Current_user.Username);
         }
         #endregion
 
@@ -271,6 +273,10 @@ namespace PamerYukFormsApp
         {
             return DAO_Chat.Select_Chat(username, this.Current_user.Username);
         }
+        public Chat Buka_Reply(int cid)
+        {
+            return DAO_Chat.Select_Reply(cid);
+        }
         public List<Chat> Buka_Note(string username)
         {
             return DAO_Chat.Select_Catatan(username, this.Current_user.Username);
@@ -370,28 +376,56 @@ namespace PamerYukFormsApp
             this.ListGroup =  DAO_Group.Select_ListGroup(username);
         }
 
-        public Group Cari_Group(string groupName)
+        public Group Cari_Group(int groupId)
         {
-            return DAO_Group.Select_Group(groupName);
+            return DAO_Group.Select_Group(groupId);
         }
 
-        public List<GroupChat> Buka_Group_Chat(string groupName)
+        public List<GroupChat> Buka_Group_Chat(int gid)
         {
-            return DAO_GroupChat.Select_Group_Chat(groupName);
+            return DAO_GroupChat.Select_Group_Chat(gid);
         }
 
         public User Tambah_Member_Group(string usn)
         {
             return DAO_Users.Select_User(usn);
         }
+        public void Kirim_Group_Chat(GroupChat chat)
+        {
+            if (chat.TipePesan == "Media")
+            {
+                chat.Pesan = Kirim_File_Gambar_Group(chat);
+            }
+            DAO_GroupChat.Insert_Group_Chat(chat);
+        }
+
+
+        private string Kirim_File_Gambar_Group(GroupChat chat)
+        {
+            string newFileName = (this.current_user.Username + "x" + chat.Grup.Id + "x" + DateTime.Now.ToString("yyMMddHHmmss") + ".jpg");
+            File.Copy(chat.Pesan, Path.Combine(this.MediafilePath, newFileName));
+            return Path.Combine(this.MediafilePathDB, newFileName);
+        }
 
         public void Buat_Group(Group group)
         {
+            group.Id = DAO_Group.Get_NewGroup_Id();
+            if(group.FotoProfil != "null")
+            {
+                group.FotoProfil = Foto_Profil_Group(group);
+            }
             DAO_Group.Insert_New_Group(group);
             DAO_Members.Insert_ListMember(group.Id, group.Members);
             Buka_Group(this.Current_user.Username);
         }
 
+
+        private string Foto_Profil_Group(Group group)
+        {
+            string newFileName = (group.Id + "x" + DateTime.Now.ToString("yyMMddHHmmss") + ".jpg");
+            File.Copy(group.FotoProfil, Path.Combine(this.MediafilePath, newFileName));
+            return Path.Combine(this.MediafilePathDB, newFileName);
+        }
         //Members
 
         public List<User> Akses_Member_Group(string group_id)

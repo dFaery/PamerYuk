@@ -41,10 +41,10 @@
             // pictureBoxTeman
             // 
             this.pictureBoxTeman.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxTeman.Location = new System.Drawing.Point(14, 42);
+            this.pictureBoxTeman.Location = new System.Drawing.Point(15, 15);
             this.pictureBoxTeman.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxTeman.Name = "pictureBoxTeman";
-            this.pictureBoxTeman.Size = new System.Drawing.Size(150, 150);
+            this.pictureBoxTeman.Size = new System.Drawing.Size(50, 50);
             this.pictureBoxTeman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxTeman.TabIndex = 0;
             this.pictureBoxTeman.TabStop = false;
@@ -54,31 +54,32 @@
             this.btnReplyTeman.BackColor = System.Drawing.Color.Transparent;
             this.btnReplyTeman.Cursor = System.Windows.Forms.Cursors.PanSE;
             this.btnReplyTeman.Image = global::PamerYukFormsApp.Properties.Resources.btnReplyChat;
-            this.btnReplyTeman.Location = new System.Drawing.Point(1230, 219);
+            this.btnReplyTeman.Location = new System.Drawing.Point(1191, 219);
             this.btnReplyTeman.Margin = new System.Windows.Forms.Padding(5);
             this.btnReplyTeman.Name = "btnReplyTeman";
             this.btnReplyTeman.Size = new System.Drawing.Size(59, 48);
             this.btnReplyTeman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnReplyTeman.TabIndex = 3;
             this.btnReplyTeman.TabStop = false;
+            this.btnReplyTeman.Click += new System.EventHandler(this.btnReplyTeman_Click);
             // 
             // labelPesan
             // 
             this.labelPesan.AutoSize = true;
-            this.labelPesan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.labelPesan.Location = new System.Drawing.Point(201, 42);
+            this.labelPesan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.labelPesan.Location = new System.Drawing.Point(84, 27);
             this.labelPesan.Name = "labelPesan";
-            this.labelPesan.Size = new System.Drawing.Size(254, 54);
+            this.labelPesan.Size = new System.Drawing.Size(187, 39);
             this.labelPesan.TabIndex = 5;
             this.labelPesan.Text = "labelPesan";
             // 
             // pictureBoxUIser
             // 
             this.pictureBoxUIser.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxUIser.Location = new System.Drawing.Point(1310, 42);
+            this.pictureBoxUIser.Location = new System.Drawing.Point(1200, 15);
             this.pictureBoxUIser.Margin = new System.Windows.Forms.Padding(5);
             this.pictureBoxUIser.Name = "pictureBoxUIser";
-            this.pictureBoxUIser.Size = new System.Drawing.Size(150, 150);
+            this.pictureBoxUIser.Size = new System.Drawing.Size(50, 50);
             this.pictureBoxUIser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxUIser.TabIndex = 0;
             this.pictureBoxUIser.TabStop = false;
@@ -87,7 +88,7 @@
             // 
             this.labelTanggal.AutoSize = true;
             this.labelTanggal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.labelTanggal.Location = new System.Drawing.Point(187, 219);
+            this.labelTanggal.Location = new System.Drawing.Point(9, 236);
             this.labelTanggal.Name = "labelTanggal";
             this.labelTanggal.Size = new System.Drawing.Size(169, 31);
             this.labelTanggal.TabIndex = 6;
@@ -105,7 +106,7 @@
             this.Controls.Add(this.btnReplyTeman);
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "UC_BubbleChat";
-            this.Size = new System.Drawing.Size(1486, 282);
+            this.Size = new System.Drawing.Size(1300, 280);
             this.Load += new System.EventHandler(this.UC_BubbleChat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTeman)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnReplyTeman)).EndInit();
