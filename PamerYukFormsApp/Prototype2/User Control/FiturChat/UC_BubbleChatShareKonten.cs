@@ -16,6 +16,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
     {
         UC_ChatNew uc;
         Chat chat;
+        GroupChat groupChat;
         Konten selectedKonten;
         public UC_BubbleChatShareKonten(UC_ChatNew uc, Chat chat)
         {
@@ -24,21 +25,48 @@ namespace PamerYukFormsApp.Prototype2.User_Control.FiturChat
             this.chat = chat;
         }
 
+        public UC_BubbleChatShareKonten(UC_ChatNew uc, GroupChat groupChat)
+        {
+            InitializeComponent();
+            this.uc = uc;
+            this.groupChat = groupChat;
+        }
+
         private void UC_BubbleChatShareKonten_Load(object sender, EventArgs e)
         {
-            selectedKonten = MainForm.service.Lihat_Konten(int.Parse(this.chat.Pesan));
-            if (this.chat.Pengirim != MainForm.service.Current_user.Username)
+            if (this.chat != null)
             {
-                pictureBoxTeman.BackgroundImage = DisplayChat(this.chat.Pesan, this.chat.TglTerkirim, this.chat.Pengirim);
-                pictureBoxTeman.BackgroundImageLayout = ImageLayout.Zoom;
-                pictureBoxUser.Visible = false;
+                selectedKonten = MainForm.service.Lihat_Konten(int.Parse(this.chat.Pesan));
+                if (this.chat.Pengirim != MainForm.service.Current_user.Username)
+                {
+                    pictureBoxTeman.BackgroundImage = DisplayChat(this.chat.Pesan, this.chat.TglTerkirim, this.chat.Pengirim);
+                    pictureBoxTeman.BackgroundImageLayout = ImageLayout.Zoom;
+                    pictureBoxUser.Visible = false;
+                }
+                else
+                {
+                    pictureBoxUser.BackgroundImage = DisplayChat(this.chat.Pesan, this.chat.TglTerkirim, this.chat.Pengirim);
+                    pictureBoxUser.BackgroundImageLayout = ImageLayout.Zoom;
+                    pictureBoxTeman.Visible = false;
+                }
             }
             else
             {
-                pictureBoxUser.BackgroundImage = DisplayChat(this.chat.Pesan, this.chat.TglTerkirim, this.chat.Pengirim);
-                pictureBoxUser.BackgroundImageLayout = ImageLayout.Zoom;
-                pictureBoxTeman.Visible = false;
+                selectedKonten = MainForm.service.Lihat_Konten(int.Parse(this.groupChat.Pesan));
+                if (this.groupChat.Pengirim != MainForm.service.Current_user.Username)
+                {
+                    pictureBoxTeman.BackgroundImage = DisplayChat(this.groupChat.Pesan, this.groupChat.TglTerkirim, this.groupChat.Pengirim);
+                    pictureBoxTeman.BackgroundImageLayout = ImageLayout.Zoom;
+                    pictureBoxUser.Visible = false;
+                }
+                else
+                {
+                    pictureBoxUser.BackgroundImage = DisplayChat(this.groupChat.Pesan, this.groupChat.TglTerkirim, this.groupChat.Pengirim);
+                    pictureBoxUser.BackgroundImageLayout = ImageLayout.Zoom;
+                    pictureBoxTeman.Visible = false;
+                }
             }
+           
             DisplayImage();
         }
 

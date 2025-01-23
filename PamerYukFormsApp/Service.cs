@@ -370,6 +370,16 @@ namespace PamerYukFormsApp
             this.ListGroup =  DAO_Group.Select_ListGroup(username);
         }
 
+        public Group Cari_Group(string groupName)
+        {
+            return DAO_Group.Select_Group(groupName);
+        }
+
+        public List<GroupChat> Buka_Group_Chat(string groupName)
+        {
+            return DAO_GroupChat.Select_Group_Chat(groupName);
+        }
+
         public User Tambah_Member_Group(string usn)
         {
             return DAO_Users.Select_User(usn);

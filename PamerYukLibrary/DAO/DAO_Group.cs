@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +29,25 @@ namespace PamerYukLibrary.DAO
                 listGroup.Add(newGroup);
             }
             return listGroup;
+        }
+
+
+        public static Group Select_Group(string groupName)
+        {
+            string perintah = "select * from groups where nama ='" + groupName + "';";
+            MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
+            Group grup;
+            if (dr.Read())
+            {
+                int id = int.Parse(dr.GetValue(0).ToString());
+                string nama = dr.GetValue(1).ToString();
+                string fotoProfil = dr.GetValue(2).ToString();
+                DateTime tglDibuat = DateTime.Parse(dr.GetValue(3).ToString());
+                string deskripsi = dr.GetValue(4).ToString();
+                grup = new Group(id, nama, fotoProfil, tglDibuat, deskripsi);
+                return grup;
+            }
+            else return null;
         }
 
         public static void Insert_New_Group(Group newGroup)
