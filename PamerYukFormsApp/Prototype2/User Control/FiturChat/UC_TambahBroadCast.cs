@@ -31,6 +31,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
         {
             string message = textBoxBroadcast.Text;
             MainForm.service.Kirim_Chat_BroadCast(message);
+            MessageBox.Show("Pesan telah berhasil dikirimkan ke semua teman anda.");
         }
     }
 }

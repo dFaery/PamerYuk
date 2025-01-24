@@ -57,3 +57,10 @@ E:\UBAYA\Semester 3\Database\Project_Student Challenge\PamerYuk\PamerYukLibrary\
 E:\UBAYA\Semester 3\Database\Project_Student Challenge\PamerYuk\PamerYukLibrary\obj\Debug\PamerYuk.290381AD.Up2Date
 E:\UBAYA\Semester 3\Database\Project_Student Challenge\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.dll
 E:\UBAYA\Semester 3\Database\Project_Student Challenge\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.pdb
+C:\Semester 3\Student Challenge - Database (Tambahan Terakhir)\PamerYuk\PamerYukLibrary\bin\Debug\PamerYukLibrary.dll
+C:\Semester 3\Student Challenge - Database (Tambahan Terakhir)\PamerYuk\PamerYukLibrary\bin\Debug\PamerYukLibrary.pdb
+C:\Semester 3\Student Challenge - Database (Tambahan Terakhir)\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.csproj.AssemblyReference.cache
+C:\Semester 3\Student Challenge - Database (Tambahan Terakhir)\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.csproj.CoreCompileInputs.cache
+C:\Semester 3\Student Challenge - Database (Tambahan Terakhir)\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.csproj.CopyComplete
+C:\Semester 3\Student Challenge - Database (Tambahan Terakhir)\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.dll
+C:\Semester 3\Student Challenge - Database (Tambahan Terakhir)\PamerYuk\PamerYukLibrary\obj\Debug\PamerYukLibrary.pdb

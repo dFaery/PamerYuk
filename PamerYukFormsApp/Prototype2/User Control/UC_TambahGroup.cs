@@ -52,6 +52,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             buffer.Nama = textBoxNamaGroup.Text;
             buffer.TglDibuat = DateTime.Now;
             MainForm.service.Buat_Group(buffer);
+            MessageBox.Show("Group telah berhasil dibuat.");
         }
 
         private void dataGridViewTeman_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -60,6 +61,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             {
                 string username = dataGridViewTeman.CurrentRow.Cells["username"].Value.ToString();
                 buffer.Members.Add(MainForm.service.Cari_AkunTeman(username));
+                MessageBox.Show(username + " telah ditambahkan ke dalam grup.");
             }
         }
 
