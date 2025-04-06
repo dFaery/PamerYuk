@@ -15,7 +15,7 @@ namespace PamerYukLibrary.DAO
         public static List<Chat> Select_Chat(string friend, string user)
         {
             //usn2 is current user
-            string perintah = "SELECT * FROM chat  WHERE pengirim = '" + friend + "' and penerima ='" + user + "' UNION SELECT * FROM chat  WHERE pengirim = '" + user + "' and penerima ='" + friend + "' order by id asc;";
+            string perintah = "SELECT * FROM chat  WHERE pengirim = '" + friend + "' and penerima ='" + user + "' and tipePesan != 'Catatan' UNION SELECT * FROM chat  WHERE pengirim = '" + user + "' and penerima ='" + friend + "'  and tipePesan != 'Catatan' order by id asc;";
             MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
             List<Chat> listChat = new List<Chat>();
             while (dr.Read())
@@ -26,16 +26,53 @@ namespace PamerYukLibrary.DAO
                 string tipePesan = dr.GetValue(3).ToString();
                 string pengirim = dr.GetValue(4).ToString();
                 string penerima = dr.GetValue(5).ToString();
-                Chat newChat = new Chat(id,pesan,pengirim,penerima,tglTerkirim,tipePesan);
+                Chat newChat = new Chat(id, pesan, pengirim, penerima, tglTerkirim, tipePesan);
                 listChat.Add(newChat);
             }
             return listChat;
         }
+        public static Chat Select_Reply(int id)
+        {
+            //usn2 is current user
+            string perintah = "SELECT * FROM chat  WHERE id = '"+id+"'";
+            MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
+            Chat reply;
+            if (dr.Read())
+            {
+                string pesan = dr.GetValue(1).ToString();
+                DateTime tglTerkirim = DateTime.Parse(dr.GetValue(2).ToString());
+                string tipePesan = dr.GetValue(3).ToString();
+                string pengirim = dr.GetValue(4).ToString();
+                string penerima = dr.GetValue(5).ToString();
+                return reply = new Chat(id, pesan, pengirim, penerima, tglTerkirim, tipePesan);
+            }
+            else return null;
+        }
 
+
+        public static List<Chat> Select_Catatan(string friend, string user)
+        {
+            //usn2 is current user
+            string perintah = "SELECT * FROM chat  WHERE pengirim = '" + friend + "' and penerima ='" + user + "' and tipePesan = 'Catatan' UNION SELECT * FROM chat  WHERE pengirim = '" + user + "' and penerima ='" + friend + "'  and tipePesan = 'Catatan' order by id asc;";
+            MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
+            List<Chat> listChat = new List<Chat>();
+            while (dr.Read())
+            {
+                int id = int.Parse(dr.GetValue(0).ToString());
+                string pesan = dr.GetValue(1).ToString();
+                DateTime tglTerkirim = DateTime.Parse(dr.GetValue(2).ToString());
+                string tipePesan = dr.GetValue(3).ToString();
+                string pengirim = dr.GetValue(4).ToString();
+                string penerima = dr.GetValue(5).ToString();
+                Chat newChat = new Chat(id, pesan, pengirim, penerima, tglTerkirim, tipePesan);
+                listChat.Add(newChat);
+            }
+            return listChat;
+        }
         public static List<int> Select_Chat_ByPesan(string friend, string user,string pesan)
         {
             //usn2 is current user
-            string perintah = "SELECT id FROM chat  WHERE pengirim = '" + friend + "' and penerima ='" + user + "' and pesan like '%"+pesan+"%' UNION SELECT id FROM chat  WHERE pengirim = '" + user + "' and penerima ='" + friend + "' and pesan like '%"+pesan+"%' order by id asc;";
+            string perintah = "SELECT id FROM chat  WHERE pengirim = '" + friend + "' and penerima ='" + user + "' and pesan like '%"+pesan+"%' and tipePesan = 'Chat' UNION SELECT id FROM chat  WHERE pengirim = '" + user + "' and penerima ='" + friend + "' and pesan like '%"+pesan+ "%' and tipePesan = 'Chat' order by id asc;";
             MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
             List<int> listChatId = new List<int>();
             while (dr.Read())

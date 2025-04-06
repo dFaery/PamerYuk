@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using PamerYukFormsApp.Prototype2.User_Control.FiturChat;
 
 namespace PamerYukFormsApp.Prototype2.User_Control
 {
@@ -90,6 +91,7 @@ namespace PamerYukFormsApp.Prototype2.User_Control
                 buttonLike.Image = Properties.Resources.Like_true;
                 buttonLike.BackgroundImageLayout = ImageLayout.Zoom;
             }
+            labelTanggalUpload.Text = this.selectedKonten.TglUpload.ToString();
         }
 
         private void buttonLike_Click(object sender, EventArgs e)
@@ -114,8 +116,11 @@ namespace PamerYukFormsApp.Prototype2.User_Control
             selectedKonten = MainForm.service.Tambah_Komen(newKomen, this.selectedKonten);
             UC_KontenDetail_Load(sender, e);
         }
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void pictureBoxShare_Click(object sender, EventArgs e)
         {
+            FormShareKonten frm = new FormShareKonten(this.selectedKonten.Id);
+            frm.Show();
         }
     }
 }

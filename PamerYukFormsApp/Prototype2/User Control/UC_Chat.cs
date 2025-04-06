@@ -39,11 +39,11 @@ namespace PamerYukFormsApp.Prototype2.User_Control
                 {
                     string username = teman.Username;
 
-                    UC_ChatListItem uc_cl = new UC_ChatListItem(this);
+                    //UC_ChatListItem uc_cl = new UC_ChatListItem(this);
 
-                    uc_cl.Name1 = username;
+                    //uc_cl.Name1 = username;
 
-                    this.flowLayoutPanelChat.Controls.Add(uc_cl);
+                    //this.flowLayoutPanelChat.Controls.Add(uc_cl);
                 }
             }
                     

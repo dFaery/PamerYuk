@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,13 +31,32 @@ namespace PamerYukLibrary.DAO
             return listGroup;
         }
 
+
+        public static Group Select_Group(int groupId)
+        {
+            string perintah = "select * from groups where id ='" + groupId + "';";
+            MySqlDataReader dr = KoneksiDatabase.DatabaseQueryCommand(perintah);
+            Group grup;
+            if (dr.Read())
+            {
+                int id = int.Parse(dr.GetValue(0).ToString());
+                string nama = dr.GetValue(1).ToString();
+                string fotoProfil = dr.GetValue(2).ToString();
+                DateTime tglDibuat = DateTime.Parse(dr.GetValue(3).ToString());
+                string deskripsi = dr.GetValue(4).ToString();
+                grup = new Group(id, nama, fotoProfil, tglDibuat, deskripsi);
+                return grup;
+            }
+            else return null;
+        }
+
         public static void Insert_New_Group(Group newGroup)
         {
-            string command = "INSERT INTO `pameryuk`.`groups` (`id`, `nama`, `fotoProfil`, `tglDibuat`, `deskripsi`) VALUES ('" + Get_NewGroup_Id() + "', '" + newGroup.Nama + "', '" + newGroup.FotoProfil + "', '" + newGroup.TglDibuat + "', '" + newGroup.Deskripsi + "');";
+            string command = "INSERT INTO `pameryuk`.`groups` (`id`, `nama`, `fotoProfil`, `tglDibuat`, `deskripsi`) VALUES ('" + Get_NewGroup_Id() + "', '" + newGroup.Nama + "', '" + newGroup.FotoProfil + "', '" + newGroup.TglDibuat.ToString("yyyy-MM-dd HH:mm:ss") + "', '" + newGroup.Deskripsi + "');";
             KoneksiDatabase.DatabaseDMLCommand(command);
         }
 
-        private static int Get_NewGroup_Id()
+        public static int Get_NewGroup_Id()
         {
             int result = 0;//for sementara
             string perintah = "SELECT id FROM groups ORDER BY id DESC LIMIT 1;";

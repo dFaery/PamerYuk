@@ -13,6 +13,7 @@ using System.Drawing;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 using PamerYukLibrary.Entity;
 using PamerYukLibrary.Database;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace PamerYukFormsApp
 {
@@ -23,6 +24,7 @@ namespace PamerYukFormsApp
         private List<Kota> listKota;
         private List<Organisasi> listOrganisasi;
         private List<Teman> listTeman;
+        private List<Group> listGroup;
         private string MediafilePath = @"C:\PamerYuk\";
         private string MediafilePathDB = @"C:\\PamerYuk\\";
         #endregion
@@ -42,12 +44,14 @@ namespace PamerYukFormsApp
         public List<Kota> ListKota { get => listKota; set => listKota = value; }
         public List<Organisasi> ListOrganisasi { get => listOrganisasi; set => listOrganisasi = value; }
         public List<Teman> ListTeman { get => listTeman; set => listTeman = value; }
+        public List<Group> ListGroup { get => listGroup; set => listGroup = value; }
         #endregion
 
         #region ONLOAD
         public void OnLoad()
         {
-            this.ListTeman = DAO_Teman.Select_ListTeman(this.Current_user.Username);       
+            this.ListTeman = DAO_Teman.Select_ListTeman(this.Current_user.Username);
+            this.ListGroup = DAO_Group.Select_ListGroup(this.Current_user.Username);
         }
         #endregion
 
@@ -130,6 +134,11 @@ namespace PamerYukFormsApp
         public User Cari_AkunTeman(string username)
         {
             return DAO_Users.Select_User(username);
+        }
+
+        public User Cari_AkunTeman_Data(string username)
+        {
+            return DAO_Users.Select_User_Data(username);
         }
 
         public void Request_Pertemanan(string username)
@@ -227,7 +236,7 @@ namespace PamerYukFormsApp
         private string New_FileName(bool type)
         {
 
-            string path = this.current_user.Username + "x" + DateTime.Now.ToString("yyyyMMddHHmmss") + "x" + DAO_Konten.Get_NewKonten_Id();
+            string path = this.current_user.Username + "x" + DAO_Konten.Get_NewKonten_Id();
             if (type)
             {
                 path += ".jpg";
@@ -241,11 +250,11 @@ namespace PamerYukFormsApp
 
         private string New_ProfilePictureFileName(string username)
         {
-            return username + "xPFPx" + DateTime.Now.ToString("yyyyMMddHHmmss")+".jpg";
+            return username + "xPFPx" +".jpg";
         }
         private string New_ProfileDiriPictureFileName(string username)
         {
-            return username + "xPFDx" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".jpg";
+            return username + "xPFDx" + ".jpg";
         }
 
         private void CreateDirectory()
@@ -259,16 +268,56 @@ namespace PamerYukFormsApp
         #endregion
 
         #region CHAT
-
+        //ENUM('Chat', 'Media', 'Konten', 'Reply', 'Catatan')
         public List<Chat> Buka_Chat(string username)
         {
             return DAO_Chat.Select_Chat(username, this.Current_user.Username);
         }
+        public Chat Buka_Reply(int cid)
+        {
+            return DAO_Chat.Select_Reply(cid);
+        }
+        public List<Chat> Buka_Note(string username)
+        {
+            return DAO_Chat.Select_Catatan(username, this.Current_user.Username);
+        }
 
         public void Kirim_Chat(Chat chat)
         {
+            if(chat.TipePesan == "Media")
+            {
+                chat.Pesan = Kirim_File_Gambar(chat);
+            }
             DAO_Chat.Insert_Chat(chat);
         }
+
+        private string Kirim_File_Gambar(Chat chat)
+        {
+            string newFileName = (this.current_user.Username + "x" + chat.Penerima + "x" + DateTime.Now.ToString("yyMMddHHmmss") + ".jpg");
+            File.Copy(chat.Pesan, Path.Combine(this.MediafilePath, newFileName));
+            return Path.Combine(this.MediafilePathDB, newFileName);
+        }
+
+        public string Lihat_PemilikKonten(int kid)
+        {
+            return DAO_Konten.Select_PemilikKonten(kid);
+        }
+        public void Kirim_Chat_BroadCast(string pesan)
+        {
+            foreach(Teman teman in ListTeman)
+            {
+                Chat chat = new Chat(pesan, this.Current_user.Username, teman.Username, "Chat");
+                chat.Penerima = teman.Username;
+                DAO_Chat.Insert_Chat(chat);
+            }
+        }
+
+        /*
+        public List<Chat> Buka_Catatan(string username)
+        {
+            return DAO_Chat.Select_Catatan(username);
+        }
+        */
 
         public List<int> Cari_Chat(List<Chat> chat, string username, string pesan)
         {
@@ -318,30 +367,70 @@ namespace PamerYukFormsApp
         }
         #endregion
 
-        #region FITUR BARU
+        #region GROUP
 
         //Group
 
-        public List<Group> Buka_Group(string username)
+        public void Buka_Group(string username)
         {
-            return DAO_Group.Select_ListGroup(username);
+            this.ListGroup =  DAO_Group.Select_ListGroup(username);
+        }
+
+        public Group Cari_Group(int groupId)
+        {
+            return DAO_Group.Select_Group(groupId);
+        }
+
+        public List<GroupChat> Buka_Group_Chat(int gid)
+        {
+            return DAO_GroupChat.Select_Group_Chat(gid);
+        }
+
+        public User Tambah_Member_Group(string usn)
+        {
+            return DAO_Users.Select_User(usn);
+        }
+        public void Kirim_Group_Chat(GroupChat chat)
+        {
+            if (chat.TipePesan == "Media")
+            {
+                chat.Pesan = Kirim_File_Gambar_Group(chat);
+            }
+            DAO_GroupChat.Insert_Group_Chat(chat);
+        }
+
+
+        private string Kirim_File_Gambar_Group(GroupChat chat)
+        {
+            string newFileName = (this.current_user.Username + "x" + chat.Grup.Id + "x" + DateTime.Now.ToString("yyMMddHHmmss") + ".jpg");
+            File.Copy(chat.Pesan, Path.Combine(this.MediafilePath, newFileName));
+            return Path.Combine(this.MediafilePathDB, newFileName);
         }
 
         public void Buat_Group(Group group)
         {
+            group.Id = DAO_Group.Get_NewGroup_Id();
+            if(group.FotoProfil != "null")
+            {
+                group.FotoProfil = Foto_Profil_Group(group);
+            }
             DAO_Group.Insert_New_Group(group);
+            DAO_Members.Insert_ListMember(group.Id, group.Members);
+            Buka_Group(this.Current_user.Username);
         }
 
+
+        private string Foto_Profil_Group(Group group)
+        {
+            string newFileName = (group.Id + "x" + DateTime.Now.ToString("yyMMddHHmmss") + ".jpg");
+            File.Copy(group.FotoProfil, Path.Combine(this.MediafilePath, newFileName));
+            return Path.Combine(this.MediafilePathDB, newFileName);
+        }
         //Members
 
         public List<User> Akses_Member_Group(string group_id)
         {
             return DAO_Members.Select_ListMember(group_id);
-        }
-
-        public void Tambah_Member_Group(string group_id, List<User> members)
-        {
-            DAO_Members.Insert_ListMember(group_id, members);
         }
         #endregion
     }
